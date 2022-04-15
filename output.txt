@@ -1,418 +1,235 @@
-job_9d972d2b3235b9c5,/rc/clk?jk=9d972d2b3235b9c5&fccid=3e5272adb478341f&vjs=3,us         
-1
 
 
 
 
 
-job_6e22064b280b6e98,/rc/clk?jk=6e22064b280b6e98&fccid=fc68da685e8aa986&vjs=3,us         
-2
 
 
 
 
 
-job_9297dd5af4ed7fad,/rc/clk?jk=9297dd5af4ed7fad&fccid=c5a31cbaead96550&vjs=3,us         
-3
 
 
 
 
 
-job_37fdb6a271f24321,/rc/clk?jk=37fdb6a271f24321&fccid=2976086f485c981d&vjs=3,us         
-4
 
 
 
 
 
-job_23264f422231925c,/rc/clk?jk=23264f422231925c&fccid=71b1543b29473502&vjs=3,us         
-5
 
 
 
 
 
-job_6479344996011265,/rc/clk?jk=6479344996011265&fccid=b5c1d17c6eeeef03&vjs=3,us         
-6
 
 
 
 
 
-job_bf659768ce2fe7a2,/rc/clk?jk=bf659768ce2fe7a2&fccid=c9538b927313f8e0&vjs=3,us         
-7
 
 
 
+15,659 Data Engineer Jobs (NEW AS OF April 15, 2022) | Indeed.com
 
 
-job_35aead1a28dc0b21,/rc/clk?jk=35aead1a28dc0b21&fccid=a43657d8af5c59dd&vjs=3,us         
-8
 
 
 
 
 
-job_f164c257e745f8f9,/rc/clk?jk=f164c257e745f8f9&fccid=3c4418c05a3a90fc&vjs=3,us         
-9
 
 
 
 
 
-job_013a65cb1ca385f0,/rc/clk?jk=013a65cb1ca385f0&fccid=40dab2048c41a718&vjs=3,us         
-10
 
 
 
+Skip to Job Postings, Search
 
 
-job_1b23ea790833098b,/rc/clk?jk=1b23ea790833098b&fccid=80816981c594885b&vjs=3,us         
-11
 
 
 
+Find jobsCompany reviewsFind salariesUpload your resumeSign inSign inEmployers / Post JobStart of main content
 
 
-job_b8d5cf197153e49d,/rc/clk?jk=b8d5cf197153e49d&fccid=0798410bc063304a&vjs=3,us         
-12
 
 
+:
 
+WhatWhereTip: Enter your city or zip code in the "where" box to show results in your area.Find jobsDate PostedLast 24 hoursLast 3 daysLast 7 daysLast 14 daysRemoteRemote (5181)Temporarily remote (92)Salary Estimate$100,000+ (5869)$115,000+ (4750)$125,000+ (3728)$135,000+ (2696)$155,000+ (1178)Job TypeFull-time (10058)Contract (703)Part-time (70)Temporary (36)Internship (5)LocationRemote (1382)New York, NY (832)Seattle, WA (696)Austin, TX (455)Chicago, IL (451)San Francisco, CA (413)Atlanta, GA (369)Boston, MA (363)Dallas, TX (322)Los Angeles, CA (225)Washington, DC (225)Houston, TX (202)Charlotte, NC (198)Phoenix, AZ (177)CompanyDeloitte (1996)Amazon.com Services LLC (842)Recruiting From Scratch (615)Accenture (476)KPMG (378)Change Healthcare (369)ThoughtWorks (144)CyberCoders (139)Facebook App (106)VMware (97)CVS Health (96)Apple (95)Michael Page (87)Visa (85)Capital One - US (74)Experience LevelMid Level (7792)Senior Level (3345)Entry Level (1455)EducationHigh School DegreeAssociate's DegreeBachelor's DegreeMaster's DegreeDoctoral Degree
 
 
-job_b1a2456fd8823e9b,/rc/clk?jk=b1a2456fd8823e9b&fccid=ffc8bb74d131df37&vjs=3,us         
-13
 
 
 
 
 
-job_239bccb38a4b1482,/rc/clk?jk=239bccb38a4b1482&fccid=f33a9750898d12d4&vjs=3,us         
-14
 
 
 
 
 
-job_4347485d05967b4a,/rc/clk?jk=4347485d05967b4a&fccid=db130263a2af3230&vjs=3,us         
-15
 
+Forgot to save your resume?Use  for  to create your resume on Indeed and apply to jobs quicker.Save your resumeBy creating an Indeed Resume, you agree to Indeed's Terms of Service, Cookie Policy and Privacy Policy, and agree to be contacted by employers via Indeed. You consent to receiving marketing messages from Indeed and may opt from receiving such messages by following the unsubscribe link in our messages, or as detailed in our terms.Back
+ Upload your resume - Let employers find you
+        data engineer jobs
 
+Sort by: 
+relevance -
+date
 
 
 
-job_1e8ece5c49298c63,/rc/clk?jk=1e8ece5c49298c63&fccid=22f7ba07f9b31a96&vjs=3,us         
-16
+                    Page 1 of 15,659 jobs
+Displayed here are Job Ads that match your query. Indeed may be compensated by these employers, helping keep Indeed free for jobseekers. Indeed ranks Job Ads based on a combination of compensation paid by employers to Indeed and relevance, such as your search terms and other activity on Indeed. For more information, see the Indeed Privacy Policy
 
 
 
 
+newData Engineer + Apprentice (Entry-Level)New Apprenticeship4.9Jersey City, NJ+6 locations$35,000 - $45,000 a yearFull-time8 hour shiftUrgently hiringHiring multiple candidates
+Identify ways to improve data reliability, efficiency, and quality.
+Prior work experience with data visualization, business analytics, business consulting …
+Posted2 days ago·More...View all New Apprenticeship jobs in Jersey City, NJ - Jersey City jobsSalary Search: Data Engineer + Apprentice (Entry-Level) salaries in Jersey City, NJSee popular questions & answers about New ApprenticeshipnewData EngineerBerkley3.9Morristown, NJ 07960+1 locationEstimated $82.7K – $105K a yearFull-time
+Partner with leadership, engineers, program managers and analytics to understand data needs then design and develop appropriate data solutions.
+PostedToday·More...View all Berkley jobs in Morristown, NJ - Morristown jobsSalary Search: Data Engineer salaries in Morristown, NJSee popular questions & answers about BerkleynewSenior Data EngineerCCS Medical3.2Remote in Clearwater, FL 33762Estimated $113K – $143K a yearFull-time
+Position Summary: The Senior Data Engineer is a key member of the Analytics team and will be responsible for the collection of relevant data from multiple data…
+Posted1 day ago·More...View all CCS Medical jobs in Clearwater, FL - Clearwater jobsSalary Search: Senior Data Engineer salaries in Clearwater, FLSee popular questions & answers about CCS MedicalnewData EngineerDataDog4.0New York, NY+1 locationEstimated $124K – $157K a year
+You’ve worked with data stores and/or data warehouses, such as AWS S3, AWS Redshift, or Snowflake.
+Route that data between different sources and destinations,…
+PostedToday·More...View all DataDog jobs in New York, NY - New York jobsSalary Search: Data Engineer salaries in New York, NYSee popular questions & answers about DataDogData EngineerAmazon.com Services LLC3.5+126 locationsRemote$132,090 - $178,710 a yearFull-time
+Experience handling data - tracking data lineage, ensuring data quality, and improving discoverability of data.
+Posted30+ days ago·More...View all Amazon.com Services LLC jobs in Remote - Remote jobsSalary Search: Data Engineer salaries in RemoteSee popular questions & answers about Amazon.com Services LLCJunior Data EngineerThe Coca-Cola Company3.9Atlanta, GA 30313 (Downtown area)+2 locationsFull-time
+Lead from the front lines to define, design, and implement high-quality solutions.
+Design, develop, test, document, deploy, monitor, and support code.
+Posted9 days ago·More...View all The Coca-Cola Company jobs in Atlanta, GA - Atlanta jobsSalary Search: Junior Data Engineer salaries in Atlanta, GASee popular questions & answers about The Coca-Cola CompanynewData Engineer – ModelerSyngenta4.1Durham, NCFull-time
+Expose data via a data virtualization layer and APIs.
+Design and construct event-driven, transformative data pipelines that combine large and complex data types…
+Posted4 days ago·More...View all Syngenta jobs in Durham, NC - Durham jobsSalary Search: Data Engineer – Modeler salaries in Durham, NCSee popular questions & answers about SyngentanewSenior Data EngineerAltaMed Health Services Corporation3.6Anaheim, CA 92801 (Northwest Anaheim area)Estimated $111K – $140K a yearFull-time
+Proficiency in all facets of DW Architecture, data flow strategy, data modeling, metadata and master data management.
+Posted3 days ago·More...View all AltaMed Health Services Corporation jobs in Anaheim, CA - Anaheim jobsSalary Search: Senior Data Engineer salaries in Anaheim, CASee popular questions & answers about AltaMed Health Services CorporationnewData Engineer Principals # IN936Cummins Inc.3.9Columbus, INFull-time
+Create data pipeline architecture using databases and data management.
+Ensure compliance with data governance and data security requirements while creating,…
+Posted1 day ago·More...View all Cummins Inc. jobs in Columbus, IN - Columbus jobsSalary Search: Data Engineer Principals # IN936 salaries in Columbus, INSee popular questions & answers about Cummins Inc.Senior Data EngineerSyndio+1 locationRemote$150,000 - $180,000 a year
+Solve complex data issues around data integration, unusable data elements, unstructured data sets, and other data processing incidents.
+Posted30+ days ago·More...View all Syndio jobs in Remote - Remote jobsSalary Search: Senior Data Engineer salaries in RemotenewData EngineerDocuSign3.7Remote in Seattle, WA$93,700 - $128,875 a year
+Develop and own ETL data pipeline and data model solutions for integrating new data sets into Snowflake.
+2+ years of data modeling, building dimensional schemas…
+Posted2 days ago·More...View all DocuSign jobs in Seattle, WA - Seattle jobsSalary Search: Data Engineer salaries in Seattle, WASee popular questions & answers about DocuSignData Engineer (Remote)Octave+1 locationRemoteEstimated $95.4K – $121K a yearFull-timeResponsive employerOctave is a national behavioral health practice creating a new standard for care delivery that’s both high-quality and accessible to more people. With in…Posted30+ days ago·More...View all Octave jobs in Remote - Remote jobsSalary Search: Data Engineer (Remote) salaries in RemoteSenior Data EngineerUnderdog FantasyRemote$120,000 - $160,000 a yearFull-timeHiring multiple candidates
+You'll work closely with our product data analysts to determine appropriate data models for the company's requirements.
+Remote, In-Person, or Hybrid Scheduling.
+Posted30+ days ago·More...View all Underdog Fantasy jobs in Remote - Remote jobsSalary Search: Senior Data Engineer salaries in RemotePower BI Data Engineer - REMOTE - US Citizenship requiredGeneral Dynamics Information Technology3.8Remote$112,000 - $168,000 a year
+5 years of experience with data visualization and reporting tools.
+Your success will be measured through your ability to deliver reports and dashboards that…
+Posted30+ days ago·More...View all General Dynamics Information Technology jobs in Remote - Remote jobsSalary Search: Power BI Data Engineer - REMOTE - US Citizenship required salaries in RemoteSee popular questions & answers about General Dynamics Information TechnologynewData Engineer (Junior)BDSARemote in Louisville, CO$70,000 - $90,000 a year
+Implement application specific logical and physical data models.
+Data cleansing and data normalization processes and procedures.
+Pay Range: $70,000 – $90,000.
+Posted3 days ago·More...View all BDSA jobs in Louisville, CO - Louisville jobsSalary Search: Data Engineer (Junior) salaries in Louisville, CO
 
-job_e430a16cd0dc6f09,/rc/clk?jk=e430a16cd0dc6f09&fccid=49d86eba2fe6034f&vjs=3,us         
-17
 
 
 
+12345
 
 
-job_d72734101f0a96dd,/rc/clk?jk=d72734101f0a96dd&fccid=390a33e248c37c9d&vjs=3,us         
-18
+Employers, looking for qualified applicants?Post a job now
 
 
 
 
 
-job_9c5db3719a34b400,/rc/clk?jk=9c5db3719a34b400&fccid=ffd8b720f648a264&vjs=3,us         
-19
 
+Be the first to see new "data engineer" jobs
 
 
 
 
-job_dfe172d9daeb6037,/rc/clk?jk=dfe172d9daeb6037&fccid=f06a4d05bf5510ec&vjs=3,us         
-20
 
 
 
 
 
-job_6de69db9710e9c1e,/rc/clk?jk=6de69db9710e9c1e&fccid=7ba4f36e4f8333b3&vjs=3,us         
-21
 
 
 
 
 
-job_cdcbb75b78968829,/rc/clk?jk=cdcbb75b78968829&fccid=da3c7fed78dd1607&vjs=3,us         
-22
 
+Email address
 
 
 
 
-job_73cbb8814447da33,/rc/clk?jk=73cbb8814447da33&fccid=734cb5a01ee60f80&vjs=3,us         
-23
 
 
 
+By creating a job alert, you agree to our Terms. You can change your consent settings at any time by unsubscribing or as detailed in our terms.
 
 
-job_d4f78955457ca13d,/rc/clk?jk=d4f78955457ca13d&fccid=48edf0ac3d689fc7&vjs=3,us         
-24
 
 
 
 
 
-job_b8d5cf197153e49d,/rc/clk?jk=b8d5cf197153e49d&fccid=0798410bc063304a&vjs=3,us         
-25
 
 
 
 
 
-job_60f76aa2e712a32d,/rc/clk?jk=60f76aa2e712a32d&fccid=eaf322a714584ea6&vjs=3,us         
-26
 
 
 
 
 
-job_1eee112b8d097739,/company/Leaseweb/jobs/Data-Center-Engineer-1eee112b8d097739?fccid=ee8373b0f3a14710&vjs=3,us         
-27
 
 
 
 
 
-job_0ecab4e22b891aac,/rc/clk?jk=0ecab4e22b891aac&fccid=fe2d21eef233e94a&vjs=3,us         
-28
 
 
 
 
 
-job_5dd634145cf204c2,/rc/clk?jk=5dd634145cf204c2&fccid=cee887bafa195ef4&vjs=3,us         
-29
+Hiring LabCareer AdviceBrowse JobsBrowse CompaniesSalariesFind CertificationsBrowse SchoolsIndeed EventsWork at IndeedCountriesAboutHelp Center© 2022 IndeedDo Not Sell My Personal InformationAccessibility at IndeedPrivacy CenterCookiesPrivacyTerms
 
+Let Employers Find You  Upload Your Resume
 
 
 
 
-job_cc4155f66ee7275c,/rc/clk?jk=cc4155f66ee7275c&fccid=e15d9e27876d9dc3&vjs=3,us         
-30
 
 
 
 
 
-sj_7693aa85ffa9c8bc,/pagead/clk?mo=r&ad=-6NYlbfkN0B8YrpSbX6QVFJd0rXqcsYRy-Bmqa2PiJhVCrQrwsglNRrw8VZ8HrAr-bAyKrTb_b_IPu_ysr625nSTy1dbKUbZz9EqmWIYDABiYR0Li9hP1iq8dpFkDce9AM6XkOZ97O7t6gQHrmgTmLffRr59i7WtB0fuqarXgqhn4Ovy1ZlyT8dJVEXN9TLBK40NZDpTVpzJIz6JP6Merq6yRqspQBIUJ0Hw5oWFsZBwRrQ1MwJvBGzTZBi3FZqDBxAQTeS0OjBN8Hock7z-XuLHCgjMhx3WvgC1BS9VEKbhQO1arrgAIS-E3h-T3crD9W3ggBR2pnlCkxHy3umUugr04KZ89OKZ2AXgW5paES-6JoWqGDmohChagUqJnGnIT8NcDj1WaEGXZswNX32rwBMA8bUugLgWkblwMo_j-_Wf2MRncGSO1NKhShkvVCkZ1wZZCPD_YwLdE16wpWubLWPdpz_7YagUifNwY06STG18Ow-YXIJABg2VYOMqIy-c&p=0&fvj=1&vjs=3,it         
-1
 
 
 
 
 
-job_c4cb0dcaef136f02,/rc/clk?jk=c4cb0dcaef136f02&fccid=0b6c496064ecd79a&vjs=3,it         
-2
 
 
 
 
 
-job_7f849863be1c5ca7,/rc/clk?jk=7f849863be1c5ca7&fccid=a4e4e2eaf26690c9&vjs=3,it         
-3
 
 
 
 
 
-job_7278d84edcc436f5,/company/Estiatech-S.r.l./jobs/Data-Engineer-7278d84edcc436f5?fccid=53f820f45b634342&vjs=3,it         
-4
 
 
+######################
 
 
 
-job_1763cc9898a33776,/rc/clk?jk=1763cc9898a33776&fccid=9e215d88a6b33622&vjs=3,it         
-5
 
 
-
-
-
-job_5e5d27ece5a7827b,/rc/clk?jk=5e5d27ece5a7827b&fccid=dda656f6c8ed048a&vjs=3,it         
-6
-
-
-
-
-
-job_c90c361851bc9493,/rc/clk?jk=c90c361851bc9493&fccid=bc17c558fb00df58&vjs=3,it         
-7
-
-
-
-
-
-job_171c15a43dc24e16,/rc/clk?jk=171c15a43dc24e16&fccid=a4e4e2eaf26690c9&vjs=3,it         
-8
-
-
-
-
-
-job_da73c2babd780363,/company/Progressive-Systems-Srl/jobs/Junior-System-Engineer-da73c2babd780363?fccid=e928f125423c2870&vjs=3,it         
-9
-
-
-
-
-
-job_04d356c36e063b15,/rc/clk?jk=04d356c36e063b15&fccid=0ee07a80a4e05d45&vjs=3,it         
-10
-
-
-
-
-
-job_106b049b7057d2cb,/rc/clk?jk=106b049b7057d2cb&fccid=828eaea9c1af927b&vjs=3,it         
-11
-
-
-
-
-
-job_65f373a6d1af2aa9,/rc/clk?jk=65f373a6d1af2aa9&fccid=ed94dd03e6d8a45e&vjs=3,it         
-12
-
-
-
-
-
-job_88450907a718c057,/company/ELIS-Innovation-Hub/jobs/Junior-Data-Analyst-88450907a718c057?fccid=92dab6965b5d9ded&vjs=3,it         
-13
-
-
-
-
-
-job_1c18d9b691e03d58,/rc/clk?jk=1c18d9b691e03d58&fccid=8346a67d2d3c0c5d&vjs=3,it         
-14
-
-
-
-
-
-job_efce60a2af0d5206,/rc/clk?jk=efce60a2af0d5206&fccid=c7fb5f7b576a671c&vjs=3,it         
-15
-
-
-
-
-
-job_65f373a6d1af2aa9,/rc/clk?jk=65f373a6d1af2aa9&fccid=ed94dd03e6d8a45e&vjs=3,it         
-16
-
-
-
-
-
-job_88450907a718c057,/company/ELIS-Innovation-Hub/jobs/Junior-Data-Analyst-88450907a718c057?fccid=92dab6965b5d9ded&vjs=3,it         
-17
-
-
-
-
-
-job_1c18d9b691e03d58,/rc/clk?jk=1c18d9b691e03d58&fccid=8346a67d2d3c0c5d&vjs=3,it         
-18
-
-
-
-
-
-job_efce60a2af0d5206,/rc/clk?jk=efce60a2af0d5206&fccid=c7fb5f7b576a671c&vjs=3,it         
-19
-
-
-
-
-
-job_8629bbe65ac592bf,/rc/clk?jk=8629bbe65ac592bf&fccid=386295a14c2e66f2&vjs=3,it         
-20
-
-
-
-
-
-job_663c02cbdbb8e033,/rc/clk?jk=663c02cbdbb8e033&fccid=dd616958bd9ddc12&vjs=3,it         
-21
-
-
-
-
-
-job_afe03ce3f0afca7e,/rc/clk?jk=afe03ce3f0afca7e&fccid=105ecfd0283f415f&vjs=3,it         
-22
-
-
-
-
-
-job_f98e20eed837d258,/rc/clk?jk=f98e20eed837d258&fccid=828eaea9c1af927b&vjs=3,it         
-23
-
-
-
-
-
-job_4550f4197fc581c8,/rc/clk?jk=4550f4197fc581c8&fccid=bf422d4af99309b2&vjs=3,it         
-24
-
-
-
-
-
-job_5e5917b049a8e06d,/rc/clk?jk=5e5917b049a8e06d&fccid=34e53cf6df6e652b&vjs=3,it         
-25
-
-
-
-
-
-job_2e125a0fdaeec40a,/company/Brain-Management-srl/jobs/Pmo-2e125a0fdaeec40a?fccid=0063636df52c41a0&vjs=3,it         
-26
-
-
-
-
-
-job_5f885dd6f2f107cc,/rc/clk?jk=5f885dd6f2f107cc&fccid=8ea54e852901f8b5&vjs=3,it         
-27
-
-
-
-
-
-job_56ce61a8cbe81750,/rc/clk?jk=56ce61a8cbe81750&fccid=2dd390c3a48a7ed0&vjs=3,it         
-28
-
-
-
-
-
-job_02d28b16161bab18,/rc/clk?jk=02d28b16161bab18&fccid=8346a67d2d3c0c5d&vjs=3,it         
-29
-
-
-
-
-
-job_1f7e17b44f4090b8,/rc/clk?jk=1f7e17b44f4090b8&fccid=2d67e4faad9b89aa&vjs=3,it         
-30
 
 
 
