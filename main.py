@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import time
+import webbrowser
 
 # url = 'https://www.indeed.com/jobs?q=data%20engineer'
 # url = 'https://indeed.com/jobs?q=data%20engineer&start='
@@ -13,7 +14,7 @@ dict = {'us':'', 'it':'it.', 'uk':'uk.'}
 # open file to write results
 # avoid with for indentation
 f = open('output.csv','w')
-o = open('output.txt','w')
+f.write("id,country,n,url\n")
 
 # iterate for every country in dictionary
 for key in dict:
@@ -23,9 +24,10 @@ for key in dict:
     j=1
 
     # iterate for every page (1-66)
-    for i in range(0,3):
+    for i in range(0,2):
         url2 = url + str(i*10)
         print(url2)
+        # webbrowser.open(url2)
 
         # get the page, parse with beautifulsoup
         page = requests.get(url2)
@@ -34,19 +36,19 @@ for key in dict:
         #printing response
         print(page)
 
-        # check why pages jump sometimes
-        o.write(soup.text)
-        o.write('\n\n\n\n\n\n\n\n\n\n\n\n######################\n\n\n\n\n\n\n\n\n\n\n')  
-
         # iterate for every post in page
-        # find every a tag with 'result' as part of the class name
-        for element in soup.find_all('a', {'class':re.compile(r'result')}):
+        # find every a tag with 'job_' as part of the id name
+        for element in soup.find_all('a', {'id':re.compile(r'job_')}):
             print(j)
-            time.sleep(0.5)
-            # write the country dict key, the url, the job id
-            f.write(f"{element['id']},https://{dict[key]}indeed.com/viewjob{element['href'][7:]},{key},{j}\n")
+            time.sleep(0.3)
+
+            # take job id
+            id = element['id'][4:]
+
+            # job id is sufficient to retrieve the job page
+            # write if, country, n, link
+            f.write(f"{id},{key},{j},https://www.indeed.com/viewjob?jk={id}\n")
             j+=1
-        time.sleep(5)
+        time.sleep(3)
 
 f.close()
-o.close()
