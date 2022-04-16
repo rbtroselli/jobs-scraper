@@ -59,8 +59,17 @@ def get_posts():
         print(url)
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
-        title = soup.find('h1', {'class':re.compile(r'title')}).text
+
+        title = soup.find(class_='icl-u-xs-mb--xs icl-u-xs-mt--none jobsearch-JobInfoHeader-title').text
         print(title)
+        title = soup.find(class_=re.compile(r'title')).text
+        print(title, '\n\n\n')
+
+        company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
+        company_url = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
+
+        print(title,'-----',company_name,'-----',company_url)
+
 
 
 
