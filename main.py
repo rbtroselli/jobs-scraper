@@ -27,7 +27,6 @@ for key in dict:
     for i in range(0,2):
         url2 = url + str(i*10)
         print(url2)
-        # webbrowser.open(url2)
 
         # get the page, parse with beautifulsoup
         page = requests.get(url2)
