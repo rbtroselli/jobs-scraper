@@ -44,8 +44,13 @@ def url_scraper():
 
 
 def get_posts():
+    ### Qua non mi piace leggere riga per riga, meglio ingerire tutto in un df 
+    # e poi iterare quello probabilemnte
+
     # open csv with all the links
     f = open('output.csv','r')
+
+    f2 = open('staging.csv','w')
     
     # take link for every line
     for line in f:
@@ -59,14 +64,12 @@ def get_posts():
         print(url)
         page = requests.get(url)
         soup = BeautifulSoup(page.content, 'html.parser')
-
-        title = soup.find(class_='icl-u-xs-mb--xs icl-u-xs-mt--none jobsearch-JobInfoHeader-title').text
-        print(title)
+        
         title = soup.find(class_=re.compile(r'title')).text
-        print(title, '\n\n\n')
-
         company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
         company_url = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
+
+        f2.write(f'"{title}","{company_name}","{company_url}"\n')
 
         print(title,'-----',company_name,'-----',company_url)
 
