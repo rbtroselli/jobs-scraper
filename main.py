@@ -2,7 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import time
-import sqlite3
+import pandas as pd
+from datetime import date
 
 def url_scraper():
     # dictionary with country tag and corresponding url piece
@@ -44,41 +45,57 @@ def url_scraper():
 
 
 def get_posts():
-    ### Qua non mi piace leggere riga per riga, meglio ingerire tutto in un df 
-    # e poi iterare quello probabilemnte
-
-    # open csv with all the links
-    f = open('output.csv','r')
-
-    f2 = open('staging.csv','w')
+    # create a df from the output from previous step, with urls of job posts
+    # open a file to write scraped data
+    df = pd.read_csv('output.csv')
+    f = open('staging.csv','w')
+    # f.write(f'colonne')
     
-    # take link for every line
-    for line in f:
-        lst = line.strip().split(',')
-
-        #skip header
-        if 'https' not in lst[3]: continue
-
-        id, country, url = lst[0], lst[1], lst[3]
-
-        print(url)
-        page = requests.get(url)
-        soup = BeautifulSoup(page.content, 'html.parser')
+    err = open('errors.txt','w')
+    
+    # iterate df rows
+    for index,row in df.iterrows():
+        id, country, url = row['job_id'], row['country'], row['job_url']
         
-        title = soup.find(class_=re.compile(r'title')).text
-        company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
-        company_url = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
+        try:
+            page = requests.get(url)
+            soup = BeautifulSoup(page.content, 'html.parser')
 
-        f2.write(f'"{title}","{company_name}","{company_url}"\n')
+            print(url)
+            
+            # scrape all the needed data. location from the title, it's consistent between languages
+            title = soup.find(class_=re.compile(r'title')).text
+            company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
+            company_url = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
+            
+            # try: type_salary_info = soup.find(id='salaryInfoAndJobType')
+            # except: type_salary_info = 'No info'
+            
+            type_salary_info = soup.find(id='salaryInfoAndJobType')
+            try: job_type = type_salary_info.find_all('span')[-1].text
+            except: job_type = 'No info'
+            try: salary = type_salary_info.find_all('span')[-2].text
+            except: salary = 'No info'
 
-        print(title,'-----',company_name,'-----',company_url)
+            location = soup.find('title').text.split('-')[-2].strip()
+            scrape_date = date.today() ## ATTENZIONE! Substitute with Airflow function
 
+            f.write(f'"{title}","{company_name}","{company_url}"\n')
+
+            print(f'{id}\n{title}\n{url}\n{company_name}\n{company_url}\n{country}\n{location}\n{type_salary_info}\n{job_type}\n{salary}\n{scrape_date}\n')
+        
+        except Exception as e:
+            err.write(f'{url}\n{e}\n\n\n')
+            
 
 
 
         time.sleep(5)
 
         # delete line after insertion?
+    
+    f.close()
+    err.close()
 
 
 if __name__ == "__main__":
