@@ -50,20 +50,18 @@ def get_posts():
     # open a file to write scraped data
     df = pd.read_csv('output.csv')
     f = open('staging.csv','w')
-    # f.write(f'colonne')
+    f.write(f'"job_id","title","url","company_name","company_page","country","location","job_type","salary","scrape_date","posted","info","description"\n')
     
     err = open('errors.txt','w')
     
     # iterate df rows
     for index,row in df.iterrows():
-        id, country, url = row['job_id'], row['country'], row['job_url']
+        job_id, country, url = row['job_id'], row['country'], row['job_url']
         
         try:
             page = requests.get(url)
             soup = BeautifulSoup(page.content, 'html.parser')
 
-            print(url)
-            
             # scrape all the needed data. location from the title, it's consistent between languages
             title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
             company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
@@ -77,14 +75,18 @@ def get_posts():
             location = soup.find('title').text.split('-')[-2].strip()
             scrape_date = date.today() ## ATTENZIONE! Substitute with Airflow function
             info = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ') # this may contain the REMOTE keyword
-            description = soup.find(class_='jobsearch-jobDescriptionText').text
+            description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
 
-            f.write(f'"{title}","{company_name}","{company_page}"\n')
+            print(f'{job_id}\n{title}\n{url}\n{company_name}\n{company_page}\n{country}\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info}\n')
 
-            print(f'{id}\n{title}\n{url}\n{company_name}\n{company_page}\n{country}\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info}\n{description}\n')
+            line = f'"{job_id}","{title}","{url}","{company_name}","{company_page}","{country}",'\
+                f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info}","{description}"\n'
+            f.write(line)
+
         
         except Exception as e:
             print('ERROR', e)
+            print(url)
             print(traceback.format_exc())
             err.write(f'{url}\n{traceback.format_exc()}\n\n\n')
             
@@ -98,4 +100,7 @@ def get_posts():
 
 if __name__ == "__main__":
     # url_scraper()
-    get_posts()
+    # get_posts()
+
+    df = pd.read_csv('staging.csv')
+    print(df)

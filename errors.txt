@@ -1,8 +1,0 @@
-https://www.indeed.com/viewjob?jk=c5e1836974ab269e
-Traceback (most recent call last):
-  File "/Users/robertoroselli/Documents/GitHub/linkedin-jobs-scraper/main.py", line 71, in get_posts
-    company_page = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
-TypeError: 'NoneType' object is not subscriptable
-
-
-

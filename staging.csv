@@ -1,4 +1,183 @@
-"Data Engineer","BlocPower","https://www.indeed.com/cmp/Blocpower?campaignid=mobvjcmp&from=mobviewjob&tk=1g0utfk9jt4n8800&fromjk=6c620bbf04b9a6ac"
-"Data Engineer + Apprentice (Entry-Level)","New Apprenticeship","https://www.indeed.com/cmp/New-Apprenticeship?campaignid=mobvjcmp&from=mobviewjob&tk=1g0utfq3et48p800&fromjk=827521761b0bb70e"
-"Data Engineer","Amazon.com Services LLC","https://www.indeed.com/cmp/Amazon.com?campaignid=mobvjcmp&from=mobviewjob&tk=1g0utg609t69o800&fromjk=460cce461bec5669"
-"Data Engineer (Remote)","Octave","https://www.indeed.com/cmp/Octave-2?campaignid=mobvjcmp&from=mobviewjob&tk=1g0utgbrtj79q800&fromjk=7d4ad7b9d9a70a50"
+"job_id","title","url","company_name","company_page","country","location","job_type","salary","scrape_date","posted","info","description"
+"6c620bbf04b9a6ac","Data Engineer","https://www.indeed.com/viewjob?jk=6c620bbf04b9a6ac","BlocPower","https://www.indeed.com/cmp/Blocpower?campaignid=mobvjcmp&from=mobviewjob&tk=1g0v9orbrj7a1800&fromjk=6c620bbf04b9a6ac","us","Remote","No info","$120,000 - $130,000 a year","2022-04-18","Posted today","BlocPower - Remote - Remote","
+
+
+Interested? Send your resume to tech-hiring@blocpower.io and say “Data Engineer”
+
+ About BlocPower
+ BlocPower is a clean energy startup leader creating Smarter, Healthier, Greener Buildings for All by reducing the barriers to money-saving, quality-of-life-improving green building retrofits. We provide engineering, financing, and project implementation services for clients in frontline communities across the country. These communities are underserved by traditional energy services companies because they are considered too small, too costly, or too risky. Our portfolio of projects include houses of worship, schools, non-profits, small businesses, and multifamily buildings. Through our work, we save our clients money, reduce greenhouse gas emissions, improve health, and create local employment opportunities.
+ At BlocPower, we value our mission. We are trusted advisors that get things done for our customers by using data to make the right decisions. We support and expect excellence from our team members. We treat both our customers and ourselves with affection and respect.
+ BlocPower has recently received support from the Bezos Earth Fund to create and nurture a robust national building database. We believe this may be a once in a decade opportunity to leverage data to accelerate decarbonization and improve Environmental Justice.
+
+ Job Overview
+ To further this mission, BlocPower is looking for a friendly Data Engineer to join our growing team. This engineer will be responsible for expanding our data pipeline architecture. You should have a depth of experience building data pipelines,, and see yourself adding to as much as benefitting from a supportive team environment. The Data Engineer will help keep data consistent across projects and teams. This may look at times like helping our engineers to perform energy audits using our proprietary models, writing software that will help us analyze big data that comes into our platform via sensors installed across our projects, or optimizing the project pipelines of our construction and sales teams.
+ The ideal candidate is someone who is self-directed, believes in our mission, and is an excellent written communicator.
+
+ Job Responsibilities
+
+ Assemble large, complex, structured/unstructured data sets from various public/non-public data sources into the raw-zone of our data lake.
+ Build the infrastructure required for optimal extraction, transformation, and loading of data from a wide variety of data sources using SQL and AWS ‘big data’ technologies.
+ Design and implement internal process improvements: automating manual processes, optimizing data delivery, re-designing infrastructure for greater scalability, etc.
+ Work with stakeholders including the Executive, Product, Data and Design teams to assist with data-related technical issues and support their data infrastructure needs.
+ Keep our data and associated architecture secure.
+
+
+ Benefits and Compensation
+
+ Base salary between $120,000 and $130,000
+ Competitive equity in a growing, Series A startup
+ Health, dental, vision benefits, plus perks like a One Medical membership
+
+
+ Desired Skills
+
+ Write good SQL, and work with a variety of databases (eg. AWS RDS, MySQL, PostgreSQL, and MongoDB)
+ Stand up and maintain an ETL pipeline with little to no supervision, using tools such as AWS Glue, Informatica, or Talend
+ Coherently organize a data lake, making it easy easy to collaborate on data
+ Manipulate big data, including high-velocity streaming data using tools such as Spark, Kafka and Kinesis
+ Strong project management and organizational skills
+
+
+ Nice to Have
+
+ Experience with AWS cloud services: EC2, EMR, RDS, Redshift, Glue, Sagemaker
+ Microservice architectures
+ Docker, Kubernetes, Docker-Compose
+ Git and Jenkins
+ Experience working with IoT/Sensors
+
+
+ Education/Experience
+
+ BA/BS or equivalent combination of work experience and education preferably in degree/course work/experience in computer science/data engineering
+ 2+ years of experience as a Data Engineer
+
+ ‍
+ As our work is centered around historically disenfranchised communities – including people of color, people from working class backgrounds, women and LGBTQ people – we strongly encourage applications from people with these identities or who are members of other marginalized communities.
+
+"
+"827521761b0bb70e","Data Engineer + Apprentice (Entry-Level)","https://www.indeed.com/viewjob?jk=827521761b0bb70e","New Apprenticeship","https://www.indeed.com/cmp/New-Apprenticeship?campaignid=mobvjcmp&from=mobviewjob&tk=1g0v9p15u2f45000&fromjk=827521761b0bb70e","us","Jersey City, NJ","Full-time","$35,000 - $45,000 a year","2022-04-18","Posted 5 days ago","New Apprenticeship - 10 reviews - Jersey City, NJ","
+Job Description: 
+Are you passionate about data and technology? Would you like to be on the forefront of innovation, working in a fast-paced environment with the resources of an established global tech consulting company? In the role of Data Engineer Apprentice, you will be providing support to consulting and technical teams across various stages of the Software Development Life Cycle. You will play a critical role by contributing to the knowledge management process while interfacing with internal teams to ensure high-quality deliverables.
+The Data Engineer Apprentice opportunity is for early-career starters interested in breaking into the tech industry while gaining real-world experience. Our apprenticeship is designed to provide a pathway to a successful tech career where opportunities traditionally do not exist. Therefore, we must insist that all applicants have not yet completed their Bachelor’s degree.
+We believe in the earn-while-you-learn model, so you will work full-time with our partner company while also participating in New Apprenticeship’s Data Analyst Apprenticeship program which is at no cost to you. The apprenticeship offers small cohorts, learning hands-on from industry experts, certifications, portfolio building, career coaching, mentoring, plus the ability to earn additional credits towards a bachelor's degree.
+Furthermore, New Apprenticeship’s Data Analyst Apprenticeship Program is an official registered apprenticeship recognized by the Department of Labor (DOL). Every graduate of a Registered Apprenticeship program receives a nationally-recognized credential from the DOL.
+You can learn more about the role and apprenticeship program here: https://hubs.la/Q013KDLt0
+Eligibility Requirements: 
+Because we understand that you're just beginning your career, we're committed to your learning and growth. We're seeking candidates who have the following requirements.
+
+Prior work experience with data visualization, business analytics, business consulting (IDEAL)
+Some coding/programming experience: HTML, Python, R, SAS, Java, C++, SQL, CSS, Scala, Ruby, Perl, etc.
+Some combination of advanced Excel and data visualization (Tableau, Google Data Studio, Power BI)
+
+Responsibilities include but are not limited to: 
+
+Develop, construct, test, and maintain architectures
+Align architecture with business requirements
+Data acquisition
+Develop data set processes
+Use programming language and tools
+Identify ways to improve data reliability, efficiency, and quality
+
+Exclusions: 
+
+Our apprenticeship is designed to provide a pathway to a successful tech career where opportunities traditionally do not exist. Therefore, we must insist that all applicants have not yet completed their Bachelor's degree.
+
+Apprenticeship Benefits: 
+As a way to accelerate your growth, you'll participate in New Apprenticeship's Data Analyst Apprenticeship Program remotely while working with our partner company, a global tech consulting firm. Prior to the apprenticeship program start date, you'll receive 9-weeks of in-demand skills acceleration, coaching, and interview preparation in the Pre-Employment Bootcamp program, which is also remote and free of cost to you.
+Once you land your full-time role, you'll start the apprenticeship program in a cohort of 10+ apprentices and complete the program over 12 months, where you can earn 24 college credit hours to transfer towards a bachelor's degree online. *(select colleges apply)
+You'll attend remote evening sessions twice a week where you'll dive deep into all things data, including business analysis using various techniques, e.g., statistical analysis, explanatory and predictive modeling, python, coding, and data mining. You'll complete milestones along the way, like earning data certifications to validate your skills, module portfolio projects, etc.
+You will also receive support from top industry coaches and mentors to progress through your personal and professional goals skills roadmap while also demonstrating new knowledge and competencies through hands-on application with your portfolio project.
+Application Process: 
+
+All applicants will go through the New Apprenticeship's interview process, which includes an application, a short project, and an interview with a member of our team.
+Accepted candidates will have an additional interview directly with our partner company's hiring manager.
+
+Job Benefits: 
+
+Job Type: Full-time (NOTE: positions are currently remote but may return to in-person)
+Salary: $35,000.00 to $45,000.00 /year
+Benefits include comprehensive medical and dental plans, life insurance, long-term disability plan, and paid vacation and holidays.
+Apprenticeship tuition fees covered as part of your employment - no cost to you
+
+Job Type: Full-time
+Pay: $35,000.00 - $45,000.00 per year
+Benefits:
+
+Dental insurance
+Health insurance
+Life insurance
+Paid time off
+
+Schedule:
+
+8 hour shift
+
+Work Location: One location
+"
+"c5e1836974ab269e","Senior Data Engineer","https://www.indeed.com/viewjob?jk=c5e1836974ab269e","Syndio","https://www.indeed.com/cmp/Syndio?campaignid=mobvjcmp&from=mobviewjob&tk=1g0v9p6vr2f45000&fromjk=c5e1836974ab269e","us","Remote","No info","$150,000 - $180,000 a year","2022-04-18","Posted 30+ days ago","Syndio - Remote - Remote","
+
+
+
+Remote Home Office 
+
+
+
+Do you want to empower organizations to fairly and equitably hire, promote, retain and compensate their employees? Syndio is a Series-C technology company committed to fairness in the workplace. Fueled by investments of $83M from Bessemer Ventures, Voyager Capital and social change organization Emerson Collective, Syndio is investing in growing our team and products.
+ This is a critical moment when organizations are looking for ways to take tangible action to fight gender and racial bias, and we believe creating diverse and inclusive workplaces for all starts with workplace fairness.
+
+
+About the role
+
+
+We are looking for an experienced data engineer who is excited to take on and solve data challenges at a fast-paced startup. You’ll be responsible for expanding and optimizing our data architecture, as well as optimizing data flow and collection for cross-functional teams. You will integrate data from different sources from around the company into a data lake to serve our R&D, reporting, and analytics needs. You will contribute heavily to the evolution of Syndio’s next-generation data platform, empowering our people and our ever-expanding set of products.
+ Why this job is exciting
+
+Design data engineering approaches that align with the company’s overall strategy
+Work with backend engineers to implement and maintain the next evolution of our data infrastructure, including our data lake / warehouse.
+Participate in building an infrastructure required for optimal extraction, transformation, and loading of data from a wide variety of data sources.
+Work with data scientists and product managers to design and build analytics tools that fulfill R&D, product, operational and reporting needs throughout the company.
+Assess the value and quality of new data sources.
+Assist other engineers in determining and implementing best practices for data management and data hygiene.
+Participate in architecture design and discussions.
+Provide logical and physical data design, and database modeling.
+Solve complex data issues around data integration, unusable data elements, unstructured data sets, and other data processing incidents.
+
+About you
+
+5-10 years of experience, with an emphasis on data warehouses and architecting data pipelines
+You are experienced in building distributed/cloud scalable, real-time and high-performance data lake solutions (GCP preferred)
+You have experience with hands on coding
+You have advanced working knowledge of SQL and familiarity with a variety of relational and non-relational databases (including analytics-focused options and data access patterns)
+You have experience with BigQuery or other data warehouses
+You have excellent communication skills that enable you to interface with both technical and non-technical teams
+You excel in a collaborative environment, supported by a strong team of data scientists, product, and engineering resources
+You are ready to work with teams across the organization to ensure data security and maintainability.
+You are an experienced problem solver, who can root out issues and find thoughtful solutions.
+You are passionate about our mission to close pay gaps and create fairness in the workplace.
+You are excited to own and drive initiatives within Syndio that leverage and build your skills and interests
+
+
+
+Why you'll love it here
+
+
+Competitive Compensation. For this role our base salary is targeted at $150k -$180k per year. Final offer amounts are determined by factors such as experience and expertise.
+ Additional Incentive. This role participates in our annual performance bonus as well.
+ Syndio Equity. So you can share in Syndio’s success.
+ Flexible Vacation Policy. We encourage our team to recharge when they need to.
+ Up to 12 weeks of paid parental leave
+ Medical, Dental, Vision. Syndio pays 90% of employee premiums, and 50% for dependents.
+ Life Insurance & Disability. Syndio covers the full premium.
+ 401(k). To help you save for your future.
+✈️ Company paid annual retreats to spend time with the team and have fun together (or a still-pretty-great virtual retreat when there’s a global pandemic)
+
+
+At Syndio, we're building a diverse team that values candor, curiosity, and community. If you share these values and are interested in joining us, we'd love to talk with you even if you don't 100% meet the 'about you' listed here. We don't expect anyone to have all the answers, as long as you're willing to learn and grow with us.
+ Employees joining the Syndio team at this early stage of growth will impact this critical social issue and support a growing customer base (including Nordstrom, General Mills, Match Group, and others) to take tangible action on workplace fairness.
+ Syndio is an Equal Opportunity Employer. We are building an inclusive and collaborative workplace as we grow, and we welcome team members regardless of gender/identity, sexual orientation, race or cultural background, religion, physical disability and age.
+
+
+
+
+"
