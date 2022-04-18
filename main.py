@@ -4,6 +4,7 @@ import re
 import time
 import pandas as pd
 from datetime import date
+import traceback
 
 def url_scraper():
     # dictionary with country tag and corresponding url piece
@@ -64,32 +65,29 @@ def get_posts():
             print(url)
             
             # scrape all the needed data. location from the title, it's consistent between languages
-            title = soup.find(class_=re.compile(r'title')).text
+            title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
             company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
-            company_url = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
-            
-            # try: type_salary_info = soup.find(id='salaryInfoAndJobType')
-            # except: type_salary_info = 'No info'
-            
-            type_salary_info = soup.find(id='salaryInfoAndJobType')
-            try: job_type = type_salary_info.find_all('span')[-1].text
+            try: company_page = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
+            except: company_page = ''
+            try: job_type = soup.find(id='salaryInfoAndJobType').find(class_='jobsearch-JobMetadataHeader-item icl-u-xs-mt--xs').text.strip(' -')
             except: job_type = 'No info'
-            try: salary = type_salary_info.find_all('span')[-2].text
+            try: salary = soup.find(id='salaryInfoAndJobType').find(class_='icl-u-xs-mr--xs attribute_snippet').text
             except: salary = 'No info'
-
+            posted = soup.find_all(class_='jobsearch-HiringInsights-entry--text')[-1].text
             location = soup.find('title').text.split('-')[-2].strip()
             scrape_date = date.today() ## ATTENZIONE! Substitute with Airflow function
+            info = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ') # this may contain the REMOTE keyword
+            description = soup.find(class_='jobsearch-jobDescriptionText').text
 
-            f.write(f'"{title}","{company_name}","{company_url}"\n')
+            f.write(f'"{title}","{company_name}","{company_page}"\n')
 
-            print(f'{id}\n{title}\n{url}\n{company_name}\n{company_url}\n{country}\n{location}\n{type_salary_info}\n{job_type}\n{salary}\n{scrape_date}\n')
+            print(f'{id}\n{title}\n{url}\n{company_name}\n{company_page}\n{country}\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info}\n{description}\n')
         
         except Exception as e:
-            err.write(f'{url}\n{e}\n\n\n')
+            print('ERROR', e)
+            print(traceback.format_exc())
+            err.write(f'{url}\n{traceback.format_exc()}\n\n\n')
             
-
-
-
         time.sleep(5)
 
         # delete line after insertion?
