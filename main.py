@@ -50,8 +50,7 @@ def get_posts():
     # open a file to write scraped data
     df = pd.read_csv('output.csv')
     f = open('staging.csv','w')
-    f.write(f'"job_id","title","url","company_name","company_page","country","location","job_type","salary","scrape_date","posted","info","description"\n')
-    
+    f.write(f'"job_id","title","url","company_name","company_page","country","location","job_type","salary","scrape_date","posted","info_remote","description"\n')
     err = open('errors.txt','w')
     
     # iterate df rows
@@ -68,28 +67,26 @@ def get_posts():
             try: company_page = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
             except: company_page = ''
             try: job_type = soup.find(id='salaryInfoAndJobType').find(class_='jobsearch-JobMetadataHeader-item icl-u-xs-mt--xs').text.strip(' -')
-            except: job_type = 'No info'
+            except: job_type = ''
             try: salary = soup.find(id='salaryInfoAndJobType').find(class_='icl-u-xs-mr--xs attribute_snippet').text
-            except: salary = 'No info'
+            except: salary = ''
             posted = soup.find_all(class_='jobsearch-HiringInsights-entry--text')[-1].text
             location = soup.find('title').text.split('-')[-2].strip()
             scrape_date = date.today() ## ATTENZIONE! Substitute with Airflow function
-            info = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ') # this may contain the REMOTE keyword
+            info_remote = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ') # this may contain the REMOTE keyword
             description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
 
-            print(f'{job_id}\n{title}\n{url}\n{company_name}\n{company_page}\n{country}\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info}\n')
+            print(f'{job_id}\n{title}\n{url}\n{company_name}\n{company_page}\n{country}\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n')
 
             line = f'"{job_id}","{title}","{url}","{company_name}","{company_page}","{country}",'\
-                f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info}","{description}"\n'
+                f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info_remote}","{description}"\n'
             f.write(line)
 
-        
         except Exception as e:
             print('ERROR', e)
             print(url)
             print(traceback.format_exc())
             err.write(f'{url}\n{traceback.format_exc()}\n\n\n')
-            
         time.sleep(5)
 
         # delete line after insertion?
@@ -100,7 +97,7 @@ def get_posts():
 
 if __name__ == "__main__":
     # url_scraper()
-    # get_posts()
+    get_posts()
 
     df = pd.read_csv('staging.csv')
     print(df)
