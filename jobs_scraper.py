@@ -6,13 +6,15 @@ import pandas as pd
 from datetime import date
 import traceback
 
-def url_scraper():
+def url_scraper(path=''):
     # dictionary with country tag and corresponding url piece
     dict = {'us':'', 'it':'it.', 'uk':'uk.'}
 
+    urls_file = path + 'urls.csv'
+
     # open file to write results
     # avoid with for indentation
-    f = open('output.csv','w')
+    f = open(urls_file,'w')
     f.write("job_id,country,number,job_url\n")
 
     # iterate for every country in dictionary
@@ -43,15 +45,21 @@ def url_scraper():
                 j+=1
             time.sleep(3)
     f.close()
+    return
 
 
-def get_posts():
+def post_scraper(path=''):
+
+    urls_file = path + 'urls.csv'
+    staging_file = path + 'staging.csv'
+    errors_file = path + 'errors.txt'
+
     # create a df from the output from previous step, with urls of job posts
     # open a file to write scraped data
-    df = pd.read_csv('output.csv')
-    f = open('staging.csv','w')
+    df = pd.read_csv(urls_file)
+    f = open(staging_file,'w')
     f.write(f'"job_id","title","url","company_name","company_page","country","location","job_type","salary","scrape_date","posted","info_remote","description"\n')
-    err = open('errors.txt','w')
+    err = open(errors_file,'w')
     
     # iterate df rows
     for index,row in df.iterrows():
@@ -93,11 +101,13 @@ def get_posts():
     
     f.close()
     err.close()
+    return
 
 
 if __name__ == "__main__":
     # url_scraper()
-    get_posts()
+    # post_scraper()
 
-    df = pd.read_csv('staging.csv')
-    print(df)
+    # df = pd.read_csv('staging.csv')
+    # print(df)
+    print('test')
