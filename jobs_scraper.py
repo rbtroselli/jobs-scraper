@@ -105,9 +105,5 @@ def post_scraper(path=''):
 
 
 if __name__ == "__main__":
-    # url_scraper()
-    # post_scraper()
-
-    # df = pd.read_csv('staging.csv')
-    # print(df)
-    print('test')
+    url_scraper()
+    post_scraper()
