@@ -8,7 +8,7 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 
 # Adding the folder to path
-path = '/Users/robertoroselli/airflow/dags/jobs-scraper/'
+path = '~/airflow/dags/jobs-scraper/'
 import sys
 sys.path.append(path)
 from jobs_scraper import url_scraper
