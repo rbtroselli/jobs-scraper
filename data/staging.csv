@@ -678,3 +678,511 @@ Compensation
 
 
 "
+"6c4dd8502bdac280","Data Engineer","https://www.indeed.com/viewjob?jk=6c4dd8502bdac280","TAB Bank","https://www.indeed.com/cmp/Tab-Bank?campaignid=mobvjcmp&from=mobviewjob&tk=1g16ulr1o2f43000&fromjk=6c4dd8502bdac280","us","Ogden, UT 84403","Full-time","","2022-04-21","Posted 1 day ago","TAB Bank - 20 reviews - Ogden, UT 84403 - Remote","
+
+
+The Data Engineer will assist in the ongoing development of new and existing data pipelines including development of data movement, data quality, data cleansing and other data-related activities at TAB, primarily using Python. The role is intended to serve the data integration and information needs of TAB. The candidate will work with all areas at TAB to ensure functional use and access to data intelligence, information, and analytics.
+ Location – While we can support remote work, candidate must be located in either Utah or Texas where we have TAB offices.
+ Essential Duties and Responsibilities:
+
+ Participate in all phases of data integration, such as analysis, requirement gathering, design, documentation and development of data related architectures, structures, and ETL processes.
+ Develop and maintain high volume streaming pipelines as well as batch processes.
+ Maintain and improve existing framework to support data integration pipelines.
+ Conduct design and code reviews with peers, business analyst and QA teams relating to data processes.
+ Interface with all areas of TAB to understand and analyze business and functional requirements.
+ Provide tactical solutions on priority issues/requirements.
+ Maintain the data dictionary as processes and applications change.
+ Understand and implement best practices, tuning and optimization for applications and reporting systems.
+ Other duties as assigned
+
+ Education and Experience Requirements:
+
+ Bachelor’s degree in a computer science, information technology or another computer-based discipline.
+ 5+ years of experience in designing and developing ETL data pipelines.
+ 5+ years of experience in OOP programming language (Python, C#, Java)
+ Experience with ETL methodologies and practices.
+ Experience with large scale streaming pipelines is a plus.
+ Proven analytical and database skills.
+ MSSQL and NoSQL experience preferred.
+ Experience utilizing and extending ETL processes in a complex, high-volume data environment.
+ Or an equivalent combination of education and experience that provides the required knowledge, skills, and abilities.
+
+ Knowledge, Skills, and Abilities Requirements:
+
+ Highly Proficient in Python, SQL/T-SQL and other ETL/ELT applications.
+ Hands-on Experience in executing high-volume data load to SQL and NoSQL environments is preferred.
+ Knowledge of RESTful API architecture including experience with creation and consumption.
+ Comfortable using GIT version control and working in CI/CD pipeline.
+ Must have independent problem-solving skills and ability to develop solutions to complex analytical/data storage problems.
+ Excellent interpersonal skills necessary to work effectively with colleagues at various levels of the organization and across multiple locations.
+ Successfully engage in multiple initiatives simultaneously.
+ Identifies critical issues with ease and determines appropriate level of escalation, if needed.
+ Work successfully in a team environment using Agile Scrum methodologies.
+ Continually seeks opportunities to increase internal customer satisfaction and deepen relationships.
+ Suggests areas for improvement in internal processes along with possible solutions.
+ Excellent verbal and written communication skills and the ability to interact professionally with a diverse group including executives, managers, and subject matter experts.
+ Experience in Big Data technologies and utilities is preferred.
+ Financial Services and Commercial banking experience is a plus.
+
+ TAB Bank Offers:
+
+ Onsite Gym
+ Tuition Reimbursement
+ Paid Holidays
+ Gym Reimbursement
+ College Scholarships for Employees and Families
+ 401(k)
+ Paid Time Off (PTO)
+ Employee Assistance Program (EAP)
+ I Made the Grade
+ Holiday Club Program
+ Medical, Dental, Vision, Life and AD&D, Voluntary Disability, Flex Spending & Dependent Care
+
+ TAB Bank will not sponsor applicants for work visas.
+
+
+"
+"3a608be663bf460d","Data Engineer","https://www.indeed.com/viewjob?jk=3a608be663bf460d","Merkle","https://www.indeed.com/cmp/Merkle,-Inc.?campaignid=mobvjcmp&from=mobviewjob&tk=1g16um0s13km6000&fromjk=3a608be663bf460d","us","Michigan","","","2022-04-21","Posted Today","Merkle - 194 reviews - Michigan","Company Description:
+About DEG, a Merkle Company
+Digital is in our DNA. Since our founding in 1999, DEG has become one of the fastest-growing agencies in the country. A member of Dentsu, we are a global, full-service digital experience agency crafting solutions that help national and global brands meet their business objectives. While other shops are now working to grow their digital presences, we were born here.
+Our associates are always evolving and finding new ways to collaborate together to solve our clients’ toughest challenges. After all, at DEG the best idea wins—no matter where it comes from.
+Here, you can grow and pursue your passions, prioritize your family, contribute to your community, and actively travel. Our “work hard, play hard” mentality provides everyone with a fun, casual work environment that embraces new and better ways of doing things, and new and better things to do for our clients. The result is consistently being named one of the best places to work.
+The question you must now ask is: Are you ready to evolve?
+Job Description:
+The Data Engineer is responsible for designing, implementing, deploying, and supporting various data management technologies and architectures. In partnership with business leaders, key stakeholders and cross-functional project teams, the Data Engineer will be an active contributor in a collaborative team structure and will have the opportunity to accelerate the delivery of and improve the quality of P&LS products providing increased operational excellence, a greater client experience and other strategic objectives.
+Qualifications:
+Description & Responsibilities:Perform data loads and optimize data for extraction and reporting useAssist with discovery of data requirements to ensure proper data collection and plan/roadmap the analysisCreate and maintain complex data pipelines that support high-volume, high-dimensionality data from varying sources using a variety of tools and ETL techniquesMaintain complex databases by performing appropriate database management functions (e.g., maintain space availability, rebuilds indexes, file cleanup, runs utilities to check database integrity) to ensure optimum capacity and application performanceProduce and maintain data pipelines in support of client and internal reporting needsSupport development of client facing documentation such as a comprehensive data dictionary and data model documentationEstablish and maintain data models in support of operational reports, dashboards, and scorecards for internal and external clients
+Qualifications:Experience with ETL tooling and supporting programming languages such as Pentaho, Apache Airflow, and Matillion with strong skills in programming languages such as Python and RStrong understanding of different data warehouse schema designs, data model design and documentation, as well as query optimizationExpert SQL Skills. Experience with relational and non-relational databases: PostgreSQL, MySQL, Redshift, Snowflake, Elastic search, MongoDB), table design and query optimization for each specific platformExperience with Power BI or other data visualization tools preferredExperience using AWS services such as S3, Redshift, Lambda,Strong expectation-setting on required effort/duration to reliably deliver work to meet client deadlines
+Additional Information:
+Employees from diverse or underrepresented backgrounds encouraged to apply.
+
+Dentsu (the 'Company') is committed to a policy of Equal Employment Opportunity and will not discriminate against an applicant or employee of the Company, on the basis of age, sex, sexual orientation, race, color, creed, religion, ethnicity, national origin, alienage or citizenship, disability, marital status, veteran or military status, genetic information, or any other legally-recognized protected basis under federal, state or local laws, regulations or ordinances. Applicants with disabilities may be entitled to reasonable accommodation under the terms of the Americans with Disabilities Act and/or certain state or local laws. A reasonable accommodation is a change in the way things are normally done that will ensure an equal employment opportunity without imposing an undue hardship on the Company. Please contact recruiting@dentsuaegis.com if you need assistance completing any forms or to otherwise participate in the application process or to request or discuss an accommodation in connection with a job at the Company to which you are applying.
+More Information:
+Our Culture: Merkle’s energy and personality lives through everything we say and do. Learn all about what defines our people and our vibe.
+Students & Recent Graduates: Start your career at Merkle and get on the path to success.
+Experienced Hires: Leverage your expertise, challenge the status quo and grow your career at Merkle."
+"fe088e61be17decc","Data Engineer","https://www.indeed.com/viewjob?jk=fe088e61be17decc","Dogtopia Enterprises LLC","https://www.indeed.com/cmp/Dogtopia?campaignid=mobvjcmp&from=mobviewjob&tk=1g16um6v1t52k801&fromjk=fe088e61be17decc","us","Phoenix, AZ 85016","Full-time","","2022-04-21","Posted 1 day ago","Dogtopia Enterprises LLC - 544 reviews - Phoenix, AZ 85016","
+
+
+
+WHO IS DOGTOPIA?
+
+
+     At Dogtopia, we have a passion for caring for dogs. Happy, healthy pups are at the heart of who we are. We have created a loving brand with what dogs want and need in mind. We are a franchise system of Dog Daycares with more than 183 locations in the United States and Canada.
+   
+
+
+ DOGTOPIA’S NOBLE CAUSE
+
+
+     To 
+    enhance the 
+    JOY of 
+    DOG parenthood and Enable dogs to 
+    positively change our world.
+   
+
+
+ Our DOGTOPIA-ISMS
+   
+
+     The rules by we, as Dogtopians live by are:
+   
+
+     We 
+    LOVE life unconditionally like a dog
+   
+
+     We 
+    STAY loyal to our pack
+   
+
+     We 
+    CHASE the absolute highest standards of safety
+   
+
+     We 
+    PLAY to our full potential
+   
+
+     We 
+    TREAT every day like it’s the most exciting day ever
+   
+
+
+ OVERALL SCOPE OF THIS ROLE
+
+
+     o We need an experienced leader that can oversee and manage data sources across multiple environments.
+   
+
+     o This role has responsibility for data quality, data rationalization, and data classification.
+   
+
+     o It is important that this role works with all aspects of our business to build strong relationships, cultivate communication channels, and understand the data needs of the organization.
+    
+
+
+
+
+WHAT WILL YOU DO?
+
+
+     o Maintain overall responsibility for the information needs of the organization.
+   
+
+     o Create and maintain data models and structures.
+   
+
+     o Work with corporate develop, store operations, and other departments to summarize and aggregate data in various environments.
+   
+
+     o Work with IT Leadership to create a long-term data strategy.
+   
+
+     o Develop data governance practices and processes including data classification and usage standards.
+   
+
+
+
+
+
+Requirements
+
+ Required Education and/or Experience: BA/BS or higher education in Information Technology, Computer Science or a field directly applicable to this role is preferred. Hard Skills/Qualifications:  Project Management: Must be proactive, highly motivated and collaborative. Ability to successfully manage multiple projects simultaneously with an eye for detail. Exceptional organizational, time management and prioritization skills. Strong problem solving, customer service and analytical skills  Proven experience as a data analyst, data architect, data scientist, or back-end developer well versed in data. Experience with MySQL databases required Experience with MongoDB preferred Experience with creation of data reports and dashboards in PowerBI Thorough knowledge of data principles Soft Skills/Qualifications Problem-solving aptitude Ability to present data findings and explain data structure in business terms Strong business acumen Physical Demands: Some lifting (up to 30 lbs.). Long hours on computer keyboard. Prolonged periods of standing and/or walking.
+
+
+
+
+"
+"41baeb0577eb67b0","Big Data Engineer I","https://www.indeed.com/viewjob?jk=41baeb0577eb67b0","Agile Lab","https://www.indeed.com/cmp/Agile-Lab-1?campaignid=mobvjcmp&from=mobviewjob&tk=1g16umcoas7na800&fromjk=41baeb0577eb67b0","it","Lavoro da casa","","","2022-04-21","Posted today","Agile Lab - Lavoro da casa - Remote","Engineering
+Big Data Engineer I (Remote)
+A distanza
+Work Type: A Tempo Pieno
+Agile Lab is a top tier data engineering firm, specialized in Spark and many other distributed technologies since 2013. Agile Lab is now employing 60 talented data engineers/scientists in a remote-first culture and with an international mindset.
+Give a look at our handbook to discover our core values and processes.
+We are looking to hire a talented Software Engineer that can become an excellent Big Data Engineer. In this role, you will be required to implement data-intensive applications.
+To ensure success as a Big Data Engineer, you should have good knowledge of distributed computing technologies and top problem-solving skills.
+Salary: 27.5K - 37.5K
+Responsibilities:
+Takes well-defined tasks and completing them with a growing autonomy
+Understands and adopts our internal SDLC
+Requirements:
+Bachelor’s degree in Computer Engineering or Computer Science.
+No previous experience as a Big Data Engineer.
+Good Knowledge of programming languages including Java and Scala.
+Knowledge of NoSQL and RDBMS databases
+Good communication skills.
+Team Player
+Ability to solve complex networking, data, and software issues.
+Eager to learn
+We offer:
+Remote or smart working and work life balance
+Training monthly budget (time and money)
+A structured career path with clear expectations and salary for each level
+Support of a buddy, as a guide in choosing the most suitable experiences for your ambitions
+Benefits and corporate welfare programs: meal vouchers, health fund provided, prizes, welcome pack with all the equipment you need to work
+The opportunity to attend one conference per year
+Stimulating environment oriented to growth, both professional and personal."
+"b3839a255ba56f37","Data Engineer","https://www.indeed.com/viewjob?jk=b3839a255ba56f37","Planetwatch","https://www.indeed.com/cmp/Planetwatch?campaignid=mobvjcmp&from=mobviewjob&tk=1g16umig0s7ik800&fromjk=b3839a255ba56f37","it","Roma, Lazio","Full-time, Permanent","","2022-04-21","Posted 9 days ago","Planetwatch - Roma, Lazio - Remote","
+Help us look after the air you breathe and protect the planet. Join PlanetWatch!
+At PlanetWatch we are building the first global real-time air quality ledger by leveraging blockchain technology, high-performance yet affordable air quality monitoring sensors, and the power of communities.
+If you have a self-motivated thirst for learning and consider yourself to be driven and resourceful, you will thrive at PlanetWatch.
+At the moment, we are looking for Data Engineers that come from different backgrounds to join our out-of-the box team.
+Wait no more if you have some of those skills or more: 
+
+2+ years experience as Data Engineer building BigData pipelines
+Hands-on experience with SQL, and Big Data processing with SQL or NoSQL databases (Elasticsearch, MySQL, Redis)
+Experience with clean coding and basic design patterns in Python or any strong typed language
+Experience with AWS cloud services and basic cloud architectures
+Experience with Kubernetes and setup of CI/CD pipelines
+Excellent collaboration and communication skills
+Ability to complete setup goals with minimal supervision
+Fluent in English
+Something extra to bring on board ;)
+
+What will you be doing: 
+
+Build, troubleshoot, and monitor data pipelines health
+Help to scale data platform, data pipelines, and ETL pipelines
+Design, secure, maintain, and monitor the cloud systems
+Working with SQL and NoSQL databases
+Developing integrations with internal and external API-s
+Maintaining and improving existing systems
+Optimizing data streams for high availability and scaling
+Build CI/CD pipelines and manage Kubernetes deployments
+
+What’s in it for you?
+
+Being part of a fast-growing greentech company with many opportunities to build great things together!
+Working on a platform that makes a real and tangible impact on air quality protection
+Fully remote work in a team where trust is valued most
+The hardware and the software you need
+Plenty of room for self-development and learning new skills and technologies
+A competitive base pay
+
+Contratto di lavoro: Tempo pieno, Tempo indeterminato
+Stipendio: €30.000,00 - €50.000,00 all'anno
+Disponibilità:
+
+Dal lunedì al venerdì
+
+Esperienza:
+
+utilizzo di Amazon Web Services: 2 anni (Preferenziale)
+utilizzo di NoSQL: 2 anni (Preferenziale)
+BigData pipelines building: 1 anno (Preferenziale)
+
+Lingua:
+
+Inglese (Preferenziale)
+
+"
+"86157ea1e94e6153","Data Engineer","https://www.indeed.com/viewjob?jk=86157ea1e94e6153","Avangarde Consulting","https://www.indeed.com/cmp/Avangarde-Consulting?campaignid=mobvjcmp&from=mobviewjob&tk=1g16umo84ocpj800&fromjk=86157ea1e94e6153","it","Roma, Lazio","","","2022-04-21","Posted 15 days ago","Avangarde Consulting - Roma, Lazio - Remote","FULL TIME ROMA/REMOTE WORKING PUBBLICATO IL 15/02/2022
+Avangarde Consulting Group è un’azienda italiana che ha scelto di incentrare il proprio business sull’innovazione e su quelle nuove tecnologie che possano abilitarla, stringendo rapporti di partnership con aziende leader nel settore della consulenza ICT. Durante vent’anni di continue sperimentazioni, ha composto un team di risorse altamente qualificate, motivate e dinamiche.
+
+In questa ottica, stiamo selezionando il seguente profilo professionale: 1 Data Engineer Intermediate per migrazione DB
+
+
+PRINCIPALI COMPITI E RESPONSABILITÀ
+
+La risorsa si occuperà della migrazione dei Database esistenti, da AS400 ad ambiente Linux, viene richiesta un’ottima conoscenza di DB2.
+REQUISITI TECNICI
+
+Il profilo prescelto dovrà avere un background consolidato, quindi con almeno 3-5 anni di esperienza pregressa nel ruolo.
+
+I candidati dovranno possedere le seguenti competenze:
+
+Ottima conoscenza di DB2
+Buona conoscenza del sistema operativo Linux
+Buone capacità di problem solving
+Lavoro in team
+Capacità di gestione del Cliente
+SEDE LAVORATIVA
+
+Roma/Remote Working
+COSA OFFRIAMO
+
+Opportunità di impiego a tempo indeterminato
+Percorsi di formazione professionale di alto livello, erogati attraverso il nostro programma interno Academy
+Benefit (Ticket Restaurant)
+Retribuzione commisurata ai livelli di esperienza acquisiti
+Possibilità di entrare in contatto con professionisti dalla comprovata esperienza, all'interno di un'azienda leader nel mercato di riferimento e con oltre venti anni di attività svolta
+Gli interessati possono inviare il proprio curriculum vitae aggiornato con autorizzazione al trattamento dei dati personali (D.Lgs 196/2003 e art. 13 GDPR 679/16.) e con la seguente dichiarazione “Il/La sottoscritto/a ………………………….Consapevole che le dichiarazioni false comportano l’applicazione delle sanzioni penali previste dall’art. 76 del D.P.R. 445/2000 , dichiara che le informazioni riportate nel seguente curriculum vitae , redatto in formato europeo , corrispondono a verità”. L’offerta si intende rivolta a candidati di ambo i sessi ai sensi della Legge n° 903/77."
+"0861cb4dcf56ddc7","Data Scientist/Engineer","https://www.indeed.com/viewjob?jk=0861cb4dcf56ddc7","Brain Management srl","https://www.indeed.com/cmp/Brain-Management-Srl-1?campaignid=mobvjcmp&from=mobviewjob&tk=1g16umu0hsa76800&fromjk=0861cb4dcf56ddc7","it","Milano, Lombardia","Full-time, Permanent, Apprenticeship","","2022-04-21","Posted 30+ days ago","Brain Management srl - Milano, Lombardia - Temporarily remote","
+Brain Management srl, System Integrator attivo sul mondo Big Data e nel mercato Banking, Insurance e Telco, ricerca Data Scientist e Data Engineer di buona esperienza e competenza tecnologica da inserire all’interno di un team di progetto esperto e stabile, su uno dei nostri Top Account.
+PROFILO
+Il Data Scientist e il Data Engineer lavorano insieme in progetti complessi con il preciso scopo di trasformare i dati in informazioni.
+In Brain Management i Data Scientist costruiscono le proprie competenze di AI e Machine Learning attraverso la sperimentazione e la messa in pratica degli algoritmi in progetti complessi mentre i Data Engineer lavorano nella costruzione delle Business Island™ presso importanti clienti del mondo finance. I nostri esperti in ambito Dati imparano inoltre ad avere un dialogo corretto con le figure di Business dei nostri Clienti.
+I nostri team sono dedicati a contesti progettuali sfidanti e ad alto contenuto di business e di tecnologia e lavorano in modalità DevOps e MLOps collaborando con le varie figure del team cliente e con la nostra Moderna Farm al fine di costruire i migliori progetti di Data Journey.
+REQUISITI
+Il candidato ideale possiede le seguenti caratteristiche:
+
+Titolo di studio: Laurea in Ingegneria Informatica, Ingegneria Matematica, Informatica, Statistica, Fisica, Biomedica o discipline affini;
+Percorso accademico in ambito statistico, Artifical Intelligence, Machine Learning e Data Mining;
+Competenza nell’ambito Data Journey dall’ Ingestion, Data Quality, Data Transformation fino al Machine Learning;
+Conoscenza dei linguaggi Python, PySpark o Scala
+Esperienza pregressa in ambito Big Data
+Conoscenza di SQL e PL - SQL;
+Esperienza lavorativa di almeno 5 anni
+
+· Gradita pregressa esperienza nel settore banking
+SOFT SKILLS
+
+Buone capacità comunicative indispensabili in area consulenza
+Spirito di collaborazione e adattamento
+Propensione al lavoro per obiettivi
+Essere flessibili e costruttivi nel lavoro in team
+Disponibilità al lavoro in trasferta per brevi periodi
+Autonomo e autodisciplinato nel lavoro da remoto
+
+Contratto di lavoro: Tempo pieno, Tempo indeterminato, Apprendistato
+Stipendio: €30.000,00 - €45.000,00 all'anno
+Benefit:
+
+Assistenza sanitaria integrativa
+Bevande gratis
+Buoni pasto
+Cellulare aziendale
+Computer aziendale
+Distributori automatici di snack e bevande
+Formazione professionale
+Lavoro da casa
+Orario flessibile
+Snack gratis
+Spese di alloggio
+
+Disponibilità:
+
+Dal lunedì al venerdì
+
+Retribuzione supplementare:
+
+Bonus annuale
+Gratifica natalizia
+Maggiorazione lavoro festivo
+Premio di produzione
+Quattordicesima
+Straordinario
+Tredicesima
+
+Considerazioni sul COVID-19:Brain Management prosegue le attività di tutela della salute e sicurezza dei luoghi di lavoro (lavoro a distanza, mascherine, mantenere il distanziamento sociale, messa a disposizione di soluzioni per la disinfezione delle mani, pulizia giornaliera)
+Istruzione:
+
+Laurea triennale (Preferenziale)
+
+Esperienza:
+
+Data Scientist/Engineer: 1 anno (Obbligatorio)
+
+"
+"b869259993b730e9","Spark Data Engineer","https://www.indeed.com/viewjob?jk=b869259993b730e9","Accenture","https://www.indeed.com/cmp/Accenture?campaignid=mobvjcmp&from=mobviewjob&tk=1g16un3vqsa76803&fromjk=b869259993b730e9","it","Roma, Lazio","","","2022-04-21","Posted 10 days ago","Accenture - 21,607 reviews - Roma, Lazio","Spark Data Engineer
+Perché Accenture? Per scoprire l'energia e l'impegno che dedichiamo ai nostri clienti trasformando il loro metodo di lavoro con le tecnologie più avanzate.
+In Accenture, crescerai come membro di una rete internazionale. Ogni giorno, farai la differenza usando ciò che ti rende unico.
+Milano, Roma
+Le tue sfide
+Unisciti a noi e porta le tue competenze in Data Science, partecipando a progetti che vanno dall'ingegneria di database alla modellazione statistica e alla visualizzazione dei dati come esperto in Spark/Scala Data Engineer.
+A capo di un team nella gestione di progetti abbastanza complessi, sarai responsabile delle seguenti attività:
+Definizione requisiti; raccolta, analisi e validazione di grandi quantità di dati strutturati e non strutturati in ambienti Big Data
+Disegno e sviluppo di soluzioni per l’ingestion, processamento, normalizzazione e pulizia dei dati; disegno e strutturazione dei diversi Data Layer
+Implementazione di procedure di data quality, prescrittive e statistiche, a supporto dei Data Scientist per la preparazione dei dataset
+Sviluppo e manutenzione di Best Practice di Data Engineering e di Data Anonymization
+
+Qualifiche
+Perché sceglieremo te? Perché le sfide che sei chiamato a cogliere rispecchiano le tue ambizioni, e sai che questa è la tua occasione! Per distinguerti e affrontarle al meglio:
+Hai maturato un’esperienza di almeno 3-5 anni su Scala/Sparks e microservizi
+Hai acquisito in questi anni conoscenze negli ambienti Big Data come Linux/Unix. Disegno dell’architettura dati
+Ami condividere e conoscere ciò che è diverso, hai ottima conoscenza anche di SQL, DATA Integration, DATA Transformation
+Sai utilizzare e trasformare/preparare dei dati secondo i requisiti di business
+Capacità di ottimizzare le performance e la qualità del dato/codice sviluppato
+Parli e scrivi in Inglese fluentemente
+Ogni giorno è per te una nuova sfida e un’occasione per imparare qualcosa di nuovo
+Hai la determinazione per affrontare e vincere le sfide di questo ruolo anche se non hai tutte le qualifiche richieste? Candidati e raccontaci come puoi fare la differenza. Contribuisci a creare soluzioni finora solo immaginate.
+Scatena il tuo talento e costruisci con noi la tua carriera ideale, visita il nostro sito per prepararti al meglio: https://www.accenture.com/it-it/careers/
+Per ulteriori informazioni, visita il nostro sito: professioni.accenture.it
+Per informazioni sulla nostra protezione della privacy art13 L.679/2016 (GDPR) vai su https://www.accenture.com/it-it/careers/privacy-policy
+Accenture garantisce le pari opportunità"
+"5e5d27ece5a7827b","Data Engineer (Junior)","https://www.indeed.com/viewjob?jk=5e5d27ece5a7827b","React Consulting","https://www.indeed.com/cmp/React-Consulting?campaignid=mobvjcmp&from=mobviewjob&tk=1g16un9q1s7n4800&fromjk=5e5d27ece5a7827b","it","Roma, Lazio","","","2022-04-21","Posted 30+ days ago","React Consulting - Roma, Lazio","Si prega nel CV specificare:
+
+Inquadramento attuale (se presente)
+Tempi di disponibilità ad iniziare l'attività lavorativa.
+
+Tutti i curricula verranno esaminati, ma verrai contattato soltanto se la tua candidatura risulterà di interesse per React Consulting.
+Descrizione Mansione
+
+Per la nostra sede di Roma, siamo alla ricerca di un Data Engineer che verrà inserito nel Competence Center dedicato al Business Intelligence e Data Science.
+
+Principali responsabilità:
+
+Partecipare al miglioramento continuo delle prestazioni;
+Lavorare con insiemi di dati ampi e complessi, applicando metodi analitici, statistici e matematici avanzati;
+Identificare, organizzare e studiare le basi dati da utilizzare nell'ambito delle analisi connesse con il business;
+Presentare le soluzioni con tecniche di Data Visualization;
+Raccogliere i requisiti di business, analizzare e formalizzare i requisiti funzionali;
+Collaborazione con le varie figure coinvolte durante le fasi del progetto allo scopo di assicurare la qualità delle funzionalità e la coerenza dei requisiti;
+
+Principali competenze tecniche:
+
+Capacità di analisi, raccolta e trattamento dati con tecniche statistiche avanzate;
+Conoscenza di linguaggi di programmazione (SQL, Python, R, …);
+Conoscenza di strumenti di Data Engineering (Sql Server Integration Services, Azure Data Factory, Databricks, Oracle Data Integrator, Talend, …);
+Conoscenza di Database e piattaforme Big Data;
+Conoscenza di strumenti di Data Visualization (Power BI, Qlik, Tableau, …);
+Esperienza nello sviluppo di soluzioni Business Intelligence / Data Warehouse;
+Conoscenza dell'intero processo di sviluppo applicativo, dall'analisi dei requisiti fino alla fase di delivery;
+
+Capacità trasversali:
+
+Ottime capacità di relazionarsi con il team e con il cliente;
+Ottime capacità organizzative;
+Ottime capacità di lavorare sotto stress;
+Capacità di problem solving;
+Capacità di lavorare per obiettivi e su più progetti contemporaneamente.
+Capacità di pianificazione;
+Saper lavorare in autonomia;
+
+Nice to have:
+
+esperienza di almeno 2 anni nello sviluppo di soluzioni di BI su piattaforme Microsoft;
+laurea in discipline tecniche o scientifiche;
+
+È previsto l’inserimento in azienda con retribuzione e inquadramento commisurati alle esperienze e competenze del candidat*.
+
+
+Le persone interessate ambosessi sono invitate ad inviare la propria candidatura con riferimento alla posizione 'Data Engineer (Junior)' all’indirizzo di posta elettronica recruitment@reactconsulting.it"
+"52bcc27819c1aa2b","Data Engineer","https://www.indeed.com/viewjob?jk=52bcc27819c1aa2b","GLOBAL 7 VENTURES & ADVISORY","https://www.indeed.com/cmp/Global-7-Ventures-&-Advisory?campaignid=mobvjcmp&from=mobviewjob&tk=1g16unfkp2f43000&fromjk=52bcc27819c1aa2b","it","Roma, Lazio","","","2022-04-21","Posted 30+ days ago","GLOBAL 7 VENTURES & ADVISORY - Roma, Lazio","Location: Rome, It Salary €155,000
+Apply: email: careers@g7va.com
+Include: Intro & Resume (pdf or dropbox link)
+Data Engineer Role
+As we build and migrate our platform we are seeking talented individuals to join the team to work closely with our internal and external partners to further develop and define our products and offerings.
+Develop our market data processes in C++ on Linux
+Define and develop gateways and APIs for external consumption of our market data via FIX and proprietary protocols.
+Develop internal monitoring and testing tools
+Provide 2nd level support for the platform
+Qualifications: You should possess great communication, analytical and the following skills:
+Bachelor’s degree in computer science or a related field
+Strong C++ skills in an object orientated environment (Experience with C++11 or later desirable)
+Experience with high volume data platforms
+Expertise with multi-threaded development or actor frameworks
+FIX skills with either quickfix or Fix8
+Experience with boost library desirable
+Experience with low latency messaging infrastructure and UDP networking desirable
+Fixed income experience desirable
+Experience of C++ development on Windows desirable"
+"1763cc9898a33776","Big Data Engineer - Mercato: Corporate, Private & Public","https://www.indeed.com/viewjob?jk=1763cc9898a33776","Deloitte","https://www.indeed.com/cmp/Deloitte?campaignid=mobvjcmp&from=mobviewjob&tk=1g16unldrsa1c800&fromjk=1763cc9898a33776","it","Roma, Lazio","","","2022-04-21","Posted 30+ days ago","Deloitte - 10,600 reviews - Roma, Lazio","Big Data Engineer - Mercato: Corporate, Private & Public
+RISK ADVISORY
+What impact will you make?
+YOUR OPPORTUNITY:
+
+Risk Advisory è la società del Network Deloitte che supporta i propri Clienti nella generazione e protezione del valore aziendale attraverso l’analisi e la gestione dei rischi d’impresa, identificando, anticipando e risolvendo le criticità di business.
+In questo contesto, stiamo cercando candidati Big Data Engineer da inserire presso l’Ufficio di Roma, su importanti progetti in ambito Digital Risk con focus su architetture Big Data, Data Analytics e processi di ETL presso prestigiosi clienti italiani ed internazionali, operanti in ambito industriale
+YOUR ROLE AND RESPONSIBILITIES:
+
+Il tuo ruolo sarà focalizzato sull’esecuzione proattiva e responsabile delle attività progettuali nelle quali sarai coinvolto. Agendo con progressiva autonomia all’interno di team multifunzionali, sarai responsabile per la qualità del tuo lavoro e del suo pieno allineamento alle priorità, agli obiettivi e alle esigenze dei clienti.
+Avrai la possibilità di condividere la tua esperienza e le tue conoscenze con i tuoi colleghi e di contribuire alla realizzazione della nostra ambizione: “make an impact that matters”.
+
+OUR REQUIREMENTS:
+
+Stiamo cercando figure Big Data Engineer da inserire presso la sede di Roma su importanti progetti in ambito Digital di clienti operanti nelle seguenti Industry: Manufacturing, Consumer, Energy, Public Sector, Telecommunication, Life Science & Healthcare, Sport & Entertainment.
+Il/la candidato/a si occuperà di gestire operativamente il disegno e l’implementazione di soluzioni Big Data attravero lo sviluppo di processi di ETL e soluzioni digitali, facendo leva su tecnologie quali machine learning, artificali intelligence e data analytics.
+Il/la candidato/a ideale ha esperienza nell’implementazione di progetti complessi e abilità nel condividere questa esperienza nel team di progetto; ha una forte attitudine al teamwork, al problem solving, spiccate capacità di analisi e ottime capacità relazionali e comunicative.
+Il/la candidato/a ideale è infine in possesso dei seguenti requisiti:
+
+Mandatory
+
+Laurea triennale in informatica, ingegneria informatica, ingegneria gestionale
+Buona conoscenza della lingua inglese (scritta e parlata)
+Disponibilità a viaggiare in Italia e all'estero
+Esperienza nell’utilizzo di Python e relative libreria per la manipolazione dei dati
+Buona conoscenza di processi di ETL e di architetture Big Data
+Buona conoscenza dei principali tool di Data Analytics (QlikSense, Power BI)
+Esperienza nel coordinamento delle attività di un team analisti, consulenti e sviluppatori
+Esperienza nel coordinamento del piano di attività di suddetti progetti
+Ottime abilità comunicative nei confronti degli stakeholder di progetto (colleghi, cliente, etc.)
+
+Nice to have
+
+Esperienza sull’utilizzo del prodotto Talend
+Esperienza su piattaforme Cloud
+Certificazioni in ambito Big Data e Cloud (AWS, Cloudera)
+
+ABOUT RISK ADVISORY:
+Deloitte Risk Advisory è la società del Network Deloitte leader mondiale nell’offerta di servizi alle imprese per l’efficace ed efficiente mitigazione dei Rischi Strategici e Reputazionali, Regolamentari, Finanziari, Operativi.
+Sviluppiamo soluzioni specifiche per le esigenze dei clienti partendo dall’analisi dell’organizzazione, dei rischi e dei controlli, nonché degli obiettivi che essi intendono perseguire.
+Disponiamo di un portfolio servizi globale e unificato, sviluppato per poter raggiungere e soddisfare ovunque i nostri clienti con un approccio integrato, coerente ed efficiente. Le nostre aree di specializzazione sono: Strategic & Reputation Risk, Regulatory Risk, Financial Risk, Operational Risk e Cyber Risk.
+In Italia operiamo con circa 350 professionisti con competenze multidisciplinari e specialistiche, utilizzando metodologie e tecnologie innovative per affrontare le sfide straordinarie del mercato.
+Siamo continuamente alla ricerca di persone di talento per rafforzare il nostro team, alle quali offriamo l’inserimento in un contesto inclusivo, collaborativo e premiante. Attrarre e conservare i migliori talenti è per noi fondamentale per continuare ad essere leader indiscussi nei servizi professionali e meta lavorativa di prim’ordine.
+ABOUT DELOITTE
+I nostri servizi
+Deloitte offre servizi integrati di Audit, Consulting, Financial Advisory, Risk Advisory, Tax e Legal. Il nostro approccio unisce conoscenze multidisciplinari, esperienza a livello globale, innovazione e servizi di alta qualità. Aiutiamo i nostri clienti a concretizzare le proprie aspirazioni, fornendo loro gli strumenti per affrontare le sfide più complesse del business, in Italia e nel mondo. Crediamo fermamente che il nostro lavoro possa influenzare positivamente la comunità in cui operiamo.
+Il nostro purpose
+Make an impact that matters. Questo è il nostro obiettivo, e ciò che ci definisce. Significa fare la differenza per i nostri clienti, per i nostri colleghi e nella società, creando un impatto a lungo termine. Vogliamo essere la prima scelta dei clienti, la prima scelta dei talenti e i primi a lasciare un segno.
+I nostri valori
+Incoraggiamo la collaborazione, la diversità di pensiero e la capacità di pensare fuori dagli schemi. Con questo approccio aiutiamo i talenti a esprimere al meglio le proprie capacità. Per noi la diversity è un valore e il rispetto è al centro della nostra cultura inclusiva.
+La nostra talent experience
+Chi lavora in Deloitte, fin dal primo giorno, si sente parte di un network che supporta e incoraggia i colleghi. Il percorso di crescita e di carriera consente di sviluppare le competenze e le capacità per avere successo. In un ambiente di lavoro che incoraggia la collaborazione e la creatività, il benessere delle nostre persone e la flessibilità sono al centro di una talent experience distintiva.
+Il nome Deloitte si riferisce a una o più delle seguenti entità: Deloitte Touche Tohmatsu Limited, una società inglese a responsabilità limitata (“DTTL”), le member firm aderenti al suo network e le entità a esse correlate. DTTL e ciascuna delle sue member firm sono entità giuridicamente separate e indipendenti tra loro. DTTL (denominata anche “Deloitte Global”) non fornisce servizi ai clienti. Si invita a leggere l’informativa completa relativa alla descrizione della struttura legale di Deloitte Touche Tohmatsu Limited e delle sue member firm all’indirizzo www.deloitte.com/about.
+
+Primary LocationRoma
+Other LocationsItaly
+OrganizationACCOUNTING & INTERNAL CONTROLS"
