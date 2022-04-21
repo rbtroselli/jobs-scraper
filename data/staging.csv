@@ -1,68 +1,51 @@
 "job_id","post_title","post_url","company_name","company_url","country","location","job_type","salary","scrape_date","posted","info_remote","description"
-"427250b1e8739b4f","Data Engineer","https://www.indeed.com/viewjob?jk=427250b1e8739b4f","SIS","https://www.indeed.comSis?campaignid=mobvjcmp&from=mobviewjob&tk=1g14hu4m43gub003&fromjk=427250b1e8739b4f","us","Austin, CA","","$55 - $65 an hour","2022-04-21","Posted today","SIS - 172 reviews - Austin, CA","
-
-Type:
-Description:
-
-Title: Data Engineer
- Location: Austin, TX | MUST RELOCATE IN 2 WEEKS
- HYBRID STYLE (3 TIMES IN THE OFFICE)
- Visa: Any type
- Duration: 12+ Month
- Rate: $55-$65 DOE
- C2C OR W2
-
-
-
- DO NOT APPLY IF YOU CAN'T MOVE
-  
-
-
- PLEASE NO PHONE CALLS. PLEASE SEND RESUME WITH RATE
-  
-
-
- EMAIL:
-  
-
-
- CSAEFONG AT SISINC . COM
-  
-
- • Automate end-to-end ETL/ML pipelines with structural understanding of data products.
-    . Automate, deploy and maintain ML pipelines into existing cloud resources.
-    • Work with team members to assist with data-related technical issues and support their data product needs, and maintain high-standard documentations
-   
-
-Required Skills
-
- • A background in computer science, engineering, mathematics, or similar quantitative field with a minimum of 2 years professional experience
-    • Experience in implementing data pipelines using python, familiar with Pandas and Numpy
-    • Experience with workflow scheduling / orchestration such as Kubernetes or Airflow
-    • Extract Transform Load (ETL) experience using Spark, Kafka, Hadoop, or similar technologies
-    • Experience with query APIs using JSON, ProtocolBuffers, or XML
-    • Experience with Unix-based command line interface and Bash scripts
-    • Experience with Postgres database, familiar with SQL scripting
-    • Experience with Web or REST API development in Python
-   
-
-Optional Skills
- • Data visualization or web development skills a plus
-   
-
-Education
- Bachelors in computer science or engineering; Masters preferred
-  
-
-
-Location Austin , CA 
-  Min Experience (yrs):
-Required Education: Not Specified 
-  Benefits:
-
-
+"b49aa795d1484e01","Senior Data Engineer","https://www.indeed.com/viewjob?jk=b49aa795d1484e01","Best Egg","https://www.indeed.com/cmp/Best-Egg-1?campaignid=mobvjcmp&from=mobviewjob&tk=1g16ujkmq2f43003&fromjk=b49aa795d1484e01","us","Remote","Full-time","","2022-04-21","Posted Today","Best Egg - 12 reviews - Remote - Remote","
+is not designed to cover or contain a comprehensive listing of activities, duties or responsibilities that are required of the employee for this job. Duties, responsibilities, and activities may change at any time with or without notice.
+*Our Brand: *At Best Egg, we believe money should be accessible so people can reach their goals, live a fuller life, and feel pride in knowing they have taken control of their finances. For those who need extra money to achieve the progress they seek in life, Best Egg is the modern solution-minded finance provider that mixes decades of banking experience with smart technology and deep customer insight to create products designed for today’s borrower, so that people can establish a smoother financial path. The egg symbolizes protection and a fresh start.
+*Recruiting Agencies: * We appreciate what you do and understand how challenging it can be, however please do not send us unsolicited resumes or cold outreach to our employees, job listings or recruiting team.
+Job Type: Full-time
 "
-"d35ca92e7e9198b1","Data Engineer I.","https://www.indeed.com/viewjob?jk=d35ca92e7e9198b1","Tulane University","https://www.indeed.comTulane-University?campaignid=mobvjcmp&from=mobviewjob&tk=1g14huafpt5qn800&fromjk=d35ca92e7e9198b1","us","New Orleans, LA","","","2022-04-21","Posted Just posted","Tulane University - 373 reviews - New Orleans, LA","The Data Engineer I is responsible for the installation, testing, maintenance, and development of scalable data-management systems. The Data Engineer I is responsible for the execution and monitoring of Extract, Transform, Load (ETL) operations. Additional responsibilities of the position include conducting data analysis, data integrity, and quality assurance testing; creating reports and dashboards for data consumption by the user community; assisting the Data Architect Team with evaluating data-management technologies, and performs other related tasks as assigned. Required Knowledge, Skills, and Abilities
+"8ab9c574bf82ba4c","Data Engineer, Advertising","https://www.indeed.com/viewjob?jk=8ab9c574bf82ba4c","Spotify","https://www.indeed.com/cmp/Spotify?campaignid=mobvjcmp&from=mobviewjob&tk=1g16ujqg33h8s000&fromjk=8ab9c574bf82ba4c","us","New York, NY","","","2022-04-21","Posted today","Spotify - 69 reviews - New York, NY - Remote","Engineering
+Data
+At Spotify Advertising, our part of that mission is to build the next generation advertising platform for audio which can scale the freemium experience for hundreds of millions of fans and tens of thousands of advertisers. This scale brings unique challenges as well as tremendous opportunities to define the insights product for our business.
+Location
+New York or Remote Americas
+Job type
+Permanent
+We are looking for a Data Engineer to build and drive Data engineering initiatives within the team. In this role, you will be instrumental in streamlining data ingested from multiple sources to not only recognize value and insights, but also set standards along the way. You will help us to create a user-first ad experience that's personalized and relevant, so we can grow to billions of fans, increasing engagement with our listeners and providing better value to our advertisers. Above all, your work will impact the way the world experiences music.
+What You'll Do
+Work across the ads business platform, contributing to the improvement of many different pipelines
+Build large-scale batch and real-time data pipelines with data processing frameworks like Scio, Storm, and Spark
+Design, develop, and maintain Java services
+Use best practices in continuous integration and delivery
+Help drive optimization, testing and tooling to improve reliability and data quality
+Collaborate with other engineers, specialists and partners, taking learning and leadership opportunities that will arise every single day
+Work in cross-functional agile teams to continuously experiment, iterate and deliver on new product objectives
+Who You Are
+You are knowledgeable and passionate about improving and building distributed data pipelines
+You have experience building high-volume/business-critical, distributed services in Java or Scala that ingest data across multiple sources
+You are knowledgeable about data modeling, data access, and data storage techniques
+You have an understanding of system design, data structures, and algorithms
+You enjoy close collaboration with backend and web engineers, and are passionate about the software architecture across the stack
+You are familiar with current data engineering practices and are curious about new technologies that help derive insights and value from data
+You care about agile software processes, data-driven development, reliability, and responsible experimentation
+You care about quality and know what it means to ship high quality code
+Where You'll Be
+We are a distributed workforce enabling our band members to find a work mode that is best for them!
+Where in the world? For this role, it can be within the Americas region in which we have a work location
+Prefer an office to work from home instead? Not a problem! We have plenty of options for your working preferences. Find more information about our Work From Anywhere options here.
+Working hours? We operate within the Eastern Standard time
+Our global benefits
+Extensive learning opportunities, through our dedicated team, GreenHouse.
+Flexible share incentives letting you choose how you share in our success.
+Global parental leave, six months off - fully paid - for all new parents.
+All The Feels, our employee assistance program and self-care hub.
+Flexible public holidays, swap days off according to your values and beliefs.
+Spotify On Tour, join your colleagues on trips to industry festivals and events.
+Learn about life at Spotify
+Spotify is an equal opportunity employer. You are welcome at Spotify for who you are, no matter where you come from, what you look like, or what’s playing in your headphones. Our platform is for everyone, and so is our workplace. The more voices we have represented and amplified in our business, the more we will all thrive, contribute, and be forward-thinking! So bring us your personal experience, your perspectives, and your background. It’s in our differences that we will find the power to keep revolutionizing the way the world listens.
+Spotify transformed music listening forever when we launched in 2008. Our mission is to unlock the potential of human creativity by giving a million creative artists the opportunity to live off their art and billions of fans the chance to enjoy and be passionate about these creators. Everything we do is driven by our love for music and podcasting. Today, we are the world’s most popular audio streaming subscription service."
+"d35ca92e7e9198b1","Data Engineer I.","https://www.indeed.com/viewjob?jk=d35ca92e7e9198b1","Tulane University","https://www.indeed.com/cmp/Tulane-University?campaignid=mobvjcmp&from=mobviewjob&tk=1g16uk0pm3h8s000&fromjk=d35ca92e7e9198b1","us","New Orleans, LA","","","2022-04-21","Posted 1 day ago","Tulane University - 373 reviews - New Orleans, LA","The Data Engineer I is responsible for the installation, testing, maintenance, and development of scalable data-management systems. The Data Engineer I is responsible for the execution and monitoring of Extract, Transform, Load (ETL) operations. Additional responsibilities of the position include conducting data analysis, data integrity, and quality assurance testing; creating reports and dashboards for data consumption by the user community; assisting the Data Architect Team with evaluating data-management technologies, and performs other related tasks as assigned. Required Knowledge, Skills, and Abilities
 Excellent oral and written communication skills.
 Excellent analytical and problem solving skills.
 Ability to effectively identify and troubleshoot issues, as well as provide viable solutions and/or recommendations.
@@ -80,7 +63,48 @@ OR
 High School Diploma/Equivalent and eight (8) years' IT experience, including SQL, Data Modeling tools, ETL, Data Warehousing, Data Visualization, Linux and Windows OS experience, plus one (1) year Agile Project Management experience.
 Preferred Qualifications
 Business Intelligence experience in Higher Education."
-"f557742bc3820e17","Data Engineer","https://www.indeed.com/viewjob?jk=f557742bc3820e17","AffiniPay","https://www.indeed.comAffinipay?campaignid=mobvjcmp&from=mobviewjob&tk=1g14hugi0t4l8800&fromjk=f557742bc3820e17","us","Austin, TX","Full-time","","2022-04-21","Posted today","AffiniPay - 6 reviews - Austin, TX","
+"64cdf004f0d67677","Senior Data Engineer","https://www.indeed.com/viewjob?jk=64cdf004f0d67677","Audiens","https://www.indeed.com/cmp/Groupe-Audiens-2?campaignid=mobvjcmp&from=mobviewjob&tk=1g16uk6jms7na800&fromjk=64cdf004f0d67677","us","Remote","Full-time","$60,000 - $70,000 a year","2022-04-21","Posted Just posted","Audiens - Remote - Remote","
+About AudiensAudiens removes the guesswork for marketers by providing actionable insights on how to increase revenue from their e-commerce store. Once connected, Audiens segments customer data and intelligently identifies opportunities for driving increases in customer spend and retention (amongst other things).
+Our customers are e-commerce merchants selling through Shopify, and range in size from sole traders to larger national and international enterprises. We are a highly motivated and professional team based in Cambridge and Milan, and have a specialist data science team in Seoul, South Korea
+The RoleAs a Senior Data Engineer, you will be working on our cloud-based application and data pipelines.While we try to keep our code up to the current standards, we are always looking for ways to improve our backend environment. You will have the opportunity to steer our current best-practice and drive continuous improvements.
+
+Development, maintenance and testing of high-performance core data processing components and API.
+Collaboration on design choices based on SOLID principles and distributed, asynchronous, event-driven patterns.
+Adoption of company best-practice with incremental responsibility of the platform’s main backend assets.
+
+The TeamThis is an opportunity to join a team at a pivotal stage, the product is starting to gain traction and there is a team of supportive and inspirational technical minds to work alongside. There is a growth mindset culture at Audiens, where everyone has an opportunity to influence the direction of the product, learn from potential customers and to improve how we work.Skills
+
+Strong expertise in Python programming v3.6+ including OOP and SOLID principles
+Strong knowledge of cloud architectures and services / AWS Preferred
+At least 2 years’ experience building data pipelines and implementing ETL processes
+Experience with NoSQL
+Expertise with testing framework like PyTest or other BDD tools
+Comfortable to work in a Linux development environment
+Experience in Agile workflows (Scrum, Kanban)
+Experience with Git
+Experience to manage deliverables within a project plan
+Ability to communicate in English
+
+Desirable Skills
+
+GraphQL – Major advantage
+Experience in Big Data engineering and technologies
+Experience in Machine Learning implementation.
+Experience with MongoDB / Elasticsearch
+Experience with relational databases
+
+LocationAudiens is a remote-first company for employees based in either UK or Italy. Getting things done and having a growth mind-set is more important than where you are. We bring everyone together for team events, so some travel may be required for 2 days every 3 months.If you like to get out the house and work alongside colleagues, we do have vibrant office space in two locations; Cambridge, UK and Milan, Italy. We're open to renting shared office space in other locations too.
+Please read the Privacy Policy.
+LocationRemote (based in UK or Italy)
+DepartmentEngineering
+Job TitleSenior Data Engineer
+Salary£60k - £70k
+CityCambridge
+CountryUK
+Job Type: Full-time
+Salary: $60,000.00 - $70,000.00 per year
+"
+"f557742bc3820e17","Data Engineer","https://www.indeed.com/viewjob?jk=f557742bc3820e17","AffiniPay","https://www.indeed.com/cmp/Affinipay?campaignid=mobvjcmp&from=mobviewjob&tk=1g16ukci2t5ei800&fromjk=f557742bc3820e17","us","Austin, TX","Full-time","","2022-04-21","Posted 1 day ago","AffiniPay - 6 reviews - Austin, TX","
 Data EngineerEngineering
 AffiniPay is looking for a Data Engineer that will assist with maintenance and buildout of AffiniPay’s business intelligence infrastructure, helping to provide key insights on how our products and customers perform. As a Data Engineer, you will focus on designing, implementing, and supporting new and existing data solutions to support our data team with various advanced analytical needs.
 Why you should work as a Data Engineer at AffiniPay:You want to be part of a highly skilled team where your work will directly impact the growth and success of the organization. You are data-driven, detail oriented, and have a passion for working on a business intelligence infrastructure. You excel in the design, creation, management, and business use of large, complex datasets. You want to be responsible for designing and implementing scalable ETL processes to support the rapidly growing and dynamic business demand and use it to deliver the data as a service.
@@ -110,4 +134,547 @@ About AffiniPayAt AffiniPay, we’re continuously taking on exciting and interes
 Affini-Perks! We've got you covered...Competitive compensation structurePerformance and loyalty-based bonuses100% paid medical, dental, and vision benefit plansOpen Paid Time Off (PTO) plan401K with automatic 5% company contribution100% Company-paid short- and long-term disability and life insurancePaid maternity/paternity leaveFlexible work environments: Home, Office, HybridCharity matching contributionsMental health counseling and nutrition educationFun offsite quarterly meetingsAffiniPay Swag PackageCompany lunches and fully stocked kitchenAll the benefits of a startup culture without the downsidesThe chance to be a vital team member of one of Austin's fastest-growing companies!
 AffiniPay is proud to be an Equal Opportunity Employer.
 Job Type: Full-time
+"
+"81638f2d5ef73e6f","Data Engineer (Remote)","https://www.indeed.com/viewjob?jk=81638f2d5ef73e6f","HP","https://www.indeed.com/cmp/HP?campaignid=mobvjcmp&from=mobviewjob&tk=1g16ukiagt59b800&fromjk=81638f2d5ef73e6f","us","Spring, TX 77389","Full-time","","2022-04-21","Posted Today","HP - 12,947 reviews - Spring, TX 77389 - Remote","
+
+We are looking for a talented Spark Data Engineer, to join a great team at HP! In this role, you'll bring advanced subject matter knowledge to solve complex business issues, and we'll look to your Spark data engineering subject matter expertise! In this role, you will frequently contribute to the development of new ideas and methods. You will also get to work on complex, interesting problems, where analysis of situations or data requires an in-depth evaluation of multiple factors. We'd love for you to provide expertise to functional project teams, and you may also participate in cross-functional initiatives.
+
+ Responsibilities
+
+ Designs limited enhancements, updates, and programming changes for portions and subsystems of data pipelines, repositories or models for structured/unstructured data.
+ Ability to work as a Big Data Engineer as an individual contributor or team player.
+ Mines data using modern tools and programming languages.
+ Analyzes design and determines coding, programming, and integration activities required based on specific objectives and established project guidelines.
+ Executes and writes portions of testing plans, protocols, and documentation for assigned portion of application; identifies and debugs issues with code and suggests changes or improvements.
+ Participates as a member of a project team of other data science professionals to develop reliable, cost effective and high-quality solutions for assigned data system, model, or component.
+ Collaborates and communicates with project team regarding project progress and issue resolution.
+
+
+ Knowledge & Skills
+
+ Hands-on experience on Big Data frameworks like Spark, Hive using Scala or Python
+ AWS services – Redshift, Athena, EMR, DocumentDB, S3
+ Basic knowledge of AI & Data Science
+ Exposure to CI/CD pipeline & Github.
+ Experience in ETL, Data Lake and Data warehouse pipeline.
+ Experience using statistics, mathematics, algorithms and programming languages to solve big data challenges.
+ Fluent in structured and unstructured data, its management, and modern data transformation methodologies.
+ Ability to define and create complex models to pull valuable insights, predictions and innovation from data.
+ Effectively and creatively tell stories and create visualizations to describe and communicate data insights.
+ Strong analytical and problem-solving skills.
+ Excellent written and verbal communication skills; mastery in English and local language.
+ Ability to effectively communicate data insights and negotiate options at senior management levels.
+
+
+ Scope & Impact
+
+ Collaborates with peers, junior engineers, data scientists and project team.
+ Typically partners with high-level Individual Contributors and Managers.
+ Supports projects requiring data engineering solutions expertise.
+
+
+ Education & Experience
+
+ Bachelor's or Master's degree in Computer Science, Information Systems, Engineering, or equivalent.
+ Typically 2-4 years’ experience.
+
+ (This position allows 100% remote work, from any location in the United States. Applicants must be currently authorized to work in the United States on a full-time basis now and in the future)
+
+ Where legally permitted, an offer of employment is conditional upon you providing proof that you are fully vaccinated against COVID-19 (as defined by the CDC) as of your first day of employment.
+
+ HP is an equal opportunity employer: https://tbcdn.talentbrew.com/company/3544/v1_0/PDFs/HP%20Inc%20EEO%20Policy%20Statement%202017_Final_signed.pdf
+
+ HP offers a comprehensive benefits package, including:
+
+ Dental insurance
+ Disability insurance
+ Employee assistance program
+ Flexible schedule
+ Flexible spending account
+ Health insurance
+ Life insurance
+
+
+ In accordance with Colorado statute, the estimated range of compensation for this job in that location, at the time of this posting, is $90-110,000. This position may be eligible for incentive pay, for openings where this is applicable.
+
+ #LI-POST
+
+ About HP
+
+
+
+
+
+   You’re out to reimagine and reinvent what’s possible—in your career as well as the world around you.
+  
+
+    So are we. We love taking on tough challenges, disrupting the status quo, and creating what’s next. We’re in search of talented people who are inspired by big challenges, driven to learn and grow, and dedicated to making a meaningful difference.
+  
+
+
+
+    HP is a technology company that operates in more than 170 countries around the world united in creating technology that makes life better for everyone, everywhere.
+  
+
+
+
+    Our history: HP’s commitment to diversity, equity and inclusion – it's just who we are.
+  
+
+    From the boardroom to factory floor, we create a culture where everyone is respected and where people can be themselves, while being a part of something bigger than themselves. We celebrate the notion that you can belong at HP and bring your authentic self to work each and every day. When you do that, you’re more innovative and that helps grow our bottom line. Come to HP and thrive!
+  
+
+"
+"37aa4efd27979666","Data Engineer","https://www.indeed.com/viewjob?jk=37aa4efd27979666","Facet Wealth","https://www.indeed.com/cmp/Facet-Wealth?campaignid=mobvjcmp&from=mobviewjob&tk=1g16uko3cm6f0800&fromjk=37aa4efd27979666","us","Remote","Full-time","$100,000 - $130,000 a year","2022-04-21","Posted 1 day ago","Facet Wealth - 5 reviews - Remote - Remote","
+
+Facet is a fully remote FinTech company with a mission to empower people to live more enriched lives by delivering a new standard of financial advice that elevates expectations across consumers and the industry.
+ We believe that unbiased, personalized financial advice that integrates into every facet of life is essential to living well. People’s financial lives are dynamic and ever-evolving, so we cover everything money touches–from starting a business to buying real estate to your investments and much more. Facet believes financial advice should be delivered with a fresh, human-plus-tech approach, that includes a CFP® professional–the highest certification possible.
+ The Role:
+ We are looking for a methodical, organized and solutions-driven Data Engineer to join the centralized Business Operations team. This role will support data analytics, operations and other company initiatives by ingesting data from business systems into a cloud data warehouse, working closely with analysts to model data for optimal accessibility and performance in reports, and move data from the data warehouse or cloud storage to business systems. The ideal candidate will be a natural collaborator and problem solver who possesses a high intellectual curiosity and thrives in a dynamic, fast-paced environment.
+ This role will report to the Senior Data Engineer, within the Business Operations department.
+ Day-To-Day Responsibilities:
+
+ Creation and maintenance of enterprise cloud data pipelines
+ Leveraging dbt to build and maintain data models for analysis
+ Investigating complex issues and solve problems across systems, processes, and departments
+ Collaborating with various departments to solve data challenges
+ Communicate data concepts and definitions to a diverse group of stakeholders with varying degrees of technical expertise
+ Design, deploy, test, and manage scalable cloud-based ETL/ELT and reverse ETL data pipelines
+ Document new systems or workflows, and communicate new releases and changes to stakeholders
+ Monitor data pipelines and model integrity regularly and follow-up in a timely manner when corrections are necessary to always ensure reporting accuracy and integrity
+
+ Basic Qualification:
+
+ 2-3+ years of experience with data orchestration tools like Airflow, Dagster or Prefect, or writing custom ETL/ELT data pipelines with Python
+ Experience with cloud OLAP databases like BigQuery, Redshift or Snowflake, writing DDL/DML operations in SQL as well as performance tuning queries
+ Excellent troubleshooting and problem-solving skills, able to deal with ambiguity and problem-solve independently, as well as have a strong curiosity and passion to seek opportunities for automation and improved reliability
+
+ Preferred Qualifications:
+
+ Bachelor’s Degree in Computer Science, Engineering, or relevant subject matter
+ Highly motivated, self-starter, organized, independent with an ability to effectively manage through change and prioritize efforts
+ Strong aptitude for technology and the interest and drive to continually expand your technical skill set
+ Fundamental analytical and conceptual thinking and problem-solving skills
+ Excellent planning, organizational, and time management skills
+ Ability to communicate clearly and concisely, verbally and in writing
+ Ability to manage multiple projects simultaneously transparently as well as effectively collaborate across teams and to work in a diverse, fast-paced environment
+ Proven ability to work in an ever-changing environment, ability to connect the dots and make decisions on your own feet
+ Exceptional communication skills including ability to take an independent stance when interfacing with cross functional stakeholders, while maintaining their respect and confidence
+
+ Perks & Benefits:
+
+ $100,000- $130,000 annual salary + Bonus (salary to be determined by the experience, knowledge, skills, and abilities of the applicant, as well as alignment with market data)
+ Equity
+ Unlimited PTO
+ All the benefits: medical, dental, and vision insurance, 401(k) with employer match, short and long term disability coverage (paid by Facet), life insurance options and paid parental leave
+ Certification reimbursement program
+ Work from anywhere in the US
+
+ Equal Opportunity Employer
+ We’ve consciously built an equitable and inclusive culture where everyone is welcome to bring their authentic selves to work. At Facet Wealth, we specifically look for individuals of varying strengths, skills, backgrounds, and ideas. We believe this gives us a competitive advantage to better serve our clients and employees.
+ All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.
+ 
+ARenafZsZ0
+
+"
+"76912d24499a274a","Data Engineer, Workforce Model Optimization","https://www.indeed.com/viewjob?jk=76912d24499a274a","Meta","https://www.indeed.com/cmp/Meta-dd1502f2?campaignid=mobvjcmp&from=mobviewjob&tk=1g16uktsoocpj800&fromjk=76912d24499a274a","us","Remote","","","2022-04-21","Posted Today","Meta - 646 reviews - Remote - Remote","Mission Control is the organization that plans and shapes Meta’s evolving workforce. The Analytics team within Mission Control supports the TECH organization by building and scaling solutions that support our workforce planning and programs. We work with stakeholders from across the company to manage headcount demand plans, build resources to manage the flow of talent, tell the story of headcount progression and associated components, and provide data driven insights into the health and development of our global programs. On our team, you will see a direct link between your work, company growth, and our ability to transform over time.We are looking for a Data Engineer to join our effort in building the future of infra for supply demand planning and optimization for all of Meta. You will develop data models to provide a solid foundation for solving workforce planning challenges with advanced analytics. Additionally, with your expertise in data and understanding of business needs, you will provide actionable strategies to improve our workforce management processes and tools.
+
+
+Data Engineer, Workforce Model Optimization Responsibilities:
+
+Build deep Workforce data expertise and own data quality for allocated areas of ownership
+Collaborate with Analysts, Program Managers, and other Data Engineers across teams to understand the workforce management ecosystem, identify corresponding data needs, come up with technical proposals, and influence these partners on opportunities for improvement
+Develop, launch and maintain team data pipelines
+Build framework for auditing, error logging and master data management for your pipelines
+Identify, investigate and solve data quality issues and make sure the data is secured and reliable
+Design, develop and provide technical support for tooling integrations
+Support on-call shift as needed to support the team
+Continuously improve the existing pipeline and process infrastructure to meet evolving business needs
+
+
+Minimum Qualifications:
+
+Experience in the data warehouse space
+Experience in custom ETL design, implementation and maintenance
+Experience with object-oriented programming languages
+Experience with schema design and dimensional data modeling
+Experience in writing SQL statements
+Experience analyzing data to identify deliverables, gaps and inconsistencies
+Experience managing and communicating data warehouse plans to internal clients
+
+
+Preferred Qualifications:
+
+Experience with more than one coding language, preferably Python, Java or PHP
+Experience with designing and implementing real-time pipelines
+Experience with data quality monitoring and anomaly/outlier detection
+Experience with SQL performance tuning and E2E process optimization
+Experience with Airflow
+Experience querying massive datasets using Spark, Presto, Hive, Impala, etc.
+BS in CE/EE/CSE or computational sciences
+Experience with workforce planning processes
+
+
+
+
+Facebook is proud to be an Equal Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender, gender identity, gender expression, transgender status, sexual stereotypes, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law.Facebook is committed to providing reasonable accommodations for candidates with disabilities in our recruiting process. If you need any assistance or accommodations due to a disability, please let us know at accommodations-ext@fb.com."
+"9f76b3627cfba330","Data Engineer","https://www.indeed.com/viewjob?jk=9f76b3627cfba330","","","us","Remote","Full-time","","2022-04-21","Posted 6 days ago","Remote","
+
+
+   Join Our Team
+  
+
+
+    Due to COVID-19, we have implemented a virtual hiring process and continue to interview candidates by phone or video conferencing. We are onboarding new employees both onsite and remotely. We value the safety of every member of our community.
+  
+
+
+    About this Position
+  
+ The Data Engineer is responsible for extraction of data, data validation, and data availability for internal and external projects. The Data Engineer works with the architects and business partners to make data available through various ETL tools, such as SSIS and Python. They utilize industry best practices to enhance loading and unloading of data. The Data Engineer tasks will also include documenting technical needs for ETL processes and databases, and ensuring optimal technical infrastructure is utilized.
+  
+ Open to candidates that live anywhere in the United States, but must work Eastern time zone work hours. If candidate is located in Metro Atlanta area, they will work a flexible hybrid schedule at our Duluth office.
+  
+
+    Responsibilities & Qualifications
+  
+
+
+    RESPONSIBILITIES
+  
+
+
+
+      Design and implement ETL procedures for intake of data from both internal and outside sources; as well as ensure data is verified and quality is checked
+    
+
+
+      Design and implement ETL processes and data architecture to ensure proper functioning of analytics lad, as well as client’s or third-party’s reporting environments and dashboard
+    
+
+
+      Collaborate with business and technology stakeholders in ensuring data warehouse architecture development and utilization
+    
+
+
+      Perform the design and extension of data marts, meta data, and data models
+    
+
+
+      Ensure all data warehouse architecture codes are maintained in a version control system.
+    
+
+
+      Helps with integration of solutions into applications
+    
+
+
+      Participates in Agile ceremonies such as SCRUM
+    
+
+
+
+    ESSENTIAL SKILLS, KNOWLEDGE, and EXPERIENCE
+  
+
+
+
+      College degree in Information Technology, or equivalent
+    
+
+
+      Minimum of 5+ years’ work experience in Information Technology
+    
+
+
+      Expertise in multiple high-level programming languages, with preferences for Java, JavaScript and Python
+    
+
+
+      Advanced knowledge of Database modeling, particularly in DB2
+    
+
+
+      Able to lead Web projects effectively and understand how all Web components fit together in Primerica as well as industry standards
+    
+
+
+      Advanced knowledge of system-to-system integration
+    
+
+
+      Advanced knowledge of Service Oriented Architecture (SOA)
+    
+
+
+      Proficient with a code debugger
+    
+
+
+      Proficient in design patterns.
+    
+
+
+      Experience with Kubernetes is a plus
+    
+
+
+      Advanced SQL
+    
+
+
+      Relational database like SQL Server or DB2
+    
+
+
+
+    Preferred SKILLS, KNOWLEDGE, and EXPERIENCE
+  
+
+
+
+      Experience with streaming data services like kafka
+    
+
+
+      Experience populating and extraction of data from datalake
+    
+
+
+      Experience with data virtualization technologies
+    
+
+
+      Experience establishing and maintaining test data for test environments
+    
+
+
+      BI Tools such as PowerBI or Tableu
+    
+
+
+
+    FLSA status:
+    This position is exempt (not eligible for over time):
+   Yes
+  
+
+    Our Benefits:
+  
+
+
+
+      Day one health, dental, and vision insurance
+    
+
+
+      401(k) Plan with competitive employer match
+    
+
+
+      Vacation, sick, holiday and volunteer time off
+    
+
+
+      Life and disability insurance
+    
+
+
+      Flexible Savings Account & Health Savings Account
+    
+
+
+      Professional development
+    
+
+
+      Tuition reimbursement
+    
+
+
+      Company-sponsored social and philanthropy events
+    
+
+
+
+    It has been and will continue to be the policy of Primerica, Inc., and its subsidiaries to be an Equal Opportunity Employer. We provide equal opportunity to all qualified individuals regardless of race, sex, color, religious creed, religion, national origin, citizenship status, age, disability, pregnancy, ancestry, military service or veteran status, genetic or carrier status, marital status, sexual orientation, or any classification protected by applicable federal, state or local laws.
+  
+
+
+    At Primerica, we believe that diversity and inclusion are critical to our future and our mission – creating a foundation for a creative workplace that leads to innovation, growth, and profitability. Through a variety of programs and initiatives, we invest in each employee, seeking to ensure that our people are not only respected as individuals, but also truly valued for their unique perspectives.
+  
+
+"
+"128d7c33038bea1e","Data Engineer","https://www.indeed.com/viewjob?jk=128d7c33038bea1e","Intel","https://www.indeed.com/cmp/Intel-Corporation?campaignid=mobvjcmp&from=mobviewjob&tk=1g16ul9g9t5gu800&fromjk=128d7c33038bea1e","us","Phoenix, AZ 85018","Full-time","","2022-04-21","Posted Today","Intel - 5,612 reviews - Phoenix, AZ 85018 - Hybrid remote","
+
+Job Description
+ Looking for an opportunity to help Intel meet customer commitments and transform our planning data to improve our leaders ability to better decisions for Intel? The search is over. Join our Data Solutions and Analytics team. We are searching for two talented Data Analysts/Architects (per the industry, a Data Engineer) to help us on our journey. Our incredibly talented team has the goal of developing and deploying an integrated and governed data, technology and infrastructure in support of Corporate Planning Group's planning transformation strategy to reduce our monthly reset planning process throughput time by half. Data transformation will play an essential and critical role.
+
+ Responsibilities may include but not be limited to:
+
+ Provide expertise on database management and or design to drive integration of business data, functions and systems.
+ Establish standards, guidelines, procedures and other infrastructure necessary to support the objective of process creation, re-engineering and integration. This could be data models, business glossary, core data domains, data cleansing and general data stewardship.
+ Deliver work product such as designing comprehensive, yet concise datasets; partner with IT to drive goal-state data lineages and low fidelity data prototypes
+ Resolve performance problems for data foundation, modeling and or consumption typically data extracts, transformations of data, and or loads not meeting stakeholder expectations.
+ Demonstrating leadership for data quality.
+ Plans and schedules daily tasks, uses judgment on a variety of problems requiring deviation from standard practices.
+ Gathering requirements by performing stakeholder analyses, understanding key gaps, time objectives, user stories with a focus on business process integration.
+ Communicating with project team and subject matter experts or key partners to successfully collaborate cross-functionally, embodying a One Intel approach.
+ Fully leading or supporting Test Lead in UAT Execution for newly developed or enhanced applications through partnership with IT systems analyst and subject matter experts.
+ Supporting Deployment Lead through go-live by adjusting business process documentation based on go-live changes, supporting post go-live stabilization, and training users on escalation processes post go-live.
+
+
+ In addition to the qualifications a successful candidate will demonstrate:
+
+ Strong problem-solving skills.
+ Natural curiosity and desire to understand and predict problems rooted in the data ecosystem.
+ Comfortable with ambiguity in the context of work planning and establishing commitments with stakeholders.
+ Attention to detail and a passion for quality data.
+ Communication effectiveness with the ability to simplify explanations of complex concepts.
+ Skills to context shift and move in and out of team collaboration and individual work settings.
+
+
+ Are you a non-commissioned employee considering this role? If so, please review the Grade Reclassification Q&A and the How Grade Reclassifications Work video for more information on how compensation changes when moving between these roles. Additional information can be found here on our Internal Transfer’s page.
+
+ Qualifications
+ You must possess the below minimum qualifications to be initially considered for this position. Preferred qualifications are in addition to the minimum requirements and are considered a plus factor in identifying top candidates.
+ This Position is not eligible for Intel immigration sponsorship.
+
+ Minimum qualifications:
+
+ Bachelor's Degree in Supply Chain Management, Industrial Engineering, Logistics, or related field of study
+ 5+ years of relevant experience in:
+ Ingesting and analyzing data at Intel for business intelligence purposes by constructing queries and joining disparate data for prototyping BI-related solutions
+ Experience with Extract, Transform, and Load (ETL) solutions
+ Knowledge of data management and governance philosophies
+ 1+ year experience understanding data quality philosophies and/or building, managing data quality solutions 
+1+ year experience on supply chain data such as master data (Item, Bom) or transactional data (Supply, Demand)
+
+
+ Preferred qualifications:
+
+ Supply chain, Manufacturing, Divisional/BUs and/or SMG prior experience
+ Proficient knowledge of demand planning, supply planning, procurement, manufacturing processes and related Intel applications
+ Proficient knowledge of Product Master Data, Bill of Materials (BOM), Intel's reporting systems and Intel's financial costing systems (e.g. ICOST) 
+Experience querying Hana, EDW, or a similar data warehouse
+ Denodo, MSFT SSAS Tabular, and or MSFT SSIS
+
+
+ Inside this Business Group
+ Intel's Sales and Marketing (SMG) organization works with global customers and partners to solve critical business problems with Intel based technology solutions. SMG works across business units to amplify the customer voice and deliver solutions that accelerate their business. We work across numerous industries, including retail, enterprise and government, cloud services and healthcare as examples. The operations team focuses on forecasting, driving alignment with factory production and delivering efficiency tools and our marketing capability drives demand and localized marketing in locations around the globe. Our sales force navigates a complex partner and customer ecosystem while shaping product roadmaps, driving value for our customers, and collaborating to harness emerging technology trends to deliver comprehensive solutions.
+ Other Locations  US, California, Folsom;US, California, Santa Clara;US, Oregon, Hillsboro
+
+ Intel strongly encourages employees to be vaccinated against COVID-19. Intel aligns to federal, state, and local laws and as a contractor to the U.S. Government is subject to government mandates that may be issued. Intel policies for COVID-19 including guidance about testing and vaccination are subject to change over time.
+
+ Posting Statement  All qualified applicants will receive consideration for employment without regard to race, color, religion, religious creed, sex, national origin, ancestry, age, physical or mental disability, medical condition, genetic information, military and veteran status, marital status, pregnancy, gender, gender expression, gender identity, sexual orientation, or any other characteristic protected by local law, regulation, or ordinance.
+
+ Work Model for this Role
+
+ This role will be eligible for our hybrid work model which allows employees to split their time between working on-site at their assigned Intel site and off-site.
+ 
+
+"
+"6031b2714e53c38d","Junior Data Engineer","https://www.indeed.com/viewjob?jk=6031b2714e53c38d","The Coca-Cola Company","https://www.indeed.com/cmp/The-Coca--cola-Company?campaignid=mobvjcmp&from=mobviewjob&tk=1g16ulfa5sa5s800&fromjk=6031b2714e53c38d","us","Atlanta, GA 30313","Full-time","","2022-04-21","Posted 15 days ago","The Coca-Cola Company - 9,866 reviews - Atlanta, GA 30313","
+
+
+ The Coca-Cola Company’s IT organization is in the midst of a digital transformation that allows our employees to use world-class technology to connect our products to our customers all over the world. This journey is a very exciting time for Coca-Cola and our employees are big contributors to our Success and Growth. Our large, scale and complex environment offers an incredible opportunity to address challenges, enable innovative solutions to make a difference for our customers, leveraging technology such as AWS, Salesforce, GitHub, and many more
+ To continue this digitalization, we are looking for a Software Engineer to join our dynamic team in Latin America to help build scalable, cutting-edge technologies for today and tomorrow. This position is part of a global network with a predominance of interaction with North America that uses deep technical skills to create and improve software applications that help the Coca-Cola Company grow and be more productive If you are up for challenges, eager to learn, and highly motivated, we’d love to speak with you!
+
+ Function Related Activities/Key Responsibilities:
+
+ Lead from the front lines to define, design, and implement high-quality solutions.
+ Design, develop, test, document, deploy, monitor, and support code
+ Be accountable for Production Issues by supporting the developers in short-term and long-term resolution in respect to Coca-Cola Service Level Agreement.
+ Participate in a scrum team continuously delivering incremental high-quality code to production
+ Connect with other teams to integrate products
+ Provide visibility over plans and status to multiple stakeholders (IT)
+
+
+ Required Experience:
+
+ Bachelor’s degree in Computer Science or related field
+ 1-year experience (or educational equivalent) as Full Stack Software Engineer with experience in creating elegant, efficient, and testable code.
+ Solid understanding of Git-based version control
+ Solid understanding of object-oriented programming
+ Exposure to two of the following languages: Java, Python, NodeJS
+ Experience developing applications using HTML/CSS, JavaScript (preferably ReactJS framework)
+ Knowledge of REST APIs and web services
+ Knowledge of approaches to accessing databases (SQL – MySQL, SQL Server, Oracle and/or NoSQL – MongoDB, DynamoDB, CosmosDB)
+ Experience using Amazon Web Services (AWS)
+ Effective Communication both in Spanish and English (Oral and Writing)
+ Can connect beyond Technical speak
+
+
+ Preferred Experience:
+
+ Understand DevOps best practices
+ Experience using CI/CD tools such as Bitbucket, GitHub, GoCD, Bamboo, Terraform
+ Experience with infrastructure – servers, networking
+ Experience with security best practices
+ Experience working in an Agile Scrum / DevOps development methodology
+ Amazon Web Services (AWS) Certifications
+ Experience working in a multinational, distributed team, with in-house and external delivery resources.
+ Proficiency in Jira, or similar Agile life cycle management tools
+ Experience in Production support space with dealing with the pressure of SLA, Short Term resolution situation
+
+
+ Our Purpose and Growth Culture: We are taking deliberate action to nurture an inclusive culture that is grounded in our company purpose, to refresh the world and make a difference. We act with a growth mindset, take an expansive approach to what’s possible and believe in continuous learning to improve our business and ourselves. We focus on four key behaviors – curious, empowered, inclusive and agile – and value how we work as much as what we achieve. We believe that our culture is one of the reasons our company continues to thrive after 130+ years. Visit Our Purpose and Vision to learn more about these behaviors and how you can bring them to life in your next role at Coca-Cola.  We are an Equal Opportunity Employer and do not discriminate against any employee or applicant for employment because of race, color, sex, age, national origin, religion, sexual orientation, gender identity and/or expression, status as a veteran, and basis of disability or any other federal, state or local protected class. When we collect your personal information as part of a job application or offer of employment, we do so in accordance with industry standards and best practices and in compliance with applicable privacy laws.
+
+"
+"a39d1ab79e7e7403","Data Engineer (Remote)","https://www.indeed.com/viewjob?jk=a39d1ab79e7e7403","Spruce","https://www.indeed.com/cmp/Spruce?campaignid=mobvjcmp&from=mobviewjob&tk=1g16ull86jp26800&fromjk=a39d1ab79e7e7403","us","Remote","Full-time","$105,000 - $120,000 a year","2022-04-21","Posted 12 days ago","Spruce - 19 reviews - Remote - Remote","
+
+
+
+About Spruce
+
+
+
+ Spruce is the platform enabling modern real estate transactions. We work with forward-thinking mortgage lenders, real estate companies, and investors. We believe that the future of real estate will be driven by automation, efficiency, and digital experiences. Our mission is to provide the products and services necessary to make that happen.
+   
+
+
+ About the job
+   
+
+
+ Spruce is looking for an experienced Data Engineer to join its growing Data Science team. The ideal candidate will have an interest in real estate and will thrive in a fast-paced startup environment.
+   
+
+
+ As a part of the Data Science team, you will help build a cutting edge platform that will define the future of real estate transactions. Your ability to help turn data into practical, production-ready features will help us automate some of the manual work of processing real estate transactions.
+   
+
+
+
+
+ What you'll do
+
+ Work closely with Product, Engineering, and Operations as part of a team building the industry’s first automated title search platform Use Python to collect and parse real estate records from 3rd party data sources Using this data, train and implement predictive underwriting models Convert existing offline prototype models to fully automated, high performance production systems
+
+
+
+
+
+What we're looking for
+
+ 1-2 years working experience as a data scientist or data engineer Experience with Python and SQL in a work setting Working knowledge of web-scraping packages such as Selenium Strongly Preferred Advanced degree in a quantitative field or equivalent Experience developing and implementing statistical models, especially in the ML / AI family
+
+
+
+
+
+Compensation
+
+ The anticipated annual compensation range for this position is $105,000 - $120,000. Stock options are typically a part of the total compensation package determined on a role-by-role basis. Your actual compensation may vary depending on your relevant skills and experience. We provide a competitive benefit package that includes 4 weeks paid PTO, 20 paid sick days, 12 weeks paid parental leave, and comprehensive medical, dental, and vision coverage. We pride ourselves on a culture where everyone is treated with respect, kindness, and appreciation.
+
+
+
+
+
+
+
+     We are proud of the team we’re building. We're committed to equal opportunity employment - and beyond. We believe diverse experiences and perspectives build a stronger team and a better product. We welcome fresh perspectives and challenge our own assumptions to make Spruce better. The more inclusive we are as a company, the better we can serve our customers.
+   
+
+
 "
