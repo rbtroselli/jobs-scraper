@@ -13,15 +13,13 @@ def url_scraper(path=''):
                      'ar':'ar.', 'au':'au.', 'bh':'bh.', 'br':'br.', 'cl':'cl.', 'ch':'ch.', 'co':'co.', 'cr':'cr.', 'ec':'ec.', 'eg':'eg.', 'hk':'hk.', 'in':'in.', 'id':'id.',
                      'il':'il.', 'jp':'jp.', 'kw':'kw.', 'mx':'mx.', 'ma':'ma.', 'nz':'nz.', 'ng':'ng.', 'om':'om.', 'pk':'pk.', 'pa':'pa.', 'pe':'pe.', 'ph':'ph.', 'qa':'qa.',
                      'sa':'sa.', 'sg':'sg.', 'za':'za.', 'kr':'kr.', 'tw':'tw.', 'th':'th.', 'tr':'tr.', 'ae':'ae.', 'uy':'uy.', 've':'ve.', 'vn':'vn.', 'my':'malaysia.'}
-    print(dict)
-    dict = {'it':'it.'}
     urls_file = path + 'data/urls.csv'
     f = open(urls_file,'w')
     f.write("number,job_id,country,job_url\n")
 
     # iterate for every country in dictionary
     for key in dict:
-        url = f'https://{dict[key]}indeed.com/jobs?q="data+engineer"&sort=date&fromage=1&filter=0&start='
+        url = f'https://{dict[key]}indeed.com/jobs?q="data+engineer"&sort=date&filter=0&start='
         # only last day &fromage=1
         
         # just checking number of posts per page in CSV
@@ -29,7 +27,8 @@ def url_scraper(path=''):
 
         # keep same sessione
         s = requests.Session()
-        # df_list = []
+
+        # id list to append ids and check duplicates to break loop
         id_list = []
 
         # iterate for every page (1-66)
@@ -50,21 +49,12 @@ def url_scraper(path=''):
                 # take job id
                 id = element['id'][4:]
                 f.write(f"{j},{id},{key},https://www.indeed.com/viewjob?jk={id}\n")
-                # row = {
-                #     'job_id':id,
-                #     'country':key,
-                #     'number':j,
-                #     'job_url':f'https://www.indeed.com/viewjob?jk={id}'
-                # }
-                # df_list.append(row)
                 id_list.append(id)
                 print(j,id)
                 j+=1
+            f.flush()
             time.sleep(5)
     
-    # df = pd.DataFrame(df_list)
-    # print(df)
-    # df.to_csv(urls_file, index=False)
     f.close()
     return
 
@@ -116,9 +106,9 @@ def post_scraper(path=''):
             print(post_url)
             print(traceback.format_exc())
             err.write(f'{post_url}\n{traceback.format_exc()}\n\n\n')
+        
+        f.flush()
         time.sleep(5)
-
-        # delete line after insertion?
     
     f.close()
     err.close()
@@ -127,4 +117,4 @@ def post_scraper(path=''):
 
 if __name__ == "__main__":
     url_scraper()
-    # post_scraper()
+    post_scraper()

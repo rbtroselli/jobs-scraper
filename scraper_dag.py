@@ -1,7 +1,7 @@
 ### To solve "Hostname of job runner does not match", set "hostname_callable = socket.gethostname" in airflow.cfg.
 # One dot, no column, otherwise it gets corrected... and the scheduler gets stuck until it restarts 
 # (because of SequentialExecutor and sqlite, during the execution, the scheduler has no heartbeat and doesn't progress)
-### If the scheduler gets stuck and the task stays is queued, check for errors or corrections in console
+### If the scheduler gets stuck and the task stays is queued, check for errors or corrections in console (even example dags)
 # https://stackoverflow.com/questions/57681573/how-to-fix-the-error-airflowexceptionhostname-of-job-runner-does-not-match
 
 from datetime import timedelta
@@ -31,6 +31,8 @@ from jobs_loader import jobs_merger
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
+    'schedule_interval': '@daily',
+    'catchup': False
 }
 
 # instantiate DAG
