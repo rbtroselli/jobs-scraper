@@ -5,6 +5,7 @@ import time
 import pandas as pd
 from datetime import date
 import traceback
+import random
 
 def url_scraper(path=''):
     # dictionary with country tag and corresponding url piece
@@ -15,45 +16,47 @@ def url_scraper(path=''):
                      'sa':'sa.', 'sg':'sg.', 'za':'za.', 'kr':'kr.', 'tw':'tw.', 'th':'th.', 'tr':'tr.', 'ae':'ae.', 'uy':'uy.', 've':'ve.', 'vn':'vn.', 'my':'malaysia.'}
     urls_file = path + 'data/urls.csv'
     f = open(urls_file,'w')
-    f.write("number,job_id,country,job_url\n")
+    f.write("number,job_id,job_role,country,job_url\n")
 
-    # iterate for every country in dictionary
-    for key in dict:
-        url = f'https://{dict[key]}indeed.com/jobs?q="data+engineer"&sort=date&filter=0&start='
-        # only last day &fromage=1
-        
-        # just checking number of posts per page in CSV
-        j=1
+    for job in ['data+engineer','data+scientist','data+analyst']:
 
-        # keep same sessione
-        s = requests.Session()
+        # iterate for every country in dictionary
+        for key in dict:
+            url = f'https://{dict[key]}indeed.com/jobs?q="{job}"&sort=date&filter=0&start='
+            job_role_acronym = ''.join(word[0] for word in job.split('+'))
+            # only last day &fromage=1
+            
+            # just checking number of posts per page in CSV
+            j=1
 
-        # id list to append ids and check duplicates to break loop
-        id_list = []
+            # keep same sessione
+            s = requests.Session()
 
-        # iterate for every page (1-66)
-        for i in range(0,1000):
-            # idea: if captcha then change proxy?!
-            # combine the url, get the page, parse with bs
-            url2 = url + str(i*10)
-            page = s.get(url2)
-            soup = BeautifulSoup(page.content,'html.parser')
+            # id list to append ids and check duplicates to break loop
+            id_list = []
 
-            # break condition, if url is already present Indeed page is looping
-            if soup.find('a', {'id':re.compile(r'job_')})['id'][4:] in id_list: break
+            # iterate for every page (1-66)
+            for i in range(0,1000):
+                # idea: if captcha then change proxy?!
+                # combine the url with page number (multiplied), get the page, parse with bs
+                url2 = url + str(i*10)
+                page = s.get(url2)
+                soup = BeautifulSoup(page.content,'html.parser')
 
-            # iterate for every post in page
-            # find every a tag with 'job_' as part of the id name
-            for element in soup.find_all('a', {'id':re.compile(r'job_')}):
-                time.sleep(0.2)
-                # take job id
-                id = element['id'][4:]
-                f.write(f"{j},{id},{key},https://www.indeed.com/viewjob?jk={id}\n")
-                id_list.append(id)
-                print(j,id)
-                j+=1
-            f.flush()
-            time.sleep(5)
+                # break condition, if url is already present Indeed page is looping
+                if soup.find('a', {'id':re.compile(r'job_')})['id'][4:] in id_list: break
+
+                # iterate for every post in page
+                # find every a tag with 'job_' as part of the id name
+                for element in soup.find_all('a', {'id':re.compile(r'job_')}):
+                    # take job id
+                    job_id = element['id'][4:]
+                    f.write(f"{j},{job_id},{job_role_acronym},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
+                    id_list.append(job_id)
+                    print(j,job_id)
+                    j+=1
+                f.flush()
+                time.sleep(random.uniform(5,10))
     
     f.close()
     return
@@ -69,12 +72,12 @@ def post_scraper(path=''):
     # open a file to write scraped data
     df = pd.read_csv(urls_file)
     f = open(staging_file,'w')
-    f.write(f'"job_id","post_title","post_url","company_name","company_url","country","location","job_type","salary","scrape_date","posted","info_remote","description"\n')
+    f.write(f'"job_id","job_role","post_title","post_url","company_name","company_url","country","location","job_type","salary","scrape_date","posted","info_remote","description"\n')
     err = open(errors_file,'w')
     
     # iterate df rows
     for index,row in df.iterrows():
-        job_id, country, post_url = row['job_id'], row['country'], row['job_url']
+        job_id, job_role, country, post_url = row['job_id'], row['job_role'], row['country'], row['job_url']
         
         try:
             page = requests.get(post_url)
@@ -95,9 +98,9 @@ def post_scraper(path=''):
             info_remote = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ') # this may contain the REMOTE keyword
             description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
 
-            print(f'{job_id}\n{post_title}\n{post_url}\n{company_name}\n{company_url}\n{country}\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n')
+            print(f'{job_id}\n{job_role}\n{post_title}\n{post_url}\n{company_name}\n{company_url}\n{country}\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n')
 
-            line = f'"{job_id}","{post_title}","{post_url}","{company_name}","{company_url}","{country}",'\
+            line = f'"{job_id}","{job_role}","{post_title}","{post_url}","{company_name}","{company_url}","{country}",'\
                 f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info_remote}","{description}"\n'
             f.write(line)
 
@@ -108,7 +111,7 @@ def post_scraper(path=''):
             err.write(f'{post_url}\n{traceback.format_exc()}\n\n\n')
         
         f.flush()
-        time.sleep(5)
+        time.sleep(random.uniform(5,10))
     
     f.close()
     err.close()
