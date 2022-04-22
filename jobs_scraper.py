@@ -18,48 +18,80 @@ def url_scraper(path=''):
     f = open(urls_file,'w')
     f.write("number,job_id,job_role,country,job_url\n")
 
-    for job in ['data+engineer','data+scientist','data+analyst']:
+    for job in ['data%20engineer','data%20scientist','data%20analyst']:
 
         # iterate for every country in dictionary
         for key in dict:
-            url = f'https://{dict[key]}indeed.com/jobs?q="{job}"&sort=date&filter=0&start='
-            job_role_acronym = ''.join(word[0] for word in job.split('+'))
             # only last day &fromage=1
+            url = f'https://{dict[key]}indeed.com/jobs?q="{job}"&sort=date&fromage=1&filter=0&start='
+            job_role_acronym = ''.join(word[0] for word in job.split('%20'))
             
             # just checking number of posts per page in CSV
             j=1
 
-            # keep same sessione
-            s = requests.Session()
-
             # id list to append ids and check duplicates to break loop
             id_list = []
 
-            try:
-                # iterate for every page (1-66)
-                for i in range(0,1000):
-                    # idea: if captcha then change proxy?!
-                    # combine the url with page number (multiplied), get the page, parse with bs
-                    url2 = url + str(i*10)
-                    page = s.get(url2)
-                    soup = BeautifulSoup(page.content,'html.parser')
+            finish, captcha, error_3 = False, False, False
 
-                    # break condition, if url is already present Indeed page is looping
-                    if soup.find('a', {'id':re.compile(r'job_')})['id'][4:] in id_list: break
+            # iterate for every page (1-66)
+            for i in range(0,1000):
+                if finish == True: break
+                if captcha == True: break
+                if error_3 == True: break
 
-                    # iterate for every post in page
-                    # find every a tag with 'job_' as part of the id name
-                    for element in soup.find_all('a', {'id':re.compile(r'job_')}):
-                        # take job id
-                        job_id = element['id'][4:]
-                        f.write(f"{j},{job_id},{job_role_acronym},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
-                        id_list.append(job_id)
-                        print(j,key,job_role_acronym,job_id)
-                        j+=1
-                    f.flush()
-                    time.sleep(random.uniform(5,10))
-            except Exception as e:
-                print(e)
+                # three attempts
+                for attempt in range(3):
+                    
+                    try:
+                        # combine the url with page number (multiplied), get the page, parse with bs
+                        url2 = url + str(i*10)
+                        page = requests.get(url2)
+                        soup = BeautifulSoup(page.content,'html.parser')
+                        
+                        print(url2)
+
+                        # break for loop, if captcha
+                        if 'captcha' in soup.text.lower(): 
+                            print('CAPTCHA', url2)
+                            captcha = True
+                            break
+                        
+                        current_id_list = []
+                        for element in soup.find_all('a', {'id':re.compile(r'job_')}):
+                            current_id_list.append(element['id'][4:])
+                        # break for loop, if all jobs are already present (indeed loop)
+                        if set(current_id_list).issubset(set(id_list)): 
+                            # print(soup.find_all('a', {'id':re.compile(r'job_')})[0]['id'][4:])
+                            print(id_list)
+                            print('finish')
+                            time.sleep(5)
+                            finish = True
+                            break
+
+                        # iterate for every post in page
+                        # find every a tag with 'job_' as part of the id name
+                        for element in soup.find_all('a', {'id':re.compile(r'job_')}):
+                            # take job id
+                            job_id = element['id'][4:]
+                            if job_id in id_list: continue # skip if job_id is already present
+                            f.write(f"{j},{job_id},{job_role_acronym},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
+                            id_list.append(job_id)
+                            print(j,key,job_role_acronym,job_id)
+                            j+=1
+                        f.flush()
+                        time.sleep(random.uniform(5,10))
+                        # break from attempts if above for is successfull
+                        break
+
+                    # if there's any error raised, try a couple more times
+                    except Exception as e:
+                        print(e)
+                        print(traceback.format_exc())
+                        if attempt == 2: error_3 = True
+
+
+
     
     f.close()
     return
@@ -69,55 +101,50 @@ def post_scraper(path=''):
 
     urls_file = path + 'data/urls.csv'
     staging_file = path + 'data/staging.csv'
-    errors_file = path + 'data/errors.txt'
 
     # create a df from the output from previous step, with urls of job posts
     # open a file to write scraped data
     df = pd.read_csv(urls_file)
     f = open(staging_file,'w')
     f.write(f'"job_id","job_role","post_title","post_url","company_name","company_url","country","location","job_type","salary","scrape_date","posted","info_remote","description"\n')
-    err = open(errors_file,'w')
     
     # iterate df rows
     for index,row in df.iterrows():
         job_id, job_role, country, post_url = row['job_id'], row['job_role'], row['country'], row['job_url']
         
-        try:
-            page = requests.get(post_url)
-            soup = BeautifulSoup(page.content, 'html.parser')
+        for attempt in range(3):
+            try:
+                page = requests.get(post_url)
+                soup = BeautifulSoup(page.content, 'html.parser')
 
-            # scrape all the needed data. location from the title, it's consistent between languages
-            post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
-            company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
-            try: company_url = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
-            except: company_url = ''
-            try: job_type = soup.find(id='salaryInfoAndJobType').find(class_='jobsearch-JobMetadataHeader-item icl-u-xs-mt--xs').text.strip(' -')
-            except: job_type = ''
-            try: salary = soup.find(id='salaryInfoAndJobType').find(class_='icl-u-xs-mr--xs attribute_snippet').text
-            except: salary = ''
-            posted = soup.find_all(class_='jobsearch-HiringInsights-entry--text')[-1].text
-            location = soup.find('title').text.split('-')[-2].strip()
-            scrape_date = date.today() ## ATTENZIONE! Substitute with Airflow function
-            info_remote = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ') # this may contain the REMOTE keyword
-            description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
+                # scrape all the needed data. location from the title, it's consistent between languages
+                post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
+                company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
+                try: company_url = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
+                except: company_url = ''
+                try: job_type = soup.find(id='salaryInfoAndJobType').find(class_='jobsearch-JobMetadataHeader-item icl-u-xs-mt--xs').text.strip(' -')
+                except: job_type = ''
+                try: salary = soup.find(id='salaryInfoAndJobType').find(class_='icl-u-xs-mr--xs attribute_snippet').text
+                except: salary = ''
+                posted = soup.find_all(class_='jobsearch-HiringInsights-entry--text')[-1].text
+                location = soup.find('title').text.split('-')[-2].strip()
+                scrape_date = date.today() 
+                info_remote = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ') # this may contain the REMOTE keyword
+                description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
 
-            print(f'{job_id}\n{job_role}\n{post_title}\n{post_url}\n{company_name}\n{company_url}\n{country}\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n')
+                print(f'{job_id}\n{job_role}\n{post_title}\n{post_url}\n{company_name}\n{company_url}\n{country}\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n')
+                line = f'"{job_id}","{job_role}","{post_title}","{post_url}","{company_name}","{company_url}","{country}",'\
+                    f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info_remote}","{description}"\n'
+                f.write(line)
+                break
 
-            line = f'"{job_id}","{job_role}","{post_title}","{post_url}","{company_name}","{company_url}","{country}",'\
-                f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info_remote}","{description}"\n'
-            f.write(line)
-
-        except Exception as e:
-            print('ERROR', e)
-            print(post_url)
-            print(traceback.format_exc())
-            err.write(f'{post_url}\n{traceback.format_exc()}\n\n\n')
-        
+            except Exception as e:
+                print(post_url,'\n',e)
+                
         f.flush()
         time.sleep(random.uniform(5,10))
     
     f.close()
-    err.close()
     return
 
 
