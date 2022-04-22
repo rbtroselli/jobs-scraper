@@ -35,28 +35,31 @@ def url_scraper(path=''):
             # id list to append ids and check duplicates to break loop
             id_list = []
 
-            # iterate for every page (1-66)
-            for i in range(0,1000):
-                # idea: if captcha then change proxy?!
-                # combine the url with page number (multiplied), get the page, parse with bs
-                url2 = url + str(i*10)
-                page = s.get(url2)
-                soup = BeautifulSoup(page.content,'html.parser')
+            try:
+                # iterate for every page (1-66)
+                for i in range(0,1000):
+                    # idea: if captcha then change proxy?!
+                    # combine the url with page number (multiplied), get the page, parse with bs
+                    url2 = url + str(i*10)
+                    page = s.get(url2)
+                    soup = BeautifulSoup(page.content,'html.parser')
 
-                # break condition, if url is already present Indeed page is looping
-                if soup.find('a', {'id':re.compile(r'job_')})['id'][4:] in id_list: break
+                    # break condition, if url is already present Indeed page is looping
+                    if soup.find('a', {'id':re.compile(r'job_')})['id'][4:] in id_list: break
 
-                # iterate for every post in page
-                # find every a tag with 'job_' as part of the id name
-                for element in soup.find_all('a', {'id':re.compile(r'job_')}):
-                    # take job id
-                    job_id = element['id'][4:]
-                    f.write(f"{j},{job_id},{job_role_acronym},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
-                    id_list.append(job_id)
-                    print(j,job_id)
-                    j+=1
-                f.flush()
-                time.sleep(random.uniform(5,10))
+                    # iterate for every post in page
+                    # find every a tag with 'job_' as part of the id name
+                    for element in soup.find_all('a', {'id':re.compile(r'job_')}):
+                        # take job id
+                        job_id = element['id'][4:]
+                        f.write(f"{j},{job_id},{job_role_acronym},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
+                        id_list.append(job_id)
+                        print(j,key,job_role_acronym,job_id)
+                        j+=1
+                    f.flush()
+                    time.sleep(random.uniform(5,10))
+            except Exception as e:
+                print(e)
     
     f.close()
     return
@@ -120,4 +123,4 @@ def post_scraper(path=''):
 
 if __name__ == "__main__":
     url_scraper()
-    post_scraper()
+    # post_scraper()
