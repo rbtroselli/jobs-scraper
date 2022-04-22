@@ -8,8 +8,13 @@ import traceback
 
 def url_scraper(path=''):
     # dictionary with country tag and corresponding url piece
-    dict = {'us':'', 'it':'it.', 'uk':'uk.'}
-
+    dict = {'us':'', 'it':'it.', 'uk':'uk.', 'es':'es.', 'fr':'fr.', 'de':'de.', 'at':'at.', 'be':'be.', 'ca':'ca.', 'fi':'fi.', 'dk':'dk.', 'cz':'cz.', 'gr':'gr.', 'hu':'hu.',
+                     'ie':'ie.', 'lu':'lu.', 'nl':'nl.', 'no':'no.', 'pl':'pl.', 'pt':'pt.', 'ro':'ro.', 'se':'se.', 'ch':'ch.', 'ua':'ua.', 
+                     'ar':'ar.', 'au':'au.', 'bh':'bh.', 'br':'br.', 'cl':'cl.', 'ch':'ch.', 'co':'co.', 'cr':'cr.', 'ec':'ec.', 'eg':'eg.', 'hk':'hk.', 'in':'in.', 'id':'id.',
+                     'il':'il.', 'jp':'jp.', 'kw':'kw.', 'mx':'mx.', 'ma':'ma.', 'nz':'nz.', 'ng':'ng.', 'om':'om.', 'pk':'pk.', 'pa':'pa.', 'pe':'pe.', 'ph':'ph.', 'qa':'qa.',
+                     'sa':'sa.', 'sg':'sg.', 'za':'za.', 'kr':'kr.', 'tw':'tw.', 'th':'th.', 'tr':'tr.', 'ae':'ae.', 'uy':'uy.', 've':'ve.', 'vn':'vn.', 'my':'malaysia.'}
+    print(dict)
+    dict = {'it':'it.'}
     urls_file = path + 'data/urls.csv'
 
     # open file to write results
@@ -19,31 +24,42 @@ def url_scraper(path=''):
 
     # iterate for every country in dictionary
     for key in dict:
-        url = f'https://{dict[key]}indeed.com/jobs?q="data%20engineer"&start='
+        url = f'https://{dict[key]}indeed.com/jobs?q="data+engineer"&sort=date&fromage=1&filter=0&start='
         
         # just checking number of posts per page in CSV
         j=1
+        # break condition to avoid looping at last page
+        id = ''
 
         # iterate for every page (1-66)
-        for i in range(0,1):
+        for i in range(0,1000):
+            # if captcha then change proxy
+
+
+            header = {"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36" ,
+                        'referer':'https://www.google.com/' }
 
             # combine the url, get the page, parse with bs
             url2 = url + str(i*10)
-            page = requests.get(url2)
-            soup = BeautifulSoup(page.content,'html.parser') 
+            page = requests.get(url2, headers=header)
+            soup = BeautifulSoup(page.content,'html.parser')
+            
+            print (id, url2)
+            if id in soup.find_all('a', {'id':re.compile(r'job_')}): break
 
             # iterate for every post in page
             # find every a tag with 'job_' as part of the id name
             for element in soup.find_all('a', {'id':re.compile(r'job_')}):
                 print(j)
-                time.sleep(0.3)
+                time.sleep(0.2)
                 # take job id
                 id = element['id'][4:]
                 # job id is sufficient to retrieve the job page
                 # write if, country, n, link
                 f.write(f"{id},{key},{j},https://www.indeed.com/viewjob?jk={id}\n")
                 j+=1
-            time.sleep(3)
+            
+            time.sleep(5)
     f.close()
     return
 
@@ -106,4 +122,4 @@ def post_scraper(path=''):
 
 if __name__ == "__main__":
     url_scraper()
-    post_scraper()
+    # post_scraper()
