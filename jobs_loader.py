@@ -8,6 +8,8 @@ def jobs_loader(path=''):
     # read staging csv, then load everything in the db (automatically creating and replacing table)
     connection = sqlite3.connect(db)
     df = pd.read_csv(staging_file)
+    # drop duplicates based on job_id (that is used as PK). There may be "data engineer/data scientist" posts
+    df = df.drop_duplicates(subset='job_id', keep='first')
     df.to_sql('new_jobs', connection, if_exists='replace', index=False, dtype={'job_id': 'TEXT PRIMARY KEY'})
     connection.close()
     return

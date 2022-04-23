@@ -21,7 +21,7 @@ def url_scraper(path=''):
     urls_error_file = path + 'data/urls_error.txt'
     err = open(urls_error_file, 'w')
 
-    for job in ['data%20engineer','data%20scientist','data%20analyst']:
+    for job in ['data%20engineer','data%20scientist']:
         job_role = ''.join(word[0] for word in job.split('%20'))
         job_role_ext = ' '.join(word for word in job.split('%20'))
 
@@ -119,7 +119,7 @@ def post_scraper(path=''):
     # open a file to write scraped data
     df = pd.read_csv(urls_file)
     f = open(staging_file,'w')
-    f.write(f'"job_id","job_role","post_title","post_url","company_name","company_url","country","location","job_type","salary","scrape_date","posted","info_remote","description"\n')
+    f.write(f'"job_id","job_role","job_role_ext","post_title","post_url","company_name","company_url","country","location","job_type","salary","scrape_date","posted","info_remote","description"\n')
     
     posts_error_file = path + 'data/posts_error.txt'
     err = open(posts_error_file, 'w')
@@ -161,8 +161,9 @@ def post_scraper(path=''):
                 info_remote = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ') # this may contain the REMOTE keyword
                 description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
 
-                print(f'{job_id}\n{job_role}\n{post_title}\n{post_url}\n{company_name}\n{company_url}\n{country}\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n')
-                line = f'"{job_id}","{job_role}","{post_title}","{post_url}","{company_name}","{company_url}","{country}",'\
+                print(f'{job_id}\n{job_role}\n{job_role_ext}\n{post_title}\n{post_url}\n{company_name}\n{company_url}\n{country}'\
+                    f'\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n')
+                line = f'"{job_id}","{job_role}","{job_role_ext}","{post_title}","{post_url}","{company_name}","{company_url}","{country}",'\
                     f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info_remote}","{description}"\n'
                 f.write(line)
                 # break from attempt if all of the aobve is successfull
