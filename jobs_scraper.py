@@ -16,18 +16,19 @@ def url_scraper(path=''):
                      'sa':'sa.', 'sg':'sg.', 'za':'za.', 'kr':'kr.', 'tw':'tw.', 'th':'th.', 'tr':'tr.', 'ae':'ae.', 'uy':'uy.', 've':'ve.', 'vn':'vn.', 'my':'malaysia.'}
     urls_file = path + 'data/urls.csv'
     f = open(urls_file,'w')
-    f.write("number,job_id,job_role,country,job_url\n")
+    f.write("number,job_id,job_role,job_role_ext,country,job_url\n")
 
     urls_error_file = path + 'data/urls_error.txt'
     err = open(urls_error_file, 'w')
 
     for job in ['data%20engineer','data%20scientist','data%20analyst']:
+        job_role = ''.join(word[0] for word in job.split('%20'))
+        job_role_ext = ' '.join(word for word in job.split('%20'))
 
         # iterate for every country in dictionary
         for key in dict:
             # only last day &fromage=1
             url = f'https://{dict[key]}indeed.com/jobs?q="{job}"&sort=date&fromage=1&filter=0&start='
-            job_role_acronym = ''.join(word[0] for word in job.split('%20'))
             
             # just checking number of posts per page in CSV
             j=1
@@ -56,7 +57,8 @@ def url_scraper(path=''):
 
                         # break for loop, if captcha
                         if 'captcha' in soup.text.lower(): 
-                            print('@@@@@@@@ CAPTCHA @@@@@@@@', url2)
+                            print(f'@@@@@@@@ CAPTCHA @@@@@@@@\n{url2}\n')
+                            err.write(f'@@@@@@@@ CAPTCHA @@@@@@@@\n{url2}\n\n\n')
                             captcha = True
                             break
                         
@@ -77,9 +79,9 @@ def url_scraper(path=''):
                             # take job id
                             job_id = element['id'][4:]
                             if job_id in id_list: continue # skip if job_id is already present
-                            f.write(f"{j},{job_id},{job_role_acronym},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
+                            f.write(f"{j},{job_id},{job_role},{job_role_ext},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
                             id_list.append(job_id)
-                            print(j,key,job_role_acronym,job_id)
+                            print(j,key,job_role,job_id)
                             j+=1
                         f.flush()
                         time.sleep(random.uniform(5,10))
@@ -88,9 +90,11 @@ def url_scraper(path=''):
 
                     # if there's any error raised, try a couple more times
                     except Exception as e:
-                        print(url2,'\n',attempt,'\n','error---','\n',e)
+                        print(f'@@@@@@@@ ERROR @@@@@@@@\n{attempt}\n{url2}\n{e}\n')
                         print(traceback.format_exc())
-                        err.write(url2,'\n',attempt,'\n','error---','\n',e,'\n',traceback.format_exc(),'\n\n\n')
+                        err.write(f'@@@@@@@@ ERROR @@@@@@@@\n{attempt}\n{url2}\n{e}\n')
+                        err.write(traceback.format_exc())
+                        err.write('\n\n\n')
                         err.flush()
                         if attempt == 2: error_3 = True # avoid infinite loops
     
@@ -115,7 +119,7 @@ def post_scraper(path=''):
 
     # iterate df rows
     for index,row in df.iterrows():
-        job_id, job_role, country, post_url = row['job_id'], row['job_role'], row['country'], row['job_url']
+        job_id, job_role, job_role_ext, country, post_url = row['job_id'], row['job_role'], row['job_role_ext'], row['country'], row['job_url']
         
         for attempt in range(3):
             try:
@@ -124,11 +128,19 @@ def post_scraper(path=''):
 
                 # break for loop, if captcha
                 if 'captcha' in soup.text.lower(): 
-                    print('@@@@@@@@ CAPTCHA @@@@@@@@', post_url)
+                    print(f'@@@@@@@@ CAPTCHA @@@@@@@@\n{post_url}\n')
+                    err.write(f'@@@@@@@@ CAPTCHA @@@@@@@@\n{post_url}\n\n\n')
                     break
 
                 # scrape all the needed data. location from the title, it's consistent between languages
                 post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
+
+                # catch intruders
+                if job_role_ext not in post_title.lower(): 
+                    print(f'{post_url}\n{post_url}\n{post_title}\n{job_role_ext}\nOUT!!!\n')
+                    err.write(f'{post_url}\n{post_url}\n{post_title}\n{job_role_ext}\nOUT!!!\n\n\n')
+                    break 
+                
                 company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
                 try: company_url = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
                 except: company_url = ''
@@ -149,9 +161,11 @@ def post_scraper(path=''):
                 break
 
             except Exception as e:
-                print(post_url,'\n','error---','\n',e)
+                print(f'@@@@@@@@ ERROR @@@@@@@@\n{attempt}\n{post_url}\n{e}\n')
                 print(traceback.format_exc())
-                err.write(post_url,'\n','error---','\n',e,'\n',traceback.format_exc(),'\n\n\n')
+                err.write(f'@@@@@@@@ ERROR @@@@@@@@\n{attempt}\n{post_url}\n{e}\n')
+                err.write(traceback.format_exc())
+                err.write('\n\n\n')
                 err.flush()
                 
         f.flush()
@@ -163,5 +177,5 @@ def post_scraper(path=''):
 
 
 if __name__ == "__main__":
-    url_scraper()
-    # post_scraper()
+    # url_scraper()
+    post_scraper()
