@@ -3,6 +3,7 @@
 # (because of SequentialExecutor and sqlite, during the execution, the scheduler has no heartbeat and doesn't progress)
 ### If the scheduler gets stuck and the task stays is queued, check for errors or corrections in console (even example dags)
 # https://stackoverflow.com/questions/57681573/how-to-fix-the-error-airflowexceptionhostname-of-job-runner-does-not-match
+## to log and debug, change in airflow.cfg: log_filename_template = {{ ti.dag_id }}.log
 
 from datetime import timedelta
 

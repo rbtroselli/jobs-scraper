@@ -80,7 +80,7 @@ def url_scraper(path=''):
                             print(j,key,job_role_acronym,job_id)
                             j+=1
                         f.flush()
-                        time.sleep(random.uniform(5,10))
+                        time.sleep(random.uniform(7,15))
                         # break from attempts if above for is successfull
                         break
 
@@ -88,10 +88,7 @@ def url_scraper(path=''):
                     except Exception as e:
                         print(e)
                         print(traceback.format_exc())
-                        if attempt == 2: error_3 = True
-
-
-
+                        if attempt == 2: error_3 = True # avoid infinite loops
     
     f.close()
     return
@@ -142,7 +139,7 @@ def post_scraper(path=''):
                 print(post_url,'\n',e)
                 
         f.flush()
-        time.sleep(random.uniform(5,10))
+        time.sleep(random.uniform(7,15))
     
     f.close()
     return
