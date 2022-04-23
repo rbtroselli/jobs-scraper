@@ -53,7 +53,7 @@ def url_scraper(path=''):
 
                         # break for loop, if captcha
                         if 'captcha' in soup.text.lower(): 
-                            print('CAPTCHA', url2)
+                            print('@@@@@@@@ CAPTCHA @@@@@@@@', url2)
                             captcha = True
                             break
                         
@@ -63,9 +63,8 @@ def url_scraper(path=''):
                         # break for loop, if all jobs are already present (indeed loop)
                         if set(current_id_list).issubset(set(id_list)): 
                             # print(soup.find_all('a', {'id':re.compile(r'job_')})[0]['id'][4:])
-                            print(id_list)
                             print('finish')
-                            time.sleep(5)
+                            time.sleep(10)
                             finish = True
                             break
 
@@ -80,13 +79,13 @@ def url_scraper(path=''):
                             print(j,key,job_role_acronym,job_id)
                             j+=1
                         f.flush()
-                        time.sleep(random.uniform(7,15))
+                        time.sleep(random.uniform(10,20))
                         # break from attempts if above for is successfull
                         break
 
                     # if there's any error raised, try a couple more times
                     except Exception as e:
-                        print(e)
+                        print(url2,'\n','error---','\n',e)
                         print(traceback.format_exc())
                         if attempt == 2: error_3 = True # avoid infinite loops
     
@@ -114,6 +113,11 @@ def post_scraper(path=''):
                 page = requests.get(post_url)
                 soup = BeautifulSoup(page.content, 'html.parser')
 
+                # break for loop, if captcha
+                if 'captcha' in soup.text.lower(): 
+                    print('@@@@@@@@ CAPTCHA @@@@@@@@', post_url)
+                    break
+
                 # scrape all the needed data. location from the title, it's consistent between languages
                 post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
                 company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
@@ -136,10 +140,10 @@ def post_scraper(path=''):
                 break
 
             except Exception as e:
-                print(post_url,'\n',e)
+                print(post_url,'\n','error---','\n',e)
                 
         f.flush()
-        time.sleep(random.uniform(7,15))
+        time.sleep(random.uniform(10,20))
     
     f.close()
     return
