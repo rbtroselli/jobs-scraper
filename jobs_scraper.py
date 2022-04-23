@@ -52,8 +52,7 @@ def url_scraper(path=''):
                         url2 = url + str(i*10)
                         page = requests.get(url2)
                         soup = BeautifulSoup(page.content,'html.parser')
-                        
-                        print(url2)
+                        print(url2+'\n')
 
                         # break for loop, if captcha
                         if 'captcha' in soup.text.lower(): 
@@ -67,7 +66,6 @@ def url_scraper(path=''):
                             current_id_list.append(element['id'][4:])
                         # break for loop, if all jobs in the page are already present (Indeed loop)
                         if set(current_id_list).issubset(set(id_list)): 
-                            # print(soup.find_all('a', {'id':re.compile(r'job_')})[0]['id'][4:])
                             print('FINISH')
                             time.sleep(random.uniform(5,10))
                             finish = True
@@ -81,12 +79,13 @@ def url_scraper(path=''):
                             if job_id in id_list: 
                                 continue 
                             id_list.append(job_id)
-                            # take post title, skip if doesn't contain the role
-                            post_title = element.find(class_=re.compile(r'jobTitle')).text
-                            if job_role_ext not in post_title.lower():
-                                print(f'{url2}\n{post_title}\n{job_role_ext}\nOUT!!!\n')
-                                err.write(f'{url2}\n{post_title}\n{job_role_ext}\nOUT!!!\n\n\n')
-                                continue  
+
+                            # take post block, skip if doesn't contain the role
+                            if job_role_ext not in element.text.lower():
+                                print(f'{url2}\n{element.text}\n{job_role_ext}\nOUT!!!\n')
+                                err.write(f'{url2}\n{element.text}\n{job_role_ext}\nOUT!!!\n\n\n')
+                                continue
+
                             # write to file all needed information 
                             print(f"{j},{job_id},{job_role},{job_role_ext},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
                             f.write(f"{j},{job_id},{job_role},{job_role_ext},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
@@ -143,7 +142,7 @@ def post_scraper(path=''):
                 # scrape all the needed data. location from the title, it's consistent between languages
                 post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
 
-                # catch intruders - to be removed, implemented in the url scraping phase
+                # catch intruders, another check for what passed previous one
                 if job_role_ext not in post_title.lower(): 
                     print(f'{post_url}\n{post_title}\n{job_role_ext}\nOUT!!!\n')
                     err.write(f'{post_url}\n{post_title}\n{job_role_ext}\nOUT!!!\n\n\n')
