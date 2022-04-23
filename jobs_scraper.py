@@ -65,7 +65,7 @@ def url_scraper(path=''):
                         current_id_list = []
                         for element in soup.find_all('a', {'id':re.compile(r'job_')}):
                             current_id_list.append(element['id'][4:])
-                        # break for loop, if all jobs are already present (indeed loop)
+                        # break for loop, if all jobs in the page are already present (Indeed loop)
                         if set(current_id_list).issubset(set(id_list)): 
                             # print(soup.find_all('a', {'id':re.compile(r'job_')})[0]['id'][4:])
                             print('FINISH')
@@ -76,12 +76,20 @@ def url_scraper(path=''):
                         # iterate for every post in page
                         # find every a tag with 'job_' as part of the id name
                         for element in soup.find_all('a', {'id':re.compile(r'job_')}):
-                            # take job id
+                            # take job id, skip if job_id is already present. If not add to iteration list
                             job_id = element['id'][4:]
-                            if job_id in id_list: continue # skip if job_id is already present
-                            f.write(f"{j},{job_id},{job_role},{job_role_ext},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
+                            if job_id in id_list: 
+                                continue 
                             id_list.append(job_id)
-                            print(j,key,job_role,job_id)
+                            # take post title, skip if doesn't contain the role
+                            post_title = element.find(class_=re.compile(r'jobTitle')).text
+                            if job_role_ext not in post_title.lower():
+                                print(f'{url2}\n{post_title}\n{job_role_ext}\nOUT!!!\n')
+                                err.write(f'{url2}\n{post_title}\n{job_role_ext}\nOUT!!!\n\n\n')
+                                continue  
+                            # write to file all needed information 
+                            print(f"{j},{job_id},{job_role},{job_role_ext},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
+                            f.write(f"{j},{job_id},{job_role},{job_role_ext},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
                             j+=1
                         f.flush()
                         time.sleep(random.uniform(5,10))
@@ -135,10 +143,10 @@ def post_scraper(path=''):
                 # scrape all the needed data. location from the title, it's consistent between languages
                 post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
 
-                # catch intruders
+                # catch intruders - to be removed, implemented in the url scraping phase
                 if job_role_ext not in post_title.lower(): 
-                    print(f'{post_url}\n{post_url}\n{post_title}\n{job_role_ext}\nOUT!!!\n')
-                    err.write(f'{post_url}\n{post_url}\n{post_title}\n{job_role_ext}\nOUT!!!\n\n\n')
+                    print(f'{post_url}\n{post_title}\n{job_role_ext}\nOUT!!!\n')
+                    err.write(f'{post_url}\n{post_title}\n{job_role_ext}\nOUT!!!\n\n\n')
                     break 
                 
                 company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
@@ -158,6 +166,7 @@ def post_scraper(path=''):
                 line = f'"{job_id}","{job_role}","{post_title}","{post_url}","{company_name}","{company_url}","{country}",'\
                     f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info_remote}","{description}"\n'
                 f.write(line)
+                # break from attempt if all of the aobve is successfull
                 break
 
             except Exception as e:
@@ -177,5 +186,5 @@ def post_scraper(path=''):
 
 
 if __name__ == "__main__":
-    # url_scraper()
-    post_scraper()
+    url_scraper()
+    # post_scraper()
