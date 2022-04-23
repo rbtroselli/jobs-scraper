@@ -18,6 +18,9 @@ def url_scraper(path=''):
     f = open(urls_file,'w')
     f.write("number,job_id,job_role,country,job_url\n")
 
+    urls_error_file = path + 'data/urls_error.txt'
+    err = open(urls_error_file, 'w')
+
     for job in ['data%20engineer','data%20scientist','data%20analyst']:
 
         # iterate for every country in dictionary
@@ -63,8 +66,8 @@ def url_scraper(path=''):
                         # break for loop, if all jobs are already present (indeed loop)
                         if set(current_id_list).issubset(set(id_list)): 
                             # print(soup.find_all('a', {'id':re.compile(r'job_')})[0]['id'][4:])
-                            print('finish')
-                            time.sleep(10)
+                            print('FINISH')
+                            time.sleep(15)
                             finish = True
                             break
 
@@ -85,11 +88,14 @@ def url_scraper(path=''):
 
                     # if there's any error raised, try a couple more times
                     except Exception as e:
-                        print(url2,'\n','error---','\n',e)
+                        print(url2,'\n',attempt,'\n','error---','\n',e)
                         print(traceback.format_exc())
+                        err.write(url2,'\n',attempt,'\n','error---','\n',e,'\n',traceback.format_exc(),'\n\n\n')
+                        err.flush()
                         if attempt == 2: error_3 = True # avoid infinite loops
     
     f.close()
+    err.close()
     return
 
 
@@ -104,6 +110,9 @@ def post_scraper(path=''):
     f = open(staging_file,'w')
     f.write(f'"job_id","job_role","post_title","post_url","company_name","company_url","country","location","job_type","salary","scrape_date","posted","info_remote","description"\n')
     
+    posts_error_file = path + 'data/posts_error.txt'
+    err = open(posts_error_file, 'w')
+
     # iterate df rows
     for index,row in df.iterrows():
         job_id, job_role, country, post_url = row['job_id'], row['job_role'], row['country'], row['job_url']
@@ -141,11 +150,15 @@ def post_scraper(path=''):
 
             except Exception as e:
                 print(post_url,'\n','error---','\n',e)
+                print(traceback.format_exc())
+                err.write(post_url,'\n','error---','\n',e,'\n',traceback.format_exc(),'\n\n\n')
+                err.flush()
                 
         f.flush()
         time.sleep(random.uniform(10,20))
     
     f.close()
+    err.close()
     return
 
 
