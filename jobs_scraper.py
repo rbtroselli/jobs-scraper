@@ -67,7 +67,7 @@ def url_scraper(path=''):
                         if set(current_id_list).issubset(set(id_list)): 
                             # print(soup.find_all('a', {'id':re.compile(r'job_')})[0]['id'][4:])
                             print('FINISH')
-                            time.sleep(15)
+                            time.sleep(random.uniform(5,10))
                             finish = True
                             break
 
@@ -82,7 +82,7 @@ def url_scraper(path=''):
                             print(j,key,job_role_acronym,job_id)
                             j+=1
                         f.flush()
-                        time.sleep(random.uniform(10,20))
+                        time.sleep(random.uniform(5,10))
                         # break from attempts if above for is successfull
                         break
 
@@ -155,7 +155,7 @@ def post_scraper(path=''):
                 err.flush()
                 
         f.flush()
-        time.sleep(random.uniform(10,20))
+        time.sleep(random.uniform(5,10))
     
     f.close()
     err.close()
