@@ -4,7 +4,6 @@
 ### If the scheduler gets stuck and the task stays is queued, check for errors or corrections in console (even example dags)
 # https://stackoverflow.com/questions/57681573/how-to-fix-the-error-airflowexceptionhostname-of-job-runner-does-not-match
 ## to log and debug, change in airflow.cfg: log_filename_template = {{ ti.dag_id }}.log
-## if you want to change default timezone: in airflow.cfg: default_timezone = Europe/Amsterdam
 
 import datetime
 
@@ -13,7 +12,6 @@ from airflow import DAG
 
 # Operators
 from airflow.operators.python_operator import PythonOperator
-from airflow.utils.dates import days_ago
 
 # Adding the folder to path
 # ~ has to be expanded. works both on Macos and linux
@@ -33,8 +31,6 @@ from jobs_loader import jobs_merger
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    #'catchup': False,
-    #'start_date': days_ago(1),
 }
 
 # instantiate DAG
