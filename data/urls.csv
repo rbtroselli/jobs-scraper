@@ -1,16 +1,16 @@
-number,job_id,job_role,country,job_url
-1,479ca8a90cc65e37,de,uk,https://www.indeed.com/viewjob?jk=479ca8a90cc65e37
-2,d66c0881dfa0894b,de,uk,https://www.indeed.com/viewjob?jk=d66c0881dfa0894b
-3,59a75a54539dc5b5,de,uk,https://www.indeed.com/viewjob?jk=59a75a54539dc5b5
-4,f99a6e594798707f,de,uk,https://www.indeed.com/viewjob?jk=f99a6e594798707f
-5,6f017f8edbd85355,de,uk,https://www.indeed.com/viewjob?jk=6f017f8edbd85355
-6,70b8e61568f088a4,de,uk,https://www.indeed.com/viewjob?jk=70b8e61568f088a4
-7,5cc6a125a3f1e999,de,uk,https://www.indeed.com/viewjob?jk=5cc6a125a3f1e999
-8,9b23cbbee765c31e,de,uk,https://www.indeed.com/viewjob?jk=9b23cbbee765c31e
-9,83d75c45f36632ef,de,uk,https://www.indeed.com/viewjob?jk=83d75c45f36632ef
-10,071f8041406c952c,de,uk,https://www.indeed.com/viewjob?jk=071f8041406c952c
-11,77a54fe723ae710f,de,uk,https://www.indeed.com/viewjob?jk=77a54fe723ae710f
-12,4179daabf9faf4b9,de,uk,https://www.indeed.com/viewjob?jk=4179daabf9faf4b9
-13,26e59bbaed6f9499,de,uk,https://www.indeed.com/viewjob?jk=26e59bbaed6f9499
-14,365977a2ca5b74b0,de,uk,https://www.indeed.com/viewjob?jk=365977a2ca5b74b0
-15,24e9cb8bdbcb14e0,de,uk,https://www.indeed.com/viewjob?jk=24e9cb8bdbcb14e0
+number,job_id,job_role,job_role_ext,country,job_url
+1,36b84c69f141cd1a,de,data engineer,us,https://www.indeed.com/viewjob?jk=36b84c69f141cd1a
+2,c013e5899a5858b0,de,data engineer,us,https://www.indeed.com/viewjob?jk=c013e5899a5858b0
+3,bf3fadff20f5fa67,de,data engineer,us,https://www.indeed.com/viewjob?jk=bf3fadff20f5fa67
+4,f70b6bd1265a3ad8,de,data engineer,us,https://www.indeed.com/viewjob?jk=f70b6bd1265a3ad8
+5,540b3041e0d3f4fc,de,data engineer,us,https://www.indeed.com/viewjob?jk=540b3041e0d3f4fc
+6,8922be31493cd7ef,de,data engineer,us,https://www.indeed.com/viewjob?jk=8922be31493cd7ef
+7,1952782bea84f851,de,data engineer,us,https://www.indeed.com/viewjob?jk=1952782bea84f851
+8,2cfa38da1e53c9f0,de,data engineer,us,https://www.indeed.com/viewjob?jk=2cfa38da1e53c9f0
+9,a410693dbd1f651b,de,data engineer,us,https://www.indeed.com/viewjob?jk=a410693dbd1f651b
+10,5ea4d83b1070ac5c,de,data engineer,us,https://www.indeed.com/viewjob?jk=5ea4d83b1070ac5c
+11,1aeef96e47e8bb8a,de,data engineer,us,https://www.indeed.com/viewjob?jk=1aeef96e47e8bb8a
+12,1d81f8c19d5b9d7e,de,data engineer,us,https://www.indeed.com/viewjob?jk=1d81f8c19d5b9d7e
+13,588f4f8bd7eb3777,de,data engineer,us,https://www.indeed.com/viewjob?jk=588f4f8bd7eb3777
+14,38472cc6cdf50c78,de,data engineer,us,https://www.indeed.com/viewjob?jk=38472cc6cdf50c78
+15,24f65ea7302bc307,de,data engineer,us,https://www.indeed.com/viewjob?jk=24f65ea7302bc307

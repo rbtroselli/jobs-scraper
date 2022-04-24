@@ -6,6 +6,7 @@ import pandas as pd
 from datetime import date
 import traceback
 import random
+import langdetect
 
 def url_scraper(path=''):
     # dictionary with country tag and corresponding url piece
@@ -160,11 +161,12 @@ def post_scraper(path=''):
                 scrape_date = date.today() 
                 info_remote = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ') # this may contain the REMOTE keyword
                 description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
+                post_language = langdetect.detect(description) # detect post language (this info is not exposed in web page)
 
                 print(f'{job_id}\n{job_role}\n{job_role_ext}\n{post_title}\n{post_url}\n{company_name}\n{company_url}\n{country}'\
-                    f'\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n')
+                    f'\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n{post_language}\n')
                 line = f'"{job_id}","{job_role}","{job_role_ext}","{post_title}","{post_url}","{company_name}","{company_url}","{country}",'\
-                    f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info_remote}","{description}"\n'
+                    f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info_remote}","{post_language}","{description}"\n'
                 f.write(line)
                 # break from attempt if all of the aobve is successfull
                 break
@@ -187,4 +189,4 @@ def post_scraper(path=''):
 
 if __name__ == "__main__":
     url_scraper()
-    # post_scraper()
+    post_scraper()
