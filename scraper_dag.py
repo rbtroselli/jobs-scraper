@@ -4,8 +4,9 @@
 ### If the scheduler gets stuck and the task stays is queued, check for errors or corrections in console (even example dags)
 # https://stackoverflow.com/questions/57681573/how-to-fix-the-error-airflowexceptionhostname-of-job-runner-does-not-match
 ## to log and debug, change in airflow.cfg: log_filename_template = {{ ti.dag_id }}.log
+## if you want to change default timezone: in airflow.cfg: default_timezone = Europe/Amsterdam
 
-from datetime import timedelta
+import datetime
 
 # The DAG object; we'll need this to instantiate a DAG
 from airflow import DAG
@@ -15,7 +16,7 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 
 # Adding the folder to path
-# ~ has to be expanded. works both on macos and linux
+# ~ has to be expanded. works both on Macos and linux
 import os
 import sys
 path = os.path.expanduser('~/airflow/dags/jobs-scraper/')
@@ -32,8 +33,8 @@ from jobs_loader import jobs_merger
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'schedule_interval': '@daily',
-    'catchup': False
+    #'catchup': False,
+    #'start_date': days_ago(1),
 }
 
 # instantiate DAG
@@ -41,9 +42,10 @@ with DAG(
     'scraper_dag',
     default_args=default_args,
     description='A for scheduling my job posts scraping tool',
-    schedule_interval=timedelta(days=1),
-    start_date=days_ago(2),
+    start_date = datetime.datetime(2022,1,1), # best practice (Astronomer): define date in DAG
+    schedule_interval = '0 15 * * *', # best practice: UTC! 15->17, UTC->CEST. also doesnt work in default_args
     tags=['example'],
+    catchup=False, # doesnt work in default args
 ) as dag:
 
     # tasks
