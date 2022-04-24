@@ -120,7 +120,7 @@ def post_scraper(path=''):
     # open a file to write scraped data
     df = pd.read_csv(urls_file)
     f = open(staging_file,'w')
-    f.write(f'"job_id","job_role","job_role_ext","post_title","post_url","company_name","company_url","country","location","job_type","salary","scrape_date","posted","info_remote","description"\n')
+    f.write(f'"job_id","job_role","job_role_ext","post_title","post_url","company_name","company_url","country","location","job_type","salary","scrape_date","posted","info_remote","post_language","description"\n')
     
     posts_error_file = path + 'data/posts_error.txt'
     err = open(posts_error_file, 'w')
