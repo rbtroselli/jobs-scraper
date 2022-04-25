@@ -88,7 +88,7 @@ def url_scraper(path=''):
                                 continue
 
                             # write to file all needed information 
-                            print(f"{j},{job_id},{job_role},{job_role_ext},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
+                            print(f"{j},{job_id},{job_role},{job_role_ext},{key},https://www.indeed.com/viewjob?jk={job_id}")
                             f.write(f"{j},{job_id},{job_role},{job_role_ext},{key},https://www.indeed.com/viewjob?jk={job_id}\n")
                             j+=1
                         f.flush()
