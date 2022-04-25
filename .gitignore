@@ -3,6 +3,7 @@
 
 # macos
 .DS_store
+get_new_data.zsh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
