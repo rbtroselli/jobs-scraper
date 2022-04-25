@@ -1,10 +1,7 @@
 # Taken from https://github.com/drandreaskrueger/chainhammer/
 #
 # This 1 Juypter notebook contains images, and tables, 
-# blowing up the total language fraction unrealistically; 
-# then 'Juypter notebooks' are suddenly 56% of repo language.
-# Nonsense. 
-# As they don't want to parse notebooks better
+# blowing up the total language fraction unrealistically.
 # (wont-fix = https://github.com/github/linguist/issues/3496)
 # I simply exclude this file from counting now:
 
