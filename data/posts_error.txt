@@ -1,77 +1,226 @@
-https://www.indeed.com/viewjob?jk=d60a10ccefd17ec1
-Data Solutions Manager
+@@@@@@@@ ERROR @@@@@@@@
+0
+https://www.indeed.com/viewjob?jk=09f2e6b27e2e5a5d
+'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
+    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
+AttributeError: 'NoneType' object has no attribute 'text'
+
+
+
+@@@@@@@@ ERROR @@@@@@@@
+0
+https://www.indeed.com/viewjob?jk=0020acb2ade11cc4
+'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
+    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
+AttributeError: 'NoneType' object has no attribute 'text'
+
+
+
+@@@@@@@@ ERROR @@@@@@@@
+0
+https://www.indeed.com/viewjob?jk=0c9a508d580c5eaa
+('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Traceback (most recent call last):
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 134, in post_scraper
+    page = requests.get(post_url)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+
+
+@@@@@@@@ ERROR @@@@@@@@
+1
+https://www.indeed.com/viewjob?jk=0c9a508d580c5eaa
+HTTPSConnectionPool(host='www.indeed.com', port=443): Max retries exceeded with url: /viewjob?jk=0c9a508d580c5eaa (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f84b4f59e50>: Failed to establish a new connection: [Errno 110] Connection timed out'))
+Traceback (most recent call last):
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
+    conn.connect()
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f84b4f59e50>: Failed to establish a new connection: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.indeed.com', port=443): Max retries exceeded with url: /viewjob?jk=0c9a508d580c5eaa (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f84b4f59e50>: Failed to establish a new connection: [Errno 110] Connection timed out'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 134, in post_scraper
+    page = requests.get(post_url)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.indeed.com', port=443): Max retries exceeded with url: /viewjob?jk=0c9a508d580c5eaa (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f84b4f59e50>: Failed to establish a new connection: [Errno 110] Connection timed out'))
+
+
+
+https://www.indeed.com/viewjob?jk=c526ab320ddfb982
+Industry Consulting Consultant
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=4c49bd2aed02e833
-Sr. Data Science Engineer - CW
+https://www.indeed.com/viewjob?jk=656af96fa9efa4e4
+Deputy Manager_Assistant Lead-BIBDA_GCP Developer_Pune
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=bbf6501bd8951bf4
-Senior Software Developer - Cloud Data Platform (Virtual)
+https://www.indeed.com/viewjob?jk=eb87246854e3b4ab
+Robotic Process Automation Developer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=48f9a2e938eac326
+Information Technology Group - Software Development
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=80aa6b6baf943fc6
-Senior Software Developer - Cloud Data Platform (Virtual)
+https://www.indeed.com/viewjob?jk=84123b67820c1433
+Information Technology Group - Software Development
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=5b7c1ba850852719
-Senior Software Developer - Cloud Data Platform (Virtual)
+https://www.indeed.com/viewjob?jk=e7796089e0a9fb9f
+Wholesale Credit Risk - Data Science Strategy and Analytics - VP
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=23cede9d2e54786d
-Senior Software Developer - Cloud Data Platform (Virtual)
+https://www.indeed.com/viewjob?jk=9b62fc683e8ecc2d
+Senior Research Associate/Research Associate, Metabolomics - (Br)
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=9508cf947440b823
-Senior Software Developer - Cloud Data Platform (Virtual)
+https://www.indeed.com/viewjob?jk=611ad809636fc72b
+Senior Product Marketing Manager
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=6175eb83d15ba908
-Senior Software Developer - Cloud Data Platform (Virtual)
+https://www.indeed.com/viewjob?jk=6b8f224e6e3beb49
+Data Science traineeship
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=ab1c618a9166aba0
-Senior Software Developer - Cloud Data Platform (Virtual)
+https://www.indeed.com/viewjob?jk=f0c7e20a1421fea8
+Web Analyst | 32 - 40 uur
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=a579792c493f607d
-Senior Software Developer - Cloud Data Platform (Virtual)
+https://www.indeed.com/viewjob?jk=414504664c023167
+Software Engineer (Python)
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=55cccc2afe169418
-Technology Enabled Intelligence Analyst
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=504a8a4025a129eb
-Manager, Data Engineering And Analytics
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=29718095d69c59dc
-CDI - Media Analyst specialization SEA (H/F)
+https://www.indeed.com/viewjob?jk=726314cb151b98e5
+Deputy Manager - DE
 data scientist
 OUT!!!
 
