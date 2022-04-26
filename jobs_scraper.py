@@ -141,7 +141,7 @@ def post_scraper(path=''):
                     break
 
                 # scrape all the needed data. location from the title, it's consistent between languages
-                post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
+                post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text.replace('"','\'')
 
                 # catch intruders, another check for what passed previous one
                 if job_role_ext not in post_title.lower(): 
@@ -149,7 +149,7 @@ def post_scraper(path=''):
                     err.write(f'{post_url}\n{post_title}\n{job_role_ext}\nOUT!!!\n\n\n')
                     break 
                 
-                company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text
+                company_name = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].text.replace('"','\'')
                 try: company_url = soup.find_all(class_='icl-u-lg-mr--sm icl-u-xs-mr--xs')[1].a['href']
                 except: company_url = ''
                 try: job_type = soup.find(id='salaryInfoAndJobType').find(class_='jobsearch-JobMetadataHeader-item icl-u-xs-mt--xs').text.strip(' -')
