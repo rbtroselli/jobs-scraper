@@ -1,6 +1,150 @@
+https://www.indeed.com/viewjob?jk=ce504a09a813a804
+Software Engineer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=d2e623e3365e2e4a
+BI Reporting Technical Lead
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=7dab9dd1e2c2bac1
+Business Intelligence Engineer II, AWS Monetiztion
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=6c0ca8a9910443d8
+Product Line Manager – Analytics (Remote)
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=8d11ba5c41f50b05
+Director of Product Management, Data Platform
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=3c0da88b555d69d5
+Senior RWD Engineer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=6b5b4cc584fbd8aa
+1007-55 FLSOCO Data Scientist – Senior
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=492402c8955df478
+Big Data Developer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=3e2c00ec2e265ec3
+Director of Product Management, Data Platform
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=e48386ed0aac2297
+BigData Developer/Workforce Technology
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=9ffd4fbfb5b487a6
+Senior Analytics Engineer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=17e0fb36f8e7436a
+Alternant.e DataPrep/DataViz
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=0f71b05b3aefc7dc
+Analytics Engineer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=74e442d6240b44f8
+DataOps Engineer for our R&D Tooling Value Creation Team (m/f/x)
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=baf0e6d6c5f60df8
+Cloud Developer [Azure] till If Skadeförsäkringar
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=d8b2f2eaddeb7975
+Senior Data Intelligence Engineer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=251d6eb026ea78fa
+Senior Data Analyst - Logistics
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=50351a7303c7b3ef
+Senior Data Analyst - Logistics
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=6784f96a3f40bbb9
+Lead Data Applications Engineer - PERM
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=3d342edd8db2dd15
+Application Architect: Google Cloud Migration
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=893397dcd2daf175
+Business Transformation Consultant: Big Data
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=312703a3cbe3a502
+Business Transformation Consultant: Big Data
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=8140aa53c32b5d79
+Software Application Development Engineer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=50ddd2b8057ba6da
+Data Fabric Solution Architect Senior Manager
+data engineer
+OUT!!!
+
+
 @@@@@@@@ ERROR @@@@@@@@
 0
-https://www.indeed.com/viewjob?jk=09f2e6b27e2e5a5d
+https://www.indeed.com/viewjob?jk=951774d185ca76c8
 'NoneType' object has no attribute 'text'
 Traceback (most recent call last):
   File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
@@ -11,216 +155,186 @@ AttributeError: 'NoneType' object has no attribute 'text'
 
 @@@@@@@@ ERROR @@@@@@@@
 0
-https://www.indeed.com/viewjob?jk=0020acb2ade11cc4
+https://www.indeed.com/viewjob?jk=b6c70e756cffb0bf
 'NoneType' object has no attribute 'text'
 Traceback (most recent call last):
   File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
     post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
 AttributeError: 'NoneType' object has no attribute 'text'
-
-
-
-@@@@@@@@ ERROR @@@@@@@@
-0
-https://www.indeed.com/viewjob?jk=0c9a508d580c5eaa
-('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-Traceback (most recent call last):
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
-    httplib_response = self._make_request(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
-    self._validate_conn(conn)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
-    conn.connect()
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connection.py", line 414, in connect
-    self.sock = ssl_wrap_socket(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
-    ssl_sock = _ssl_wrap_socket_impl(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
-    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 500, in wrap_socket
-    return self.sslsocket_class._create(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 1040, in _create
-    self.do_handshake()
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 1309, in do_handshake
-    self._sslobj.do_handshake()
-ConnectionResetError: [Errno 104] Connection reset by peer
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/adapters.py", line 440, in send
-    resp = conn.urlopen(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 785, in urlopen
-    retries = retries.increment(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/retry.py", line 550, in increment
-    raise six.reraise(type(error), error, _stacktrace)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/packages/six.py", line 769, in reraise
-    raise value.with_traceback(tb)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
-    httplib_response = self._make_request(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
-    self._validate_conn(conn)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
-    conn.connect()
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connection.py", line 414, in connect
-    self.sock = ssl_wrap_socket(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
-    ssl_sock = _ssl_wrap_socket_impl(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
-    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 500, in wrap_socket
-    return self.sslsocket_class._create(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 1040, in _create
-    self.do_handshake()
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/ssl.py", line 1309, in do_handshake
-    self._sslobj.do_handshake()
-urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 134, in post_scraper
-    page = requests.get(post_url)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/api.py", line 75, in get
-    return request('get', url, params=params, **kwargs)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/api.py", line 61, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/sessions.py", line 529, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/sessions.py", line 645, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/adapters.py", line 501, in send
-    raise ConnectionError(err, request=request)
-requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 
 
 
 @@@@@@@@ ERROR @@@@@@@@
 1
-https://www.indeed.com/viewjob?jk=0c9a508d580c5eaa
-HTTPSConnectionPool(host='www.indeed.com', port=443): Max retries exceeded with url: /viewjob?jk=0c9a508d580c5eaa (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f84b4f59e50>: Failed to establish a new connection: [Errno 110] Connection timed out'))
+https://www.indeed.com/viewjob?jk=b6c70e756cffb0bf
+'NoneType' object has no attribute 'text'
 Traceback (most recent call last):
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connection.py", line 174, in _new_conn
-    conn = connection.create_connection(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/connection.py", line 95, in create_connection
-    raise err
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
-    sock.connect(sa)
-TimeoutError: [Errno 110] Connection timed out
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
+    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
+AttributeError: 'NoneType' object has no attribute 'text'
 
-During handling of the above exception, another exception occurred:
 
+
+@@@@@@@@ ERROR @@@@@@@@
+2
+https://www.indeed.com/viewjob?jk=b6c70e756cffb0bf
+'NoneType' object has no attribute 'text'
 Traceback (most recent call last):
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 703, in urlopen
-    httplib_response = self._make_request(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 386, in _make_request
-    self._validate_conn(conn)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 1040, in _validate_conn
-    conn.connect()
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connection.py", line 358, in connect
-    self.sock = conn = self._new_conn()
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connection.py", line 186, in _new_conn
-    raise NewConnectionError(
-urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f84b4f59e50>: Failed to establish a new connection: [Errno 110] Connection timed out
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
+    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
+AttributeError: 'NoneType' object has no attribute 'text'
 
-During handling of the above exception, another exception occurred:
 
+
+@@@@@@@@ ERROR @@@@@@@@
+0
+https://www.indeed.com/viewjob?jk=f5a317051713bea8
+'NoneType' object has no attribute 'text'
 Traceback (most recent call last):
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/adapters.py", line 440, in send
-    resp = conn.urlopen(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 785, in urlopen
-    retries = retries.increment(
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/urllib3/util/retry.py", line 592, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.indeed.com', port=443): Max retries exceeded with url: /viewjob?jk=0c9a508d580c5eaa (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f84b4f59e50>: Failed to establish a new connection: [Errno 110] Connection timed out'))
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
+    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
+AttributeError: 'NoneType' object has no attribute 'text'
 
-During handling of the above exception, another exception occurred:
 
+
+@@@@@@@@ ERROR @@@@@@@@
+1
+https://www.indeed.com/viewjob?jk=f5a317051713bea8
+'NoneType' object has no attribute 'text'
 Traceback (most recent call last):
-  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 134, in post_scraper
-    page = requests.get(post_url)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/api.py", line 75, in get
-    return request('get', url, params=params, **kwargs)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/api.py", line 61, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/sessions.py", line 529, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/sessions.py", line 645, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/rob/miniconda3/envs/airflowenv/lib/python3.9/site-packages/requests/adapters.py", line 519, in send
-    raise ConnectionError(e, request=request)
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.indeed.com', port=443): Max retries exceeded with url: /viewjob?jk=0c9a508d580c5eaa (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f84b4f59e50>: Failed to establish a new connection: [Errno 110] Connection timed out'))
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
+    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
+AttributeError: 'NoneType' object has no attribute 'text'
 
 
 
-https://www.indeed.com/viewjob?jk=c526ab320ddfb982
-Industry Consulting Consultant
-data engineer
-OUT!!!
+@@@@@@@@ ERROR @@@@@@@@
+2
+https://www.indeed.com/viewjob?jk=f5a317051713bea8
+'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
+    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
+AttributeError: 'NoneType' object has no attribute 'text'
 
 
-https://www.indeed.com/viewjob?jk=656af96fa9efa4e4
-Deputy Manager_Assistant Lead-BIBDA_GCP Developer_Pune
-data engineer
-OUT!!!
 
-
-https://www.indeed.com/viewjob?jk=eb87246854e3b4ab
-Robotic Process Automation Developer
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=48f9a2e938eac326
-Information Technology Group - Software Development
+https://www.indeed.com/viewjob?jk=10ecca204d92eb19
+Research Scientist, Amazon DynamoDB
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=84123b67820c1433
-Information Technology Group - Software Development
+https://www.indeed.com/viewjob?jk=9ffd4fbfb5b487a6
+Senior Analytics Engineer
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=e7796089e0a9fb9f
-Wholesale Credit Risk - Data Science Strategy and Analytics - VP
+https://www.indeed.com/viewjob?jk=95945159fd4cce38
+Senior Consultant - People Analytics - People Advisory Services (UK&I) - Open to Flexible Working
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=9b62fc683e8ecc2d
-Senior Research Associate/Research Associate, Metabolomics - (Br)
+https://www.indeed.com/viewjob?jk=e3dca3d0fbad44a1
+Senior Data Engineer
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=611ad809636fc72b
-Senior Product Marketing Manager
+https://www.indeed.com/viewjob?jk=5d64011d198699c0
+BI Consultant (f/m/d)
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=6b8f224e6e3beb49
-Data Science traineeship
+https://www.indeed.com/viewjob?jk=aa9baca4f77723bd
+Head of Operations
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=f0c7e20a1421fea8
-Web Analyst | 32 - 40 uur
+https://www.indeed.com/viewjob?jk=709791eede177a61
+Werkstudent Informatik / Data Science / Data Engineering (m/w/d)
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=414504664c023167
-Software Engineer (Python)
+https://www.indeed.com/viewjob?jk=b80b864849ecbdb7
+Werkstudent:in Datascience
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=726314cb151b98e5
-Deputy Manager - DE
+https://www.indeed.com/viewjob?jk=b2b20f9438a03847
+Product Manager
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=4778116f7777fc9e
+Manager Data Science Insights - Product
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=e239e9165a2f3334
+Vil du skape fremtidens smarte digitale helsetjenester?
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=035083fb6b2d18f5
+Digital Data Engineer / Senior Digital Data Engineer
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=a5ca882f3b9a7b9d
+Data Analyst / Senior Data Analyst
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=457b4b85906e613a
+Senior Data Analyst
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=b2872e1035a33396
+BU Controlling Analyst
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=fe27983cf99d5870
+Software Engineer 2
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=16382fae2847d01c
+Software Engineer 2
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=9c799096b27c6114
+Senior Software Engineer
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=8948e020585d1257
+Senior Software Engineer
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=43755cb2dab81d14
+Manager | Data Analytics | Technology Consulting | HCMC or Hanoi Office
 data scientist
 OUT!!!
 
