@@ -1,71 +1,17 @@
-https://www.indeed.com/viewjob?jk=ce504a09a813a804
+https://www.indeed.com/viewjob?jk=77268d0e5e230d9f
+Platform Senior Tech Analyst
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=8d691fa2f5263f70
 Software Engineer
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=d2e623e3365e2e4a
-BI Reporting Technical Lead
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=7dab9dd1e2c2bac1
-Business Intelligence Engineer II, AWS Monetiztion
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=6c0ca8a9910443d8
-Product Line Manager – Analytics (Remote)
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=8d11ba5c41f50b05
-Director of Product Management, Data Platform
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=3c0da88b555d69d5
-Senior RWD Engineer
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=6b5b4cc584fbd8aa
-1007-55 FLSOCO Data Scientist – Senior
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=492402c8955df478
-Big Data Developer
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=3e2c00ec2e265ec3
-Director of Product Management, Data Platform
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=e48386ed0aac2297
-BigData Developer/Workforce Technology
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=9ffd4fbfb5b487a6
-Senior Analytics Engineer
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=17e0fb36f8e7436a
-Alternant.e DataPrep/DataViz
+https://www.indeed.com/viewjob?jk=ce195f1d99716983
+Senior Data Scientist
 data engineer
 OUT!!!
 
@@ -76,20 +22,20 @@ data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=74e442d6240b44f8
-DataOps Engineer for our R&D Tooling Value Creation Team (m/f/x)
+https://www.indeed.com/viewjob?jk=527f0a816a8b75e2
+Senior Software Engineer - 22213
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=baf0e6d6c5f60df8
-Cloud Developer [Azure] till If Skadeförsäkringar
+https://www.indeed.com/viewjob?jk=0f68eae56268b6af
+ETL Support Engineer
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=d8b2f2eaddeb7975
-Senior Data Intelligence Engineer
+https://www.indeed.com/viewjob?jk=f035176349e547c3
+Assistant Manager
 data engineer
 OUT!!!
 
@@ -106,139 +52,74 @@ data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=6784f96a3f40bbb9
-Lead Data Applications Engineer - PERM
+https://www.indeed.com/viewjob?jk=b2bb884cbedfce40
+Senior Product Data Analyst
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=3d342edd8db2dd15
-Application Architect: Google Cloud Migration
+https://www.indeed.com/viewjob?jk=e351d0e7eeb65870
+Analytics Engineer
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=893397dcd2daf175
-Business Transformation Consultant: Big Data
+https://www.indeed.com/viewjob?jk=a9fadd22f4de5e16
+Head of Data Science
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=312703a3cbe3a502
-Business Transformation Consultant: Big Data
+https://www.indeed.com/viewjob?jk=573b543ec5a9b7b1
+Python Developer
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=8140aa53c32b5d79
-Software Application Development Engineer
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=50ddd2b8057ba6da
-Data Fabric Solution Architect Senior Manager
-data engineer
-OUT!!!
-
-
-@@@@@@@@ ERROR @@@@@@@@
-0
-https://www.indeed.com/viewjob?jk=951774d185ca76c8
-'NoneType' object has no attribute 'text'
-Traceback (most recent call last):
-  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
-    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
-AttributeError: 'NoneType' object has no attribute 'text'
-
-
-
-@@@@@@@@ ERROR @@@@@@@@
-0
-https://www.indeed.com/viewjob?jk=b6c70e756cffb0bf
-'NoneType' object has no attribute 'text'
-Traceback (most recent call last):
-  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
-    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
-AttributeError: 'NoneType' object has no attribute 'text'
-
-
-
-@@@@@@@@ ERROR @@@@@@@@
-1
-https://www.indeed.com/viewjob?jk=b6c70e756cffb0bf
-'NoneType' object has no attribute 'text'
-Traceback (most recent call last):
-  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
-    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
-AttributeError: 'NoneType' object has no attribute 'text'
-
-
-
-@@@@@@@@ ERROR @@@@@@@@
-2
-https://www.indeed.com/viewjob?jk=b6c70e756cffb0bf
-'NoneType' object has no attribute 'text'
-Traceback (most recent call last):
-  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
-    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
-AttributeError: 'NoneType' object has no attribute 'text'
-
-
-
-@@@@@@@@ ERROR @@@@@@@@
-0
-https://www.indeed.com/viewjob?jk=f5a317051713bea8
-'NoneType' object has no attribute 'text'
-Traceback (most recent call last):
-  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
-    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
-AttributeError: 'NoneType' object has no attribute 'text'
-
-
-
-@@@@@@@@ ERROR @@@@@@@@
-1
-https://www.indeed.com/viewjob?jk=f5a317051713bea8
-'NoneType' object has no attribute 'text'
-Traceback (most recent call last):
-  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
-    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
-AttributeError: 'NoneType' object has no attribute 'text'
-
-
-
-@@@@@@@@ ERROR @@@@@@@@
-2
-https://www.indeed.com/viewjob?jk=f5a317051713bea8
-'NoneType' object has no attribute 'text'
-Traceback (most recent call last):
-  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 144, in post_scraper
-    post_title = soup.find(class_='jobsearch-JobInfoHeader-title-container').text
-AttributeError: 'NoneType' object has no attribute 'text'
-
-
-
-https://www.indeed.com/viewjob?jk=10ecca204d92eb19
-Research Scientist, Amazon DynamoDB
+https://www.indeed.com/viewjob?jk=611ffe12683b8f86
+Business Intelligence Specialist
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=9ffd4fbfb5b487a6
-Senior Analytics Engineer
+https://www.indeed.com/viewjob?jk=05d1f56262e86647
+Senior Data Analyst
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=95945159fd4cce38
-Senior Consultant - People Analytics - People Advisory Services (UK&I) - Open to Flexible Working
+https://www.indeed.com/viewjob?jk=88f49b13333771b2
+Senior Data Analyst
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=e3dca3d0fbad44a1
-Senior Data Engineer
+https://www.indeed.com/viewjob?jk=6f66386a1cc35b3d
+Contrôleuse / Contrôleur financier en charge des créances clients et recouv
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=a2f8601db3f488e6
+Gestionnaire comptabilité et suivi créances clients et recouvrement (H/F)
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=07da4ebd3e1effd8
+Data Analyst H/F
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=d3624baa5f4afab8
+Alternant Assistant Chef d’Exploitation Hyperviseur (F/H)
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=17297a2e01b5f8d2
+Account Manager (DACH/Europe)
 data scientist
 OUT!!!
 
@@ -249,20 +130,8 @@ data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=aa9baca4f77723bd
-Head of Operations
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=709791eede177a61
-Werkstudent Informatik / Data Science / Data Engineering (m/w/d)
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=b80b864849ecbdb7
-Werkstudent:in Datascience
+https://www.indeed.com/viewjob?jk=64be942defabaf52
+Senior Data Engineer - 04 06 2022
 data scientist
 OUT!!!
 
@@ -273,62 +142,74 @@ data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=4778116f7777fc9e
-Manager Data Science Insights - Product
+https://www.indeed.com/viewjob?jk=4af04b860b067d17
+Konsulent Datavarehus / PowerBI
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=e239e9165a2f3334
-Vil du skape fremtidens smarte digitale helsetjenester?
+https://www.indeed.com/viewjob?jk=7f3d16530fac8b68
+Data Engineer to Uddeholm!
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=035083fb6b2d18f5
-Digital Data Engineer / Senior Digital Data Engineer
+https://www.indeed.com/viewjob?jk=b692b4626c4dacf7
+Kvantitativ analytiker
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=a5ca882f3b9a7b9d
-Data Analyst / Senior Data Analyst
+https://www.indeed.com/viewjob?jk=aef9501c87964788
+Consultant - Analytic Engineer
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=457b4b85906e613a
-Senior Data Analyst
+https://www.indeed.com/viewjob?jk=6064081d7e4acf26
+Data Engineer - Analyst
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=b2872e1035a33396
-BU Controlling Analyst
+https://www.indeed.com/viewjob?jk=ee607d762483c1c1
+Staff Software Engineer - ATG
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=fe27983cf99d5870
-Software Engineer 2
+https://www.indeed.com/viewjob?jk=cdaaabc54a730db6
+Senior Software Engineer - ATG
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=16382fae2847d01c
-Software Engineer 2
+https://www.indeed.com/viewjob?jk=f746c32d2dd76585
+Senior Software Engineer - ATG
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=9c799096b27c6114
-Senior Software Engineer
+https://www.indeed.com/viewjob?jk=9c5a1d54ea4d982d
+Data Analyst
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=8948e020585d1257
-Senior Software Engineer
+https://www.indeed.com/viewjob?jk=b2bb884cbedfce40
+Senior Product Data Analyst
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=8266acb7a4bf7bda
+Product Strategist
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=a9fadd22f4de5e16
+Head of Data Science
 data scientist
 OUT!!!
 
