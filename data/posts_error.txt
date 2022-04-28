@@ -1,29 +1,59 @@
-https://www.indeed.com/viewjob?jk=77268d0e5e230d9f
-Platform Senior Tech Analyst
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=8d691fa2f5263f70
+https://www.indeed.com/viewjob?jk=2304eee43a42f129
 Software Engineer
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=ce195f1d99716983
-Senior Data Scientist
+https://www.indeed.com/viewjob?jk=07c85175937d3458
+782-1 - Software Engineer II (Insurance) - Remote
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=0f71b05b3aefc7dc
-Analytics Engineer
+https://www.indeed.com/viewjob?jk=ec81dcb51aaa7953
+Manager, BIE, AWS Commerce Platform
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=527f0a816a8b75e2
-Senior Software Engineer - 22213
+https://www.indeed.com/viewjob?jk=f8c8a3c40e176cf8
+Business Operations Analyst
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=50aebdf77fbc52ae
+Test Automation Engineer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=c186fe328f34e48b
+Test Automation Engineer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=89224a6602eb316c
+Test Automation Engineer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=14d279d66e98dbbb
+Lead BI Engineer
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=24cc023719be78fd
+Associate for Reporting and Analytics
+data engineer
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=15af58d7570c1b18
+Sr Software Engineer (Data Warehouse / Integration)
 data engineer
 OUT!!!
 
@@ -34,98 +64,131 @@ data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=f035176349e547c3
-Assistant Manager
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=251d6eb026ea78fa
+https://www.indeed.com/viewjob?jk=cba90a0e75618ddc
 Senior Data Analyst - Logistics
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=50351a7303c7b3ef
+https://www.indeed.com/viewjob?jk=6bf61915fb3f14c7
 Senior Data Analyst - Logistics
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=b2bb884cbedfce40
-Senior Product Data Analyst
+https://www.indeed.com/viewjob?jk=e9e807fb3ba69e95
+Senior Data Analyst - Logistics (copy)
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=e351d0e7eeb65870
-Analytics Engineer
+@@@@@@@@ ERROR @@@@@@@@
+0
+https://www.indeed.com/viewjob?jk=5d78dbdb976c246c
+'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 163, in post_scraper
+    description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
+AttributeError: 'NoneType' object has no attribute 'text'
+
+
+
+@@@@@@@@ ERROR @@@@@@@@
+1
+https://www.indeed.com/viewjob?jk=5d78dbdb976c246c
+'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 163, in post_scraper
+    description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
+AttributeError: 'NoneType' object has no attribute 'text'
+
+
+
+@@@@@@@@ ERROR @@@@@@@@
+2
+https://www.indeed.com/viewjob?jk=5d78dbdb976c246c
+'NoneType' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/home/rob/airflow/dags/jobs-scraper/jobs_scraper.py", line 163, in post_scraper
+    description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
+AttributeError: 'NoneType' object has no attribute 'text'
+
+
+
+https://www.indeed.com/viewjob?jk=da57aabd3dd05f73
+senior Big Data process Engineer
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=a9fadd22f4de5e16
-Head of Data Science
+https://www.indeed.com/viewjob?jk=960cfd529cde3935
+Manager/ Senior Manager - Data & Analytics
 data engineer
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=573b543ec5a9b7b1
-Python Developer
-data engineer
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=611ffe12683b8f86
-Business Intelligence Specialist
+https://www.indeed.com/viewjob?jk=e744dbd9e84b62c4
+Senior AI Team Lead
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=05d1f56262e86647
-Senior Data Analyst
+https://www.indeed.com/viewjob?jk=9f585e4ccd9b8485
+Biomedical Data Science Assistant
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=88f49b13333771b2
-Senior Data Analyst
+https://www.indeed.com/viewjob?jk=6a648367cfe9cfac
+Information Technology Group - Data Engineering
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=6f66386a1cc35b3d
-Contrôleuse / Contrôleur financier en charge des créances clients et recouv
+https://www.indeed.com/viewjob?jk=adc150bc3bc3a8cf
+Data Engineer, Marketing Measurement, CMO
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=a2f8601db3f488e6
-Gestionnaire comptabilité et suivi créances clients et recouvrement (H/F)
+https://www.indeed.com/viewjob?jk=13313afcc5c6c412
+Biomedical Data Science Assistant
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=07da4ebd3e1effd8
-Data Analyst H/F
+https://www.indeed.com/viewjob?jk=efccb22cef1cb356
+Director - People Analytics & Strategic Workforce Planning Consulting
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=d3624baa5f4afab8
-Alternant Assistant Chef d’Exploitation Hyperviseur (F/H)
+https://www.indeed.com/viewjob?jk=d28d9275a359a313
+Statisticien(ne) titulaire
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=17297a2e01b5f8d2
-Account Manager (DACH/Europe)
+https://www.indeed.com/viewjob?jk=b027eb6efcc0a476
+Lead Instructor Data Science (part-time)
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=5d64011d198699c0
-BI Consultant (f/m/d)
+https://www.indeed.com/viewjob?jk=6b7d8f678889ac5f
+Lead Instructor Data Science - IMMEDIATE HIRING
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=7c6b1d2ccffb4af8
+Associate Account Manager (Berlin, Konstanz, Budapest)
+data scientist
+OUT!!!
+
+
+https://www.indeed.com/viewjob?jk=96749b57dffba1f6
+UX Designer - Website (Berlin, Konstanz)
 data scientist
 OUT!!!
 
@@ -136,86 +199,44 @@ data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=b2b20f9438a03847
-Product Manager
+https://www.indeed.com/viewjob?jk=261f99c872553c9e
+Software Engineer - Java - Warsaw/Remote - up to 180PLN/Hour
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=4af04b860b067d17
-Konsulent Datavarehus / PowerBI
+https://www.indeed.com/viewjob?jk=06add67a76f18623
+Confidential Computing Solution Engineer
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=7f3d16530fac8b68
-Data Engineer to Uddeholm!
+https://www.indeed.com/viewjob?jk=bfa580cb6ac4efbf
+Imaging & Computer Vision Data Science Expert (80-100%)*
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=b692b4626c4dacf7
-Kvantitativ analytiker
+https://www.indeed.com/viewjob?jk=f0d8c1ffa2057114
+Senior Data Lab Solution Architect
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=aef9501c87964788
-Consultant - Analytic Engineer
+https://www.indeed.com/viewjob?jk=2151e2068479a538
+Senior Data Engineer
 data scientist
 OUT!!!
 
 
-https://www.indeed.com/viewjob?jk=6064081d7e4acf26
-Data Engineer - Analyst
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=ee607d762483c1c1
-Staff Software Engineer - ATG
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=cdaaabc54a730db6
-Senior Software Engineer - ATG
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=f746c32d2dd76585
-Senior Software Engineer - ATG
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=9c5a1d54ea4d982d
-Data Analyst
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=b2bb884cbedfce40
-Senior Product Data Analyst
+https://www.indeed.com/viewjob?jk=f725bac546069043
+Senior Artificial Intelligence Solution Consultant
 data scientist
 OUT!!!
 
 
 https://www.indeed.com/viewjob?jk=8266acb7a4bf7bda
 Product Strategist
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=a9fadd22f4de5e16
-Head of Data Science
-data scientist
-OUT!!!
-
-
-https://www.indeed.com/viewjob?jk=43755cb2dab81d14
-Manager | Data Analytics | Technology Consulting | HCMC or Hanoi Office
 data scientist
 OUT!!!
 
