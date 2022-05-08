@@ -159,12 +159,12 @@ def post_scraper(path=''):
                 posted = soup.find_all(class_='jobsearch-HiringInsights-entry--text')[-1].text
                 location = soup.find('title').text.split('-')[-2].strip()
                 scrape_date = date.today() 
-                info_remote = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ') # this may contain the REMOTE keyword
+                info_remote = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ').text.replace('"','\'') # this may contain the REMOTE keyword
                 description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
                 post_language = langdetect.detect(description) # detect post language (this info is not exposed in web page)
 
                 print(f'{job_id}\n{job_role}\n{job_role_ext}\n{post_title}\n{post_url}\n{company_name}\n{company_url}\n{country}'\
-                    f'\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n{post_language}\n')
+                    f'\n{location}\n{job_type}\n{salary}\n{scrape_date}\n{posted}\n{info_remote}\n{post_language}\n--------------------------------')
                 line = f'"{job_id}","{job_role}","{job_role_ext}","{post_title}","{post_url}","{company_name}","{company_url}","{country}",'\
                     f'"{location}","{job_type}","{salary}","{scrape_date}","{posted}","{info_remote}","{post_language}","{description}"\n'
                 f.write(line)
