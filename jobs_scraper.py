@@ -159,7 +159,7 @@ def post_scraper(path=''):
                 posted = soup.find_all(class_='jobsearch-HiringInsights-entry--text')[-1].text
                 location = soup.find('title').text.split('-')[-2].strip()
                 scrape_date = date.today() 
-                info_remote = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ').text.replace('"','\'') # this may contain the REMOTE keyword
+                info_remote = soup.find(class_='jobsearch-CompanyInfoContainer').get_text(separator=' - ').replace('"','\'') # this may contain the REMOTE keyword
                 description = soup.find(class_='jobsearch-jobDescriptionText').text.replace('"','\'') # replace to avoid messing CSV up
                 post_language = langdetect.detect(description) # detect post language (this info is not exposed in web page)
 
