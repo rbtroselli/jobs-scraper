@@ -1,3 +1,5 @@
+from datetime import datetime
+
 class ResultPage:
     """ A class to represent a result page, with post urls """
     def __init__(self, url, driver, keyword):
@@ -5,6 +7,7 @@ class ResultPage:
         self.driver = driver
         self.posts = []
         self.keyword = keyword.replace('+',' ')
+        self.scrape_timestamp = datetime.now()
         self._scrape()
         return
 
@@ -16,7 +19,8 @@ class ResultPage:
             self.posts.append({
                 'id': id,
                 'url': f'https://www.indeed.com/viewjob?jk={id}',
-                'keyword': self.keyword
+                'keyword': self.keyword,
+                'scrape_timestamp': self.scrape_timestamp
             })
         return
     
@@ -25,6 +29,7 @@ class ResultPage:
             print(post['id'])
             print(post['url'])
             print(post['keyword'])
+            print(post['scrape_timestamp'])
         return
 
     def get_posts(self):
