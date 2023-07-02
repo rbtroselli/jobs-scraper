@@ -1,12 +1,13 @@
 import json
-from datetime import date
+from datetime import datetime
 
 
 class Post:
+    """ A class to represent a single job post """
     def __init__(self, url, driver):
         self.url = url
         self.driver = driver
-        self.scrape_date = date.today()
+        self.scrape_timestamp = datetime.now()
         self.title = None
         self.content = None
         self.company = None
@@ -38,10 +39,11 @@ class Post:
         self.direct_apply = None
         self.title_again = None
         self.raw_script_json = None
-        self.scrape()
+        self._scrape()
         return
 
-    def scrape(self):
+    def _scrape(self):
+        """ Scrape the job post """
         self.driver.get(self.url)
         # replace space in class names with dots
         self.title = self.driver.find_element('class name', 'icl-u-xs-mb--xs.icl-u-xs-mt--none.jobsearch-JobInfoHeader-title').text
@@ -89,7 +91,7 @@ class Post:
     def display(self):
         print('-----------------')
         print(f'URL: {self.url}')
-        print(f'Scrape Date: {self.scrape_date}')
+        print(f'Scrape Timestamp: {self.scrape_timestamp}')
         print(f'Title: {self.title}')
         print(f'Content: {self.content[:100]}...')
         print(f'Company: {self.company}')
