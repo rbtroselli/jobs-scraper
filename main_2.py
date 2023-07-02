@@ -13,6 +13,6 @@ if __name__ == '__main__':
 
     results_iterator = ResultsIterator(search_terms_list, driver)
     results_iterator.scrape_results()
-    results_iterator.save_posts()
+    results_iterator.save_results()
 
     driver.quit()

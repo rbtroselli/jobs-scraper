@@ -3,11 +3,11 @@ import random
 from result_page import ResultPage
 
 class ResultsIterator:
-    """ A class to iterate through the search results, save and eventually return a list of posts urls """
+    """ A class to iterate through the search results, save and eventually return a list of results urls """
     def __init__(self, search_terms_list, driver):
         self.search_terms_list = search_terms_list
         self.driver = driver
-        self.posts_list = []
+        self.results_list = []
 
     def _iterate_pages(self, search_terms):
         """ Iterate through the pages of a SINGLE SEARCH TERMS combo results """
@@ -15,11 +15,11 @@ class ResultsIterator:
             url = f'https://www.indeed.com/jobs?q=%22{search_terms}%22&sort=date&start={i}'
             result_page = ResultPage(url, self.driver, search_terms)
             result_page.display()
-            posts = result_page.get_results_list()
-            if all(post['id'] in [e['id'] for e in self.posts_list] for post in posts):
-                break # if all posts ids are already in posts_list, break
-            for post in posts:
-                self.posts_list.append(post)
+            local_results = result_page.get_results_list()
+            if all(result['id'] in [e['id'] for e in self.results_list] for result in local_results):
+                break # if all results ids are already in results_list, break
+            for result in local_results:
+                self.results_list.append(result)
             time.sleep(random.uniform(5,15))
         return
 
@@ -30,13 +30,13 @@ class ResultsIterator:
         return
 
     def scrape_results(self):
-        """ Return the list of posts """
+        """ Scrape and return the list of results """
         self._iterate_search_terms()
-        return self.posts_list
+        return self.results_list
     
-    def save_posts(self):
-        with open('posts.csv','w') as f:
+    def save_results(self):
+        with open('results.csv','w') as f:
             f.write('id,url,search_terms,scrape_timestamp\n')
-            for post in self.posts_list:
-                f.write(f"{post['id']},{post['url']},{post['search_terms']},{post['scrape_timestamp']}\n")
+            for result in self.results_list:
+                f.write(f"{result['id']},{result['url']},{result['search_terms']},{result['scrape_timestamp']}\n")
         return
