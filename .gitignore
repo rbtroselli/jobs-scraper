@@ -1,4 +1,6 @@
+# custom
 browser/*
+airflow/*
 
 # vscode notebook
 .vscode
