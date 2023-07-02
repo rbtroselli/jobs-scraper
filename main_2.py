@@ -16,10 +16,7 @@ if __name__ == '__main__':
     driver = get_driver()
 
     results_iterator = ResultsIterator(keywords_list, driver)
-    posts = results_iterator.get_posts_list()
-
-    with open('posts.csv','w') as f:
-        f.write('id,url,keyword\n')
-        for post in posts:
-            f.write(f"{post['id']},{post['url']},{post['keyword']}\n")
+    results_iterator.get_posts_list()
+    results_iterator.save_posts()
+    
     driver.quit()
