@@ -32,5 +32,5 @@ class ResultPage:
             print(result['scrape_timestamp'])
         return
 
-    def get_results_list(self):
+    def get_results_dict_list(self):
         return self.results_list
