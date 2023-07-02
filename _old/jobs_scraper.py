@@ -15,12 +15,14 @@ def url_scraper(path=''):
                      'ar':'ar.', 'au':'au.', 'bh':'bh.', 'br':'br.', 'cl':'cl.', 'ch':'ch.', 'co':'co.', 'cr':'cr.', 'ec':'ec.', 'eg':'eg.', 'hk':'hk.', 'in':'in.', 'id':'id.',
                      'il':'il.', 'jp':'jp.', 'kw':'kw.', 'mx':'mx.', 'ma':'ma.', 'nz':'nz.', 'ng':'ng.', 'om':'om.', 'pk':'pk.', 'pa':'pa.', 'pe':'pe.', 'ph':'ph.', 'qa':'qa.',
                      'sa':'sa.', 'sg':'sg.', 'za':'za.', 'kr':'kr.', 'tw':'tw.', 'th':'th.', 'tr':'tr.', 'ae':'ae.', 'uy':'uy.', 've':'ve.', 'vn':'vn.', 'my':'malaysia.'}
+    dict = {'us':''}
     urls_file = path + 'data/urls.csv'
     f = open(urls_file,'w')
     f.write("number,job_id,job_role,job_role_ext,country,job_url\n")
 
     urls_error_file = path + 'data/urls_error.txt'
     err = open(urls_error_file, 'w')
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'}
 
     for job in ['data%20engineer','data%20scientist']:
         job_role = ''.join(word[0] for word in job.split('%20'))
@@ -30,6 +32,7 @@ def url_scraper(path=''):
         for key in dict:
             # only last day &fromage=1
             url = f'https://{dict[key]}indeed.com/jobs?q="{job}"&sort=date&fromage=1&filter=0&start='
+            print(url)
             
             # just checking number of posts per page in CSV
             j=1
@@ -51,9 +54,11 @@ def url_scraper(path=''):
                     try:
                         # combine the url with page number (multiplied), get the page, parse with bs
                         url2 = url + str(i*10)
-                        page = requests.get(url2)
+                        page = requests.get(url2, headers=headers)
                         soup = BeautifulSoup(page.content,'html.parser')
                         print(url2+'\n')
+
+                        # add check for non 200 response
 
                         # break for loop, if captcha
                         if 'captcha' in soup.text.lower(): 
