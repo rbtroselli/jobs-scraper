@@ -11,7 +11,7 @@ class Post:
         self.title = None
         self.content = None
         self.company = None
-        self.date_posted = None
+        self.posted_date = None
         # location
         self.raw_job_location = None
         self.address_country = None
@@ -35,7 +35,7 @@ class Post:
         # other
         self.job_location_type = None
         self.employment_type = None
-        self.valid_through = None
+        self.valid_through_date = None
         self.direct_apply = None
         self.title_again = None
         self.raw_script_json = None
@@ -50,41 +50,41 @@ class Post:
         self.content = self.driver.find_element('id','jobDescriptionText').text.replace('\n',' ')
         self.company = self.driver.find_element('class name', 'css-1cjkto6.eu4oa1w0').text
         # dict.get(key,alternative) returns alternative if it cant find key. fail safe
-        script_json = self.driver.find_element_by_xpath("//script[@type = 'application/ld+json']").get_attribute('innerHTML')
-        stuff_dict = json.loads(script_json)
-        self.date_posted = stuff_dict.get('datePosted','').split('T')[0]
+        script_json = self.driver.find_element('xpath', "//script[@type = 'application/ld+json']").get_attribute('innerHTML')
+        script_dict = json.loads(script_json)
+        self.posted_date = script_dict.get('datePosted','').split('T')[0]
         # location
-        self.raw_job_location = stuff_dict.get('jobLocation','')
-        self.address_country = stuff_dict.get('jobLocation','').get('address','').get('addressCountry','')
-        self.address_locality = stuff_dict.get('jobLocation','').get('address','').get('addressLocality','')
-        self.address_region_0 = stuff_dict.get('jobLocation','').get('address','').get('addressRegion','')
-        self.address_region_1 = stuff_dict.get('jobLocation','').get('address','').get('addressRegion1','')
-        self.address_region_2 = stuff_dict.get('jobLocation','').get('address','').get('addressRegion2','')
-        self.postal_code = stuff_dict.get('jobLocation','').get('address','').get('postalCode','')
+        self.raw_job_location = script_dict.get('jobLocation','')
+        self.address_country = script_dict.get('jobLocation','').get('address','').get('addressCountry','')
+        self.address_locality = script_dict.get('jobLocation','').get('address','').get('addressLocality','')
+        self.address_region_0 = script_dict.get('jobLocation','').get('address','').get('addressRegion','')
+        self.address_region_1 = script_dict.get('jobLocation','').get('address','').get('addressRegion1','')
+        self.address_region_2 = script_dict.get('jobLocation','').get('address','').get('addressRegion2','')
+        self.postal_code = script_dict.get('jobLocation','').get('address','').get('postalCode','')
         # hiring organization
-        self.raw_hiring_organization = stuff_dict.get('hiringOrganization','')
-        self.hiring_organization = stuff_dict.get('hiringOrganization','').get('name','')
+        self.raw_hiring_organization = script_dict.get('hiringOrganization','')
+        self.hiring_organization = script_dict.get('hiringOrganization','').get('name','')
         # location requirements
         try:
-            self.raw_location_requirements = stuff_dict.get('applicantLocationRequirements','')
-            self.country_requirements = stuff_dict.get('applicantLocationRequirements','').get('name','')
+            self.raw_location_requirements = script_dict.get('applicantLocationRequirements','')
+            self.country_requirements = script_dict.get('applicantLocationRequirements','').get('name','')
         except:
             pass
         # salary
         try:
-            self.raw_base_salary = stuff_dict.get('baseSalary','')
-            self.salary_currency = stuff_dict.get('baseSalary','').get('currency','')
-            self.min_salary = stuff_dict.get('baseSalary','').get('value','').get('minValue','')
-            self.max_salary = stuff_dict.get('baseSalary','').get('value','').get('maxValue','')
-            self.salary_unit = stuff_dict.get('baseSalary','').get('value','').get('unitText','')
+            self.raw_base_salary = script_dict.get('baseSalary','')
+            self.salary_currency = script_dict.get('baseSalary','').get('currency','')
+            self.min_salary = script_dict.get('baseSalary','').get('value','').get('minValue','')
+            self.max_salary = script_dict.get('baseSalary','').get('value','').get('maxValue','')
+            self.salary_unit = script_dict.get('baseSalary','').get('value','').get('unitText','')
         except:
             pass
         # other
-        self.job_location_type = stuff_dict.get('jobLocationType','')
-        self.employment_type = stuff_dict.get('employmentType','')
-        self.valid_through = stuff_dict.get('validThrough','').split('T')[0]
-        self.direct_apply = stuff_dict.get('directApply','')
-        self.title_again = stuff_dict.get('title','')
+        self.job_location_type = script_dict.get('jobLocationType','')
+        self.employment_type = script_dict.get('employmentType','')
+        self.valid_through_date = script_dict.get('validThrough','').split('T')[0]
+        self.direct_apply = script_dict.get('directApply','')
+        self.title_again = script_dict.get('title','')
         self.raw_script_json = str(script_json)
         return
 
@@ -95,7 +95,7 @@ class Post:
         print(f'Title: {self.title}')
         print(f'Content: {self.content[:100]}...')
         print(f'Company: {self.company}')
-        print(f'Date Posted: {self.date_posted}')
+        print(f'Posted Date: {self.posted_date}')
         # location
         print(f'Raw Job Location: {self.raw_job_location}')
         print(f'Address Country: {self.address_country}')
@@ -119,7 +119,7 @@ class Post:
         # other stuff
         print(f'Job Location Type: {self.job_location_type}')
         print(f'Employment Type: {self.employment_type}')
-        print(f'Valid Through: {self.valid_through}')
+        print(f'Valid Through Date: {self.valid_through_date}')
         print(f'Direct Apply: {self.direct_apply}')
         print(f'Title Again: {self.title_again}')
         print(f'Raw Script Json: {self.raw_script_json[:100]}...')
