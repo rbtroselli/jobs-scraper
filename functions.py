@@ -12,10 +12,10 @@ def get_driver():
     driver.implicitly_wait(10) # ?
     return driver
 
-def get_keywords_list():
-    """ Return a list of keywords to search, taken from file """
+def get_search_terms_list():
+    """ Return a list of search_terms to search, taken from file """
     with open('search_terms.txt') as f:
-        keywords_list = f.readlines()
-    keywords_list = [x.strip().replace(' ','+') for x in keywords_list]
-    print(keywords_list)    
-    return keywords_list
+        search_terms_list = f.readlines()
+    search_terms_list = [x.strip().replace(' ','+') for x in search_terms_list]
+    print(search_terms_list)    
+    return search_terms_list
