@@ -36,7 +36,7 @@ class ResultsIterator:
     
     def save_posts(self):
         with open('posts.csv','w') as f:
-            f.write('id,url,keyword,scrape_date\n')
+            f.write('id,url,keyword,scrape_timestamp\n')
             for post in self.posts_list:
-                f.write(f"{post['id']},{post['url']},{post['keyword']},{post['scrape_date']}\n")
+                f.write(f"{post['id']},{post['url']},{post['keyword']},{post['scrape_timestamp']}\n")
         return
