@@ -13,7 +13,7 @@ class PostsIterator:
     """ A class to iterate through posts, combine all the posts and save them """
     def __init__(self):
         self.driver = get_driver()
-        self.results_df = pd.read_csv('results_test.csv')
+        self.results_df = pd.read_csv('./data/results_test.csv')
         self.posts_list = []
         self.posts_df = None
         return
@@ -51,5 +51,5 @@ class PostsIterator:
     
     def save_posts(self):
         """ Save the posts in a csv file """
-        self.posts_df.to_csv('posts.csv', sep='|', index=False)
+        self.posts_df.to_csv('./data/posts.csv', sep='|', index=False)
         return

@@ -14,7 +14,7 @@ def get_driver():
 
 def get_search_terms_list():
     """ Return a list of search_terms to search, taken from file """
-    with open('search_terms.txt') as f:
+    with open('./data/search_terms.txt') as f:
         search_terms_list = f.readlines()
     search_terms_list = [x.strip().replace(' ','+') for x in search_terms_list]
     print(search_terms_list)    

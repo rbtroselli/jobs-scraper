@@ -1,5 +1,6 @@
 import time
 import random
+import pandas as pd
 from result_page import ResultPage
 from functions import get_driver, get_search_terms_list
 
@@ -9,6 +10,17 @@ class ResultsIterator:
         self.search_terms_list = get_search_terms_list()
         self.driver = get_driver()
         self.results_list = []
+        self.search_results_df = None
+        return
+    
+    def _make_search_results_df(self):
+        """ Make a dataframe from the search_results list of dictionaries """
+        self.search_results_df = pd.DataFrame(self.results_list, index=None)
+        return
+    
+    def _deduplicate_search_results(self):
+        """ Deduplicate repeated search results (encountered with different search terms) """
+        self.search_results_df.drop_duplicates(subset=['id'], keep='first', inplace=True)
         return
 
     def _iterate_pages(self, search_terms):
@@ -35,12 +47,12 @@ class ResultsIterator:
     def scrape_results(self):
         """ Scrape and return the list of results """
         self._iterate_search_terms()
-        return self.results_list
+        self._make_search_results_df()
+        self._deduplicate_search_results()
+        return self.results_list, self.search_results_df
     
     def save_results(self):
         """ Save the results in a csv file """
-        with open('results.csv','w') as f:
-            f.write('id,url,search_terms,scrape_timestamp\n')
-            for result in self.results_list:
-                f.write(f"{result['id']},{result['url']},{result['search_terms']},{result['scrape_timestamp']}\n")
+        self.search_results_df.to_csv('./data/results.csv', sep='|', index=False)
         return
+    
