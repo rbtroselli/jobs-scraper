@@ -3,6 +3,8 @@
 browser/
 .airflow
 airflow/
+.data
+data/
 
 # vscode notebook
 .vscode
