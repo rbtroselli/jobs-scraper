@@ -1,6 +1,7 @@
 # Browser driver not needed anymore, since we are using selenium-manager
 # https://www.selenium.dev/blog/2022/introducing-selenium-manager/
 from selenium import webdriver
+import duckdb
 
 def get_driver():
     """ Return a driver to use selenium """
@@ -19,3 +20,9 @@ def get_search_terms_list():
     search_terms_list = [x.strip().replace(' ','+') for x in search_terms_list]
     print(search_terms_list)    
     return search_terms_list
+
+def execute_query(query):
+    """ Execute a query on the db """
+    conn = duckdb.connect('./data/jobs.db')
+    conn.execute(query)
+    return 
