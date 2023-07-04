@@ -5,6 +5,8 @@ browser/
 airflow/
 .data
 data/
+.__old
+__old/
 
 # vscode notebook
 .vscode
