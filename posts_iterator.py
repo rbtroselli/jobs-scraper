@@ -7,15 +7,24 @@ from post import Post
 import pandas as pd
 import time 
 import random
+import duckdb
+from queries import get_search_results_to_scrape
 
 
 class PostsIterator:
     """ A class to iterate through posts, combine all the posts and save them """
     def __init__(self):
         self.driver = get_driver()
-        self.results_df = pd.read_csv('./data/results_test.csv')
+        self.conn = duckdb.connect('./data/jobs.db')
+        self.results_df = None
         self.posts_list = []
         self.posts_df = None
+        self._get_results_df()
+        return
+    
+    def _get_results_df(self):
+        """ Get the results dataframe from the db """
+        self.results_df = self.conn.query(get_search_results_to_scrape).to_df()
         return
     
     def _make_posts_df(self):
