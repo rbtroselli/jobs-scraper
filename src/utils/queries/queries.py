@@ -3,7 +3,7 @@
 insert_new_search_results = """
     INSERT INTO search_result (id, url, search_terms, scrape_timestamp)
     SELECT id, url, search_terms, scrape_timestamp
-    FROM read_csv_auto('./data/results.csv', delimiter='|', header=true)
+    FROM read_csv('./data/results.csv', delim='|', header=true, auto_detect=true)
     WHERE id NOT IN (SELECT id FROM search_result)
     ;
 """

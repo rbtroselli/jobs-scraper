@@ -1,18 +1,17 @@
-# takes in input the list of the posts and scrape the content of each post
-# for now the list is in csv, in the future it'll be in the db
-# using pandas because of structured data
-
-from functions import get_driver
-from post import Post
+from ...utils.functions.functions import get_driver
+from ...utils.queries.queries import get_search_results_to_scrape
+from .post import Post
 import pandas as pd
 import time 
 import random
 import duckdb
-from queries import get_search_results_to_scrape
 
 
 class PostsIterator:
-    """ A class to iterate through posts, combine all the posts and save them """
+    """ 
+    A class to iterate through posts, combine all the posts and save them.
+    Takes in input the list of the posts from the db. Using pandas because of structured data 
+    """
     def __init__(self):
         self.driver = get_driver()
         self.conn = duckdb.connect('./data/jobs.db')

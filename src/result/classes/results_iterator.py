@@ -1,8 +1,8 @@
 import time
 import random
 import pandas as pd
-from result_page import ResultPage
-from functions import get_driver, get_search_terms_list
+from .result_page import ResultPage
+from ...utils.functions.functions import get_driver, get_search_terms_list
 
 class ResultsIterator:
     """ A class to iterate through the search results, combine all the pages and save them """
