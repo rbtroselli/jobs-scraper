@@ -23,7 +23,7 @@ class ResultsIterator:
         self.driver = get_driver()
         self.results_list = []
         self.search_results_df = None
-        self.last_3_days = None
+        self.last_3_days_string = None
         return
     
     def _make_search_results_df(self):
@@ -40,7 +40,7 @@ class ResultsIterator:
         """ Iterate through the pages of a SINGLE SEARCH TERMS combo results """
         country_domain = countries_dict[site_country]
         for i in range(0, 10000, 10):
-            url = f'https://{country_domain}indeed.com/jobs?q="{search_terms}"&sort=date{self.last_3_days}&start={i}'
+            url = f'https://{country_domain}indeed.com/jobs?q="{search_terms}"&sort=date{self.last_3_days_string}&start={i}'
             result_page = ResultPage(url, self.driver, search_terms, site_country)
             result_page.display()
             local_results = result_page.get_results_dict_list()
@@ -65,9 +65,9 @@ class ResultsIterator:
         self.driver.quit()
         return
 
-    def scrape_results(self, last_3_days=False):
+    def scrape_results(self, last_3_days=True):
         """ Scrape and return the list of results """
-        self.last_3_days = ('&fromage=3' if last_3_days is True else '')
+        self.last_3_days_string = ('&fromage=3' if last_3_days is True else '')
         self._iterate_search_terms()
         self._make_search_results_df()
         self._deduplicate_search_results()
