@@ -14,10 +14,10 @@ get_search_results_to_scrape = """
     ;
 """
 insert_new_posts = """
-    INSERT INTO post (id, url, search_terms, site_country, scrape_timestamp, content, title, posted_date, 
+    INSERT INTO post (id, url, search_terms, site_country, scrape_timestamp, content, title, posted_timestamp, 
         address_country, address_locality, address_region_0, address_region_1, address_region_2, postal_code, 
         hiring_organization, country_requirements, salary_currency, min_salary, max_salary, salary_unit, 
-        job_location_type, employment_type, valid_through_date, direct_apply, raw_script_json)
+        job_location_type, employment_type, valid_through_timestamp, direct_apply, raw_script_json)
     SELECT *
     FROM read_csv_auto('./data/posts.csv', delimiter='|', header=true)
     WHERE id NOT IN (SELECT id FROM post)
@@ -57,10 +57,10 @@ get_search_results_to_scrape = """
 
 # posts
 copy_posts = """
-    COPY post (id, url, search_terms, scrape_timestamp, content, title, posted_date, address_country, 
+    COPY post (id, url, search_terms, scrape_timestamp, content, title, posted_timestamp, address_country, 
         address_locality, address_region_0, address_region_1, address_region_2, postal_code, hiring_organization, 
         country_requirements, salary_currency, min_salary, max_salary, salary_unit, job_location_type, 
-        employment_type, valid_through_date, direct_apply, raw_script_json)
+        employment_type, valid_through_timestamp, direct_apply, raw_script_json)
     FROM './data/posts.csv' (delimiter '|', header true)
     ;
 """
