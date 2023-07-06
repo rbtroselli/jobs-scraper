@@ -26,7 +26,7 @@ class ResultsIterator:
     def _iterate_pages(self, search_terms):
         """ Iterate through the pages of a SINGLE SEARCH TERMS combo results """
         for i in range(0, 10000, 10):
-            url = f'https://www.indeed.com/jobs?q=%22{search_terms}%22&sort=date&start={i}'
+            url = f'https://indeed.com/jobs?q=%22{search_terms}%22&sort=date&start={i}'
             result_page = ResultPage(url, self.driver, search_terms)
             result_page.display()
             local_results = result_page.get_results_dict_list()
@@ -34,7 +34,7 @@ class ResultsIterator:
                 break # if all results ids are already in results_list, break
             for result in local_results:
                 self.results_list.append(result)
-            time.sleep(random.uniform(5,15))
+            time.sleep(random.uniform(3,5))
         return
 
     def _iterate_search_terms(self):
