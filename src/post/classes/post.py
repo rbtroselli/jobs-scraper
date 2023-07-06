@@ -39,6 +39,7 @@ class Post:
             self.post_dict['salary_currency'] = script_dict.get('baseSalary','').get('currency','')
             self.post_dict['min_salary'] = script_dict.get('baseSalary','').get('value','').get('minValue','')
             self.post_dict['max_salary'] = script_dict.get('baseSalary','').get('value','').get('maxValue','')
+            self.post_dict['salary'] = script_dict.get('baseSalary','').get('value','').get('value','')
             self.post_dict['salary_unit'] = script_dict.get('baseSalary','').get('value','').get('unitText','')
         except:
             self.post_dict['salary_currency'] = None
