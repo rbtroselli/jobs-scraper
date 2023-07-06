@@ -47,7 +47,7 @@ class PostsIterator:
             post = Post(url, id, search_terms, site_country, self.driver)
             post.display()
             self.posts_list.append(post.get_post_dict())
-            time.sleep(random.uniform(3,5))
+            time.sleep(random.uniform(2,4))
         self.driver.quit()
         return
     
