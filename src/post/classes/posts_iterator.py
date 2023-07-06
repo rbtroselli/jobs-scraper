@@ -42,8 +42,9 @@ class PostsIterator:
             url = row['url']
             id = row['id']
             search_terms = row['search_terms']
+            site_country = row['site_country']
             # scrape_timestamp = row['scrape_timestamp'] # not needed for post
-            post = Post(url, id, search_terms, self.driver)
+            post = Post(url, id, search_terms, site_country, self.driver)
             post.display()
             self.posts_list.append(post.get_post_dict())
             time.sleep(random.uniform(3,5))

@@ -4,6 +4,18 @@ import pandas as pd
 from .result_page import ResultPage
 from ...utils.functions.functions import get_driver, get_search_terms_list
 
+countries_dict = {
+    'us':'', 'it':'it.', 'uk':'uk.', 'es':'es.', 'fr':'fr.', 'de':'de.', 'at':'at.', 'be':'be.', 
+    'ca':'ca.', 'fi':'fi.', 'dk':'dk.', 'cz':'cz.', 'gr':'gr.', 'hu':'hu.', 'ie':'ie.', 'lu':'lu.', 
+    'nl':'nl.', 'no':'no.', 'pl':'pl.', 'pt':'pt.', 'ro':'ro.', 'se':'se.', 'ch':'ch.', 'ua':'ua.', 
+    'cn':'cn.', 'ar':'ar.', 'au':'au.', 'bh':'bh.', 'br':'br.', 'cl':'cl.', 'ch':'ch.', 'co':'co.', 
+    'cr':'cr.', 'ec':'ec.', 'eg':'eg.', 'hk':'hk.', 'in':'in.', 'id':'id.', 'il':'il.', 'jp':'jp.', 
+    'kw':'kw.', 'mx':'mx.', 'ma':'ma.', 'nz':'nz.', 'ng':'ng.', 'om':'om.', 'pk':'pk.', 'pa':'pa.', 
+    'pe':'pe.', 'ph':'ph.', 'qa':'qa.', 'sa':'sa.', 'sg':'sg.', 'za':'za.', 'kr':'kr.', 'tw':'tw.', 
+    'th':'th.', 'tr':'tr.', 'ae':'ae.', 'uy':'uy.', 've':'ve.', 'vn':'vn.', 'my':'malaysia.'
+}
+
+
 class ResultsIterator:
     """ A class to iterate through the search results, combine all the pages and save them """
     def __init__(self):
@@ -23,11 +35,12 @@ class ResultsIterator:
         self.search_results_df.drop_duplicates(subset=['id'], keep='first', inplace=True)
         return
 
-    def _iterate_pages(self, search_terms):
+    def _iterate_pages(self, search_terms, site_country):
         """ Iterate through the pages of a SINGLE SEARCH TERMS combo results """
+        country_domain = countries_dict[site_country]
         for i in range(0, 10000, 10):
-            url = f'https://indeed.com/jobs?q=%22{search_terms}%22&sort=date&start={i}'
-            result_page = ResultPage(url, self.driver, search_terms)
+            url = f'https://{country_domain}indeed.com/jobs?q="{search_terms}"&sort=date&start={i}'
+            result_page = ResultPage(url, self.driver, search_terms, site_country)
             result_page.display()
             local_results = result_page.get_results_dict_list()
             if all(result['id'] in [e['id'] for e in self.results_list] for result in local_results):
@@ -36,11 +49,17 @@ class ResultsIterator:
                 self.results_list.append(result)
             time.sleep(random.uniform(3,5))
         return
+    
+    def _iterate_countries(self, search_terms):
+        # iterate countries keys
+        for site_country in countries_dict.keys():
+            self._iterate_pages(search_terms, site_country)
+        return
 
     def _iterate_search_terms(self):
         """ Iterate through the search terms list """
         for search_terms in self.search_terms_list:
-            self._iterate_pages(search_terms)
+            self._iterate_countries(search_terms)
         self.driver.quit()
         return
 

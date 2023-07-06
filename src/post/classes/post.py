@@ -4,12 +4,13 @@ from datetime import datetime
 
 class Post:
     """ A class to represent a single job post """
-    def __init__(self, url, id, search_terms, driver):
+    def __init__(self, url, id, search_terms, site_country, driver):
         self.post_dict = {}
         self.post_dict['id'] = id
         self.post_dict['url'] = url
         self.post_dict['search_terms'] = search_terms
-        self.post_dict['scrape_timestamp'] = datetime.now()
+        self.post_dict['site_country'] = site_country
+        self.post_dict['scrape_timestamp'] = datetime.utcnow()
         self.driver = driver
         self._scrape()
         return
@@ -23,7 +24,7 @@ class Post:
         script_json = self.driver.find_element('xpath', "//script[@type = 'application/ld+json']").get_attribute('innerHTML')
         script_dict = json.loads(script_json)
         self.post_dict['title'] = script_dict.get('title','')
-        self.post_dict['posted_date'] = script_dict.get('datePosted','').split('T')[0]
+        self.post_dict['posted_timestamp'] = script_dict.get('datePosted','')
         self.post_dict['address_country'] = script_dict.get('jobLocation','').get('address','').get('addressCountry','')
         self.post_dict['address_locality'] = script_dict.get('jobLocation','').get('address','').get('addressLocality','')
         self.post_dict['address_region_0'] = script_dict.get('jobLocation','').get('address','').get('addressRegion','')
@@ -48,7 +49,7 @@ class Post:
             self.post_dict['salary_unit'] = None
         self.post_dict['job_location_type'] = script_dict.get('jobLocationType','')
         self.post_dict['employment_type'] = script_dict.get('employmentType','')
-        self.post_dict['valid_through_date'] = script_dict.get('validThrough','').split('T')[0]
+        self.post_dict['valid_through_timestamp'] = script_dict.get('validThrough','')
         self.post_dict['direct_apply'] = script_dict.get('directApply','')
         self.post_dict['raw_script_json'] = str(script_json)
         return

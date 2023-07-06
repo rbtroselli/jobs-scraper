@@ -2,12 +2,13 @@ from datetime import datetime
 
 class ResultPage:
     """ A class to represent a result page, with post urls """
-    def __init__(self, url, driver, search_terms):
+    def __init__(self, url, driver, search_terms, site_country):
         self.url = url
         self.driver = driver
         self.results_list = []
         self.search_terms = search_terms.replace('+',' ')
-        self.scrape_timestamp = datetime.now()
+        self.site_country = site_country
+        self.scrape_timestamp = datetime.utcnow()
         self._scrape()
         return
 
@@ -20,6 +21,7 @@ class ResultPage:
                 'id': id,
                 'url': f'https://www.indeed.com/viewjob?jk={id}',
                 'search_terms': self.search_terms,
+                'site_country': self.site_country,
                 'scrape_timestamp': self.scrape_timestamp
             })
         return

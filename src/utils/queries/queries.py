@@ -1,8 +1,8 @@
 # leaner approach: no cfg
 # make process leaner and storage lighter by loading only new results (insert into, not copy)
 insert_new_search_results = """
-    INSERT INTO search_result (id, url, search_terms, scrape_timestamp)
-    SELECT id, url, search_terms, scrape_timestamp
+    INSERT INTO search_result (id, url, search_terms, site_country, scrape_timestamp)
+    SELECT *
     FROM read_csv('./data/results.csv', delim='|', header=true, auto_detect=true)
     WHERE id NOT IN (SELECT id FROM search_result)
     ;
@@ -14,13 +14,14 @@ get_search_results_to_scrape = """
     ;
 """
 insert_new_posts = """
-    INSERT INTO post (id, url, search_terms, scrape_timestamp, content, title, posted_date, address_country, 
-        address_locality, address_region_0, address_region_1, address_region_2, postal_code, hiring_organization, 
-        country_requirements, salary_currency, min_salary, max_salary, salary_unit, job_location_type, 
-        employment_type, valid_through_date, direct_apply, raw_script_json)
+    INSERT INTO post (id, url, search_terms, site_country, scrape_timestamp, content, title, posted_date, 
+        address_country, address_locality, address_region_0, address_region_1, address_region_2, postal_code, 
+        hiring_organization, country_requirements, salary_currency, min_salary, max_salary, salary_unit, 
+        job_location_type, employment_type, valid_through_date, direct_apply, raw_script_json)
     SELECT *
     FROM read_csv_auto('./data/posts.csv', delimiter='|', header=true)
     WHERE id NOT IN (SELECT id FROM post)
+    ;
 """
 
 '''
