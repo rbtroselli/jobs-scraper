@@ -2,8 +2,8 @@
 # make process leaner and storage lighter by loading only new results (insert into, not copy)
 insert_new_search_results = """
     INSERT INTO search_result (id, url, search_terms, site_country, scrape_timestamp)
-    SELECT *
-    FROM read_csv('./data/results.csv', delim='|', header=true, auto_detect=true)
+    SELECT id, url, search_terms, site_country, scrape_timestamp
+    FROM read_csv('./data/results.csv', sep='|', header=true, auto_detect=true)
     WHERE id NOT IN (SELECT id FROM search_result)
     ;
 """
@@ -16,10 +16,14 @@ get_search_results_to_scrape = """
 insert_new_posts = """
     INSERT INTO post (id, url, search_terms, site_country, scrape_timestamp, content, title, posted_timestamp, 
         address_country, address_locality, address_region_0, address_region_1, address_region_2, postal_code, 
-        hiring_organization, country_requirements, salary_currency, min_salary, max_salary, salary_unit, 
+        hiring_organization, country_requirements, salary_currency, min_salary, max_salary, salary, salary_unit, 
         job_location_type, employment_type, valid_through_timestamp, direct_apply, raw_script_json)
-    SELECT *
-    FROM read_csv_auto('./data/posts.csv', delim='|', header=true)
+    SELECT 
+        id, url, search_terms, site_country, scrape_timestamp, content, title, posted_timestamp, 
+        address_country, address_locality, address_region_0, address_region_1, address_region_2, postal_code, 
+        hiring_organization, country_requirements, salary_currency, min_salary, max_salary, salary, salary_unit, 
+        job_location_type, employment_type, valid_through_timestamp, direct_apply, raw_script_json
+    FROM read_csv('./data/posts.csv', sep='|', header=true, auto_detect=true)
     WHERE id NOT IN (SELECT id FROM post)
     ;
 """
