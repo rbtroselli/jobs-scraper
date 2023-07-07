@@ -1,5 +1,5 @@
-from ...utils.functions.functions import get_driver
-from ...utils.queries.queries import get_search_results_to_scrape
+from ...utils.functions.functions import get_driver, execute_query_get_df, execute_query
+from ...utils.queries.queries import get_search_results_to_scrape, insert_new_posts
 from .post import Post
 import pandas as pd
 import time 
@@ -14,7 +14,7 @@ class PostsIterator:
     """
     def __init__(self):
         self.driver = get_driver()
-        self.conn = duckdb.connect('./data/jobs.db')
+        # self.conn = duckdb.connect('./data/jobs.db')
         self.results_df = None
         self.posts_list = []
         self.posts_df = None
@@ -23,7 +23,7 @@ class PostsIterator:
     
     def _get_results_df(self):
         """ Get the results dataframe from the db """
-        self.results_df = self.conn.query(get_search_results_to_scrape).to_df()
+        self.results_df = execute_query_get_df(get_search_results_to_scrape)
         return
     
     def _make_posts_df(self):
@@ -58,7 +58,13 @@ class PostsIterator:
         self._remove_separator_from_df()
         return self.posts_list, self.posts_df
     
-    def save_posts(self):
+    def save_posts_to_csv(self):
         """ Save the posts in a csv file """
         self.posts_df.to_csv('./data/posts.csv', sep='|', index=False)
         return
+    
+def load_posts_csv_to_db():
+    """ Load posts csv to db """
+    execute_query(insert_new_posts)
+    return
+

@@ -2,7 +2,8 @@ import time
 import random
 import pandas as pd
 from .result_page import ResultPage
-from ...utils.functions.functions import get_driver, get_search_terms_list
+from ...utils.functions.functions import get_driver, get_search_terms_list, execute_query
+from ...utils.queries.queries import insert_new_search_results
 
 countries_dict = {
     'us':'', 'it':'it.', 'uk':'uk.', 'es':'es.', 'fr':'fr.', 'de':'de.', 'at':'at.', 'be':'be.', 
@@ -73,8 +74,13 @@ class ResultsIterator:
         self._deduplicate_search_results()
         return self.results_list, self.search_results_df
     
-    def save_results(self):
+    def save_results_to_csv(self):
         """ Save the results in a csv file """
         self.search_results_df.to_csv('./data/results.csv', sep='|', index=False)
         return
+    
+def load_results_csv_to_db():
+    """ Load posts csv to db """
+    execute_query(insert_new_search_results)
+    return
     

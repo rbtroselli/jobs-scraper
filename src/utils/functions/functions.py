@@ -3,7 +3,6 @@
 from selenium import webdriver
 import duckdb
 
-
 def get_driver():
     """ Return a driver to use selenium """
     user_data_dir = './browser/user_data' # local data folder
@@ -31,3 +30,9 @@ def execute_query(query):
     conn = duckdb.connect('./data/jobs.db')
     conn.execute(query)
     return 
+
+def execute_query_get_df(query):
+    """ Execute a query on the db and return df with records obtained """
+    conn = duckdb.connect('./data/jobs.db')
+    df = conn.query(query).to_df()
+    return df

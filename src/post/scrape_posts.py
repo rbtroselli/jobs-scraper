@@ -1,12 +1,11 @@
-from .classes.posts_iterator import PostsIterator
-from ..utils.functions.functions import execute_query
-from ..utils.queries.queries import insert_new_posts
+from .classes.posts_iterator import PostsIterator, load_posts_csv_to_db
 
-def run_posts():
-    # scrape posts to csv
+def posts_to_csv():
     posts_iterator = PostsIterator()
     posts_iterator.scrape_posts()
-    posts_iterator.save_posts()
-    # load csv to db
-    execute_query(insert_new_posts)
+    posts_iterator.save_posts_to_csv()
+    return
+
+def posts_to_db():
+    load_posts_csv_to_db()
     return
