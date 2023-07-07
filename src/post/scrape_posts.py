@@ -2,7 +2,7 @@ from .classes.posts_iterator import PostsIterator
 from ..utils.functions.functions import execute_query
 from ..utils.queries.queries import insert_new_posts
 
-def run():
+def run_posts():
     # scrape posts to csv
     posts_iterator = PostsIterator()
     posts_iterator.scrape_posts()

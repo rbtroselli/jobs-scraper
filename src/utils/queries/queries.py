@@ -8,7 +8,7 @@ insert_new_search_results = """
     ;
 """
 get_search_results_to_scrape = """
-    SELECT id, url, search_terms
+    SELECT id, url, search_terms, site_country
     FROM search_result
     WHERE id NOT IN (SELECT id FROM post)
     ;
@@ -19,7 +19,7 @@ insert_new_posts = """
         hiring_organization, country_requirements, salary_currency, min_salary, max_salary, salary_unit, 
         job_location_type, employment_type, valid_through_timestamp, direct_apply, raw_script_json)
     SELECT *
-    FROM read_csv_auto('./data/posts.csv', delimiter='|', header=true)
+    FROM read_csv_auto('./data/posts.csv', delim='|', header=true)
     WHERE id NOT IN (SELECT id FROM post)
     ;
 """
