@@ -4,7 +4,6 @@ from .post import Post
 import pandas as pd
 import time 
 import random
-import duckdb
 
 
 class PostsIterator:
@@ -40,10 +39,7 @@ class PostsIterator:
         """ Iterate through the posts (results), add their data dict to the posts list """
         for index, row in self.results_df.iterrows():
             url, id, search_terms, site_country = row['url'], row['id'], row['search_terms'], row['site_country']
-            try:
-                post = Post(url, id, search_terms, site_country, self.driver)
-            except:
-                continue
+            post = Post(url, id, search_terms, site_country, self.driver)
             post.display()
             self.posts_list.append(post.get_post_dict())
             time.sleep(random.uniform(2,4))

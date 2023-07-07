@@ -12,7 +12,7 @@ class Post:
         self.post_dict['site_country'] = site_country
         self.post_dict['scrape_timestamp'] = datetime.utcnow()
         self.driver = driver
-        self._scrape()
+        self._assign_post_elements()
         return
 
     def _scrape(self):
@@ -35,7 +35,7 @@ class Post:
         try:
             self.post_dict['country_requirements'] = script_dict.get('applicantLocationRequirements','').get('name','')
         except:
-            self.post_dict['country_requirements'] = None
+            pass
         try:
             self.post_dict['salary_currency'] = script_dict.get('baseSalary','').get('currency','')
             self.post_dict['min_salary'] = script_dict.get('baseSalary','').get('value','').get('minValue','')
@@ -43,18 +43,23 @@ class Post:
             self.post_dict['salary'] = script_dict.get('baseSalary','').get('value','').get('value','')
             self.post_dict['salary_unit'] = script_dict.get('baseSalary','').get('value','').get('unitText','')
         except:
-            self.post_dict['salary_currency'] = None
-            self.post_dict['min_salary'] = None
-            self.post_dict['max_salary'] = None
-            self.post_dict['salary_unit'] = None
+            pass
         self.post_dict['job_location_type'] = script_dict.get('jobLocationType','')
         self.post_dict['employment_type'] = script_dict.get('employmentType','')
         self.post_dict['valid_through_timestamp'] = script_dict.get('validThrough','')
         self.post_dict['direct_apply'] = script_dict.get('directApply','')
         self.post_dict['raw_script_json'] = str(script_json)
         return
+    
+    def _assign_post_elements(self):
+        try:
+            self._scrape()
+        except:
+            pass
+        return
 
     def display(self):
+        print('-'*100)
         for key, value in self.post_dict.items():
             if key == 'content':
                 print(f'{key}: {value[0:100]}...')
