@@ -39,12 +39,11 @@ class PostsIterator:
     def _iterate_posts(self):
         """ Iterate through the posts (results), add their data dict to the posts list """
         for index, row in self.results_df.iterrows():
-            url = row['url']
-            id = row['id']
-            search_terms = row['search_terms']
-            site_country = row['site_country']
-            # scrape_timestamp = row['scrape_timestamp'] # not needed for post
-            post = Post(url, id, search_terms, site_country, self.driver)
+            url, id, search_terms, site_country = row['url'], row['id'], row['search_terms'], row['site_country']
+            try:
+                post = Post(url, id, search_terms, site_country, self.driver)
+            except:
+                continue
             post.display()
             self.posts_list.append(post.get_post_dict())
             time.sleep(random.uniform(2,4))
