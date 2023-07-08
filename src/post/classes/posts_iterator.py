@@ -67,7 +67,7 @@ class PostsIterator:
     
 def _move_posts_csv_to_archive():
     """ Move results csv to archive """
-    utc_ts = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+    utc_ts = datetime.utcnow().strftime('%Y-%m-%d_%H-%M-%S_UTC')
     os.rename(posts_csv, posts_csv_archived.format(utc_ts))
     return
     

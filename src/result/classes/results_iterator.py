@@ -38,7 +38,7 @@ class ResultsIterator:
         return
     
     def _deduplicate_search_results(self):
-        """ Deduplicate repeated search results (encountered with different search terms) """
+        """ Deduplicate repeated search results (results encountered with multiple search terms) """
         self.search_results_df.drop_duplicates(subset=['id'], keep='first', inplace=True)
         return
 
@@ -88,7 +88,7 @@ class ResultsIterator:
     
 def _move_results_csv_to_archive():
     """ Move results csv to archive """
-    utc_ts = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+    utc_ts = datetime.utcnow().strftime('%Y-%m-%d_%H-%M-%S_UTC')
     os.rename(results_csv, results_csv_archived.format(utc_ts))
     return
     
