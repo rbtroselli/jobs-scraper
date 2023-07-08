@@ -34,11 +34,6 @@ class PostsIterator:
         """ Make a dataframe from the posts list of dictionaries """
         self.posts_df = pd.DataFrame(self.posts_list, index=None)
         return
-    
-    def _remove_separator_from_df(self):
-        """ Remove the CSV separator from everywhere in the dataframe """
-        self.posts_df.replace('\|', '-', regex=True, inplace=True)
-        return
 
     def _iterate_posts(self):
         """ Iterate through the posts (results), add their data dict to the posts list """
@@ -47,7 +42,7 @@ class PostsIterator:
             post = Post(url, id, search_terms, site_country, self.driver)
             post.display()
             self.posts_list.append(post.get_post_dict())
-            time.sleep(random.uniform(2,4))
+            time.sleep(random.uniform(1.5,3.5))
         self.driver.quit()
         return
     
@@ -55,7 +50,6 @@ class PostsIterator:
         """ Scrape and return the list of posts and posts df """
         self._iterate_posts()
         self._make_posts_df()
-        self._remove_separator_from_df()
         return self.posts_list, self.posts_df
     
     def save_posts_to_csv(self):

@@ -51,9 +51,19 @@ class Post:
         # self.post_dict['raw_script_json'] = str(script_json)
         return
     
+    def _clean_separator_and_empty(self):
+        """ Iterate through the post_dict, remove any empty strings and replace | with - """
+        for key, value in self.post_dict.items():
+            if value == '':
+                self.post_dict[key] = None
+            if type(value)==str and '|' in value:
+                self.post_dict[key] = value.replace('|','-')
+        return
+    
     def _assign_post_elements(self):
         try:
             self._scrape()
+            self._clean_separator_and_empty()
         except:
             pass
         return
