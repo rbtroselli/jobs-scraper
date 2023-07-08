@@ -2,6 +2,8 @@ import duckdb
 
 conn = duckdb.connect('./data/jobs.db')
 
+# to remove: varchar lengths, no needed in duckdb
+
 # conn.execute("""DROP TABLE IF EXISTS raw_search_result""")
 # conn.execute("""
 #     CREATE TABLE IF NOT EXISTS raw_search_result (
@@ -67,7 +69,6 @@ conn = duckdb.connect('./data/jobs.db')
 #         employment_type VARCHAR(50),
 #         valid_through_timestamp TIMESTAMP,
 #         direct_apply BOOLEAN,
-#         raw_script_json VARCHAR(1000),
 #         insert_update_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP::VARCHAR::TIMESTAMP 
 #     )
 # """)

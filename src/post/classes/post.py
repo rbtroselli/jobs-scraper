@@ -48,7 +48,7 @@ class Post:
         self.post_dict['employment_type'] = script_dict.get('employmentType','')
         self.post_dict['valid_through_timestamp'] = script_dict.get('validThrough','')
         self.post_dict['direct_apply'] = script_dict.get('directApply','')
-        self.post_dict['raw_script_json'] = str(script_json)
+        # self.post_dict['raw_script_json'] = str(script_json)
         return
     
     def _assign_post_elements(self):
@@ -63,8 +63,8 @@ class Post:
         for key, value in self.post_dict.items():
             if key == 'content':
                 print(f'{key}: {value[0:100]}...')
-            elif key == 'raw_script_json':
-                print(f'{key}: {value[0:100]}...')
+            # elif key == 'raw_script_json':
+            #     print(f'{key}: {value[0:100]}...')
             else:
                 print(f'{key}: {value}')
         return

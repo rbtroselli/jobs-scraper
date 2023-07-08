@@ -17,13 +17,13 @@ insert_new_posts = """
     INSERT INTO post (id, url, search_terms, site_country, scrape_timestamp, content, title, posted_timestamp, 
         address_country, address_locality, address_region_0, address_region_1, address_region_2, postal_code, 
         hiring_organization, country_requirements, salary_currency, min_salary, max_salary, salary, salary_unit, 
-        job_location_type, employment_type, valid_through_timestamp, direct_apply, raw_script_json)
+        job_location_type, employment_type, valid_through_timestamp, direct_apply)
     SELECT 
         id, url, search_terms, site_country, scrape_timestamp, content, title, posted_timestamp, 
         address_country, address_locality, address_region_0, address_region_1, address_region_2, postal_code, 
         hiring_organization, country_requirements, salary_currency, min_salary, max_salary, salary, salary_unit, 
-        job_location_type, employment_type, valid_through_timestamp, direct_apply, raw_script_json
-    FROM read_csv({}, sep='|', header=true, auto_detect=true)
+        job_location_type, employment_type, valid_through_timestamp, direct_apply
+    FROM read_csv('{}', sep='|', header=true, auto_detect=true)
     WHERE id NOT IN (SELECT id FROM post)
     ;
 """
