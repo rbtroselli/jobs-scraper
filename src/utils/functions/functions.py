@@ -3,7 +3,7 @@
 from selenium import webdriver
 import duckdb
 
-def get_driver():
+def _get_driver():
     """ Return a driver to use selenium """
     user_data_dir = './browser/user_data' # local data folder
     user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
@@ -17,7 +17,7 @@ def get_driver():
     driver.implicitly_wait(10) # ?
     return driver
 
-def get_search_terms_list():
+def _get_search_terms_list():
     """ Return a list of search_terms to search, taken from file """
     with open('./data/search_terms.txt') as f:
         search_terms_list = f.readlines()
@@ -25,13 +25,13 @@ def get_search_terms_list():
     print(search_terms_list)    
     return search_terms_list
 
-def execute_query(query):
+def _execute_query(query):
     """ Execute a query on the db """
     conn = duckdb.connect('./data/jobs.db')
     conn.execute(query)
     return 
 
-def execute_query_get_df(query):
+def _execute_query_get_df(query):
     """ Execute a query on the db and return df with records obtained """
     conn = duckdb.connect('./data/jobs.db')
     df = conn.query(query).to_df()
