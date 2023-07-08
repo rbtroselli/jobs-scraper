@@ -1,9 +1,14 @@
-from ...utils.functions.functions import get_driver, execute_query_get_df, execute_query
-from ...utils.queries.queries import get_search_results_to_scrape, insert_new_posts
-from .post import Post
 import pandas as pd
 import time 
 import random
+import os
+from datetime import datetime
+from .post import Post
+from ...utils.functions.functions import _get_driver, _execute_query_get_df, _execute_query
+from ...utils.queries.queries import get_search_results_to_scrape, insert_new_posts
+
+posts_csv = './data/posts.csv'
+posts_csv_archived = './data/archive/posts_{}.csv'
 
 
 class PostsIterator:
@@ -12,7 +17,7 @@ class PostsIterator:
     Takes in input the list of the posts from the db. Using pandas because of structured data 
     """
     def __init__(self):
-        self.driver = get_driver()
+        self.driver = _get_driver()
         # self.conn = duckdb.connect('./data/jobs.db')
         self.results_df = None
         self.posts_list = []
@@ -22,7 +27,7 @@ class PostsIterator:
     
     def _get_results_df(self):
         """ Get the results dataframe from the db """
-        self.results_df = execute_query_get_df(get_search_results_to_scrape)
+        self.results_df = _execute_query_get_df(get_search_results_to_scrape)
         return
     
     def _make_posts_df(self):
@@ -54,12 +59,21 @@ class PostsIterator:
         return self.posts_list, self.posts_df
     
     def save_posts_to_csv(self):
-        """ Save the posts in a csv file """
-        self.posts_df.to_csv('./data/posts.csv', sep='|', index=False)
+        """ Save the posts in a csv file. Raise error if the file already exists """
+        if os.path.exists(posts_csv):
+            raise FileExistsError('The CSV already exists. Please load results and move it to archive')
+        self.posts_df.to_csv(posts_csv, sep='|', index=False)
         return
+    
+def _move_posts_csv_to_archive():
+    """ Move results csv to archive """
+    utc_ts = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+    os.rename(posts_csv, posts_csv_archived.format(utc_ts))
+    return
     
 def load_posts_csv_to_db():
     """ Load posts csv to db """
-    execute_query(insert_new_posts)
+    _execute_query(insert_new_posts.format(posts_csv))
+    _move_posts_csv_to_archive()
     return
 

@@ -1,8 +1,10 @@
 import time
 import random
 import pandas as pd
+import os
+from datetime import datetime
 from .result_page import ResultPage
-from ...utils.functions.functions import get_driver, get_search_terms_list, execute_query
+from ...utils.functions.functions import _get_driver, _get_search_terms_list, _execute_query
 from ...utils.queries.queries import insert_new_search_results
 
 countries_dict = {
@@ -16,12 +18,15 @@ countries_dict = {
     'TH':'th.', 'TR':'tr.', 'AE':'ae.', 'UY':'uy.', 'VE':'ve.', 'VN':'vn.', 'MY':'malaysia.'
 }
 
+results_csv = './data/results.csv'
+results_csv_archived = './data/archive/results_{}.csv'
+
 
 class ResultsIterator:
     """ A class to iterate through the search results, combine all the pages and save them """
     def __init__(self):
-        self.search_terms_list = get_search_terms_list()
-        self.driver = get_driver()
+        self.search_terms_list = _get_search_terms_list()
+        self.driver = _get_driver()
         self.results_list = []
         self.search_results_df = None
         self.last_3_days_string = None
@@ -75,12 +80,21 @@ class ResultsIterator:
         return self.results_list, self.search_results_df
     
     def save_results_to_csv(self):
-        """ Save the results in a csv file """
-        self.search_results_df.to_csv('./data/results.csv', sep='|', index=False)
+        """ Save the results in a csv file. Raise error if the file already exists """
+        if os.path.exists(results_csv):
+            raise FileExistsError('The CSV already exists. Please load results and move it to archive')
+        self.search_results_df.to_csv(results_csv, sep='|', index=False)
         return
+    
+def _move_results_csv_to_archive():
+    """ Move results csv to archive """
+    utc_ts = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+    os.rename(results_csv, results_csv_archived.format(utc_ts))
+    return
     
 def load_results_csv_to_db():
     """ Load posts csv to db """
-    execute_query(insert_new_search_results)
+    _execute_query(insert_new_search_results.format(results_csv))
+    _move_results_csv_to_archive()
     return
     
