@@ -6,14 +6,14 @@ from ...utils.functions.functions import get_driver, get_search_terms_list, exec
 from ...utils.queries.queries import insert_new_search_results
 
 countries_dict = {
-    'us':'', 'it':'it.', 'uk':'uk.', 'es':'es.', 'fr':'fr.', 'de':'de.', 'at':'at.', 'be':'be.', 
-    'ca':'ca.', 'fi':'fi.', 'dk':'dk.', 'cz':'cz.', 'gr':'gr.', 'hu':'hu.', 'ie':'ie.', 'lu':'lu.', 
-    'nl':'nl.', 'no':'no.', 'pl':'pl.', 'pt':'pt.', 'ro':'ro.', 'se':'se.', 'ch':'ch.', 'ua':'ua.', 
-    'cn':'cn.', 'ar':'ar.', 'au':'au.', 'bh':'bh.', 'br':'br.', 'cl':'cl.', 'ch':'ch.', 'co':'co.', 
-    'cr':'cr.', 'ec':'ec.', 'eg':'eg.', 'hk':'hk.', 'in':'in.', 'id':'id.', 'il':'il.', 'jp':'jp.', 
-    'kw':'kw.', 'mx':'mx.', 'ma':'ma.', 'nz':'nz.', 'ng':'ng.', 'om':'om.', 'pk':'pk.', 'pa':'pa.', 
-    'pe':'pe.', 'ph':'ph.', 'qa':'qa.', 'sa':'sa.', 'sg':'sg.', 'za':'za.', 'kr':'kr.', 'tw':'tw.', 
-    'th':'th.', 'tr':'tr.', 'ae':'ae.', 'uy':'uy.', 've':'ve.', 'vn':'vn.', 'my':'malaysia.'
+    'US':'', 'IT':'it.', 'UK':'uk.', 'ES':'es.', 'FR':'fr.', 'DE':'de.', 'AT':'at.', 'BE':'be.', 
+    'CA':'ca.', 'FI':'fi.', 'DK':'dk.', 'CZ':'cz.', 'GR':'gr.', 'HU':'hu.', 'IE':'ie.', 'LU':'lu.', 
+    'NL':'nl.', 'NO':'no.', 'PL':'pl.', 'PT':'pt.', 'RO':'ro.', 'SE':'se.', 'CH':'ch.', 'UA':'ua.', 
+    'CN':'cn.', 'AR':'ar.', 'AU':'au.', 'BH':'bh.', 'BR':'br.', 'CL':'cl.', 'CH':'ch.', 'CO':'co.', 
+    'CR':'cr.', 'EC':'ec.', 'EG':'eg.', 'HK':'hk.', 'IN':'in.', 'ID':'id.', 'IL':'il.', 'JP':'jp.', 
+    'KW':'kw.', 'MX':'mx.', 'MA':'ma.', 'NZ':'nz.', 'NG':'ng.', 'OM':'om.', 'PK':'pk.', 'PA':'pa.', 
+    'PE':'pe.', 'PH':'ph.', 'QA':'qa.', 'SA':'sa.', 'SG':'sg.', 'ZA':'za.', 'KR':'kr.', 'TW':'tw.', 
+    'TH':'th.', 'TR':'tr.', 'AE':'ae.', 'UY':'uy.', 'VE':'ve.', 'VN':'vn.', 'MY':'malaysia.'
 }
 
 
