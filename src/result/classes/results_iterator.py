@@ -51,15 +51,15 @@ class ResultsIterator:
             result_page.display()
             local_results = result_page.get_results_dict_list()
             if all(result['id'] in [e['id'] for e in self.results_list] for result in local_results):
-                time.sleep(random.uniform(1.5,2.5))
+                time.sleep(random.uniform(1,2))
                 break # if all results ids are already in results_list, break
             for result in local_results:
                 self.results_list.append(result)
-            time.sleep(random.uniform(1.5,2.5))
+            time.sleep(random.uniform(1,2))
         return
     
     def _iterate_countries(self, search_terms):
-        # iterate countries keys
+        """ Iterate through countries """
         for site_country in countries_dict.keys():
             self._iterate_pages(search_terms, site_country)
         return

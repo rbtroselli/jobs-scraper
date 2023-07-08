@@ -31,6 +31,7 @@ class ResultPage:
         return
     
     def display(self):
+        print('-'*100)
         for result in self.results_list:
             for key, value in result.items():
                 print(f'{key}: {value}')
