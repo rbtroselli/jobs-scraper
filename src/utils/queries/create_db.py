@@ -4,17 +4,6 @@ conn = duckdb.connect('./data/jobs.db')
 
 # to remove: varchar lengths, no needed in duckdb
 
-# conn.execute("""DROP TABLE IF EXISTS raw_search_result""")
-# conn.execute("""
-#     CREATE TABLE IF NOT EXISTS raw_search_result (
-#         id VARCHAR(16),
-#         url VARCHAR(50),
-#         search_terms VARCHAR(50),
-#         scrape_timestamp TIMESTAMP,
-#         insert_update_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-#     )
-# """)
-
 # Getting current timestamp in UTC is surprisingly difficult
 # the cast to varchar isolates the '+2' offset, the cast to timestamp renoves it
 # conn.execute("""DROP TABLE IF EXISTS search_result""")
@@ -27,18 +16,6 @@ conn = duckdb.connect('./data/jobs.db')
 #         scrape_timestamp TIMESTAMP,
 #         insert_update_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP::VARCHAR::TIMESTAMP 
 #     )
-# """)
-             
-# conn.execute("""DROP TABLE IF EXISTS flow_step_cfg""")
-# conn.execute("""
-#     CREATE TABLE IF NOT EXISTS flow_step_cfg (
-#         flow_step VARCHAR(20),
-#         last_run_timestamp TIMESTAMP
-#     )
-# """)
-# conn.execute("""
-#     INSERT INTO flow_step_cfg (flow_step, last_run_timestamp)
-#     VALUES ('search_result_load', '2023-01-01 00:00:00')
 # """)
 
 # conn.execute("""DROP TABLE IF EXISTS post""")
@@ -72,7 +49,3 @@ conn = duckdb.connect('./data/jobs.db')
 #         insert_update_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP::VARCHAR::TIMESTAMP 
 #     )
 # """)
-# conn.execute("""
-#     INSERT INTO flow_step_cfg (flow_step, last_run_timestamp)
-#     VALUES ('post_load', '2023-01-01 00:00:00')
-# """)  
