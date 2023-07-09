@@ -1,8 +1,8 @@
 # leaner approach: no cfg
 # make process leaner and storage lighter by loading only new results (insert into, not copy)
 insert_new_search_results = """
-    INSERT INTO search_result (id, url, search_terms, site_country, scrape_timestamp)
-    SELECT id, url, search_terms, site_country, scrape_timestamp
+    INSERT INTO search_result (id, url, search_terms, title, site_country, scrape_timestamp)
+    SELECT id, url, search_terms, title, site_country, scrape_timestamp
     FROM read_csv('{}', sep='|', header=true, auto_detect=true)
     WHERE id NOT IN (SELECT id FROM search_result)
     ;
@@ -17,12 +17,12 @@ insert_new_posts = """
     INSERT INTO post (id, url, search_terms, site_country, scrape_timestamp, content, title, posted_timestamp, 
         address_country, address_locality, address_region_0, address_region_1, address_region_2, postal_code, 
         hiring_organization, country_requirements, salary_currency, min_salary, max_salary, salary, salary_unit, 
-        job_location_type, employment_type, valid_through_timestamp, direct_apply)
+        job_location_type, employment_type, direct_apply)
     SELECT 
         id, url, search_terms, site_country, scrape_timestamp, content, title, posted_timestamp, 
         address_country, address_locality, address_region_0, address_region_1, address_region_2, postal_code, 
         hiring_organization, country_requirements, salary_currency, min_salary, max_salary, salary, salary_unit, 
-        job_location_type, employment_type, valid_through_timestamp, direct_apply
+        job_location_type, employment_type, direct_apply
     FROM read_csv('{}', sep='|', header=true, auto_detect=true)
     WHERE id NOT IN (SELECT id FROM post)
     ;

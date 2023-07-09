@@ -46,7 +46,7 @@ class Post:
             pass
         self.post_dict['job_location_type'] = script_dict.get('jobLocationType', None)
         self.post_dict['employment_type'] = script_dict.get('employmentType', None)
-        self.post_dict['valid_through_timestamp'] = script_dict.get('validThrough', None)
+        # self.post_dict['valid_through_timestamp'] = script_dict.get('validThrough', None)
         self.post_dict['direct_apply'] = script_dict.get('directApply', None)
         # self.post_dict['raw_script_json'] = str(script_json)
         return

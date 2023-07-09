@@ -9,10 +9,11 @@ conn = duckdb.connect('./data/jobs.db')
 # conn.execute("""DROP TABLE IF EXISTS search_result""")
 # conn.execute("""
 #     CREATE TABLE IF NOT EXISTS search_result (
-#         id VARCHAR(16),
-#         url VARCHAR(50),
-#         search_terms VARCHAR(50),
-#         site_country VARCHAR(2),
+#         id VARCHAR,
+#         url VARCHAR,
+#         search_terms VARCHAR,
+#         title VARCHAR,
+#         site_country VARCHAR,
 #         scrape_timestamp TIMESTAMP,
 #         insert_update_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP::VARCHAR::TIMESTAMP 
 #     )
@@ -44,7 +45,6 @@ conn = duckdb.connect('./data/jobs.db')
 #         salary_unit VARCHAR(20),
 #         job_location_type VARCHAR(50),
 #         employment_type VARCHAR(50),
-#         valid_through_timestamp TIMESTAMP,
 #         direct_apply BOOLEAN,
 #         insert_update_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP::VARCHAR::TIMESTAMP 
 #     )
