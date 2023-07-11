@@ -9,9 +9,9 @@ def _get_driver():
     user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument(f'--user-data-dir={user_data_dir}')
-    chrome_options.add_argument(f'--user-agent={user_agent}')
-    chrome_options.add_argument('--window-size=1920,1080')
-    chrome_options.add_argument('--headless')
+    # chrome_options.add_argument(f'--user-agent={user_agent}')
+    # chrome_options.add_argument('--window-size=1920,1080')
+    # chrome_options.add_argument('--headless')
 
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(10) # ?
