@@ -1,20 +1,28 @@
 # Browser driver not needed anymore, since we are using selenium-manager
 # https://www.selenium.dev/blog/2022/introducing-selenium-manager/
-from selenium import webdriver
 import duckdb
+import undetected_chromedriver as uc
 
 def _get_driver():
     """ Return a driver to use selenium """
     user_data_dir = './browser/user_data' # local data folder
-    user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument(f'--user-data-dir={user_data_dir}')
+
+    driver = uc.Chrome(headless=True, use_subprocess=False, user_data_dir=user_data_dir)
+
+    # from selenium import webdriver
+    # user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+    # chrome_options = webdriver.ChromeOptions()
+    # chrome_options.add_argument(f'--user-data-dir={user_data_dir}')
+    # chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    # chrome_options.add_experimental_option('useAutomationExtension', False)
+    # chrome_options.add_argument('--disable-blink-features=AutomationControlled')
+    # # headless
     # chrome_options.add_argument(f'--user-agent={user_agent}')
     # chrome_options.add_argument('--window-size=1920,1080')
     # chrome_options.add_argument('--headless')
+    # driver = webdriver.Chrome(options=chrome_options)
+    # driver.implicitly_wait(10) # ?
 
-    driver = webdriver.Chrome(options=chrome_options)
-    driver.implicitly_wait(10) # ?
     return driver
 
 def _get_search_terms_list():
