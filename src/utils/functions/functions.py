@@ -2,14 +2,14 @@
 # https://www.selenium.dev/blog/2022/introducing-selenium-manager/
 import duckdb
 import undetected_chromedriver as uc
+from selenium import webdriver
 
 def _get_driver():
     """ Return a driver to use selenium """
     user_data_dir = './browser/user_data' # local data folder
 
-    driver = uc.Chrome(headless=True, use_subprocess=False, user_data_dir=user_data_dir)
+    driver = uc.Chrome(headless=False, use_subprocess=False, user_data_dir=user_data_dir)
 
-    # from selenium import webdriver
     # user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
     # chrome_options = webdriver.ChromeOptions()
     # chrome_options.add_argument(f'--user-data-dir={user_data_dir}')
