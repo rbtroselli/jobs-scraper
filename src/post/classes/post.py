@@ -35,7 +35,7 @@ class Post:
         try:
             self.post_dict['country_requirements'] = script_dict.get('applicantLocationRequirements', None).get('name', None)
         except:
-            pass
+            self.post_dict['country_requirements'] = None
         try:
             self.post_dict['salary_currency'] = script_dict.get('baseSalary', None).get('currency', None)
             self.post_dict['min_salary'] = script_dict.get('baseSalary', None).get('value', None).get('minValue', None)
@@ -43,12 +43,14 @@ class Post:
             self.post_dict['salary'] = script_dict.get('baseSalary', None).get('value', None).get('value', None)
             self.post_dict['salary_unit'] = script_dict.get('baseSalary', None).get('value', None).get('unitText', None)
         except:
-            pass
+            self.post_dict['salary_currency'] = None
+            self.post_dict['min_salary'] = None
+            self.post_dict['max_salary'] = None
+            self.post_dict['salary'] = None
+            self.post_dict['salary_unit'] = None
         self.post_dict['job_location_type'] = script_dict.get('jobLocationType', None)
         self.post_dict['employment_type'] = script_dict.get('employmentType', None)
-        # self.post_dict['valid_through_timestamp'] = script_dict.get('validThrough', None)
         self.post_dict['direct_apply'] = script_dict.get('directApply', None)
-        # self.post_dict['raw_script_json'] = str(script_json)
         return
     
     def _assign_post_elements(self):
@@ -63,8 +65,6 @@ class Post:
         for key, value in self.post_dict.items():
             if key == 'content':
                 print(f'{key}: {value[0:100]}...')
-            # elif key == 'raw_script_json':
-            #     print(f'{key}: {value[0:100]}...')
             else:
                 print(f'{key}: {value}')
         return
